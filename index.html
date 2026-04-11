@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Kongu Times - கொங்கு மண்டலத்தின் நம்பகமான செய்தி ஆதாரம். Tamil and English news from the Kongu region of Tamil Nadu." />
+  <title>The Kongu Times | கொங்கு டைம்ஸ்</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="logo-block" style="text-decoration:none">
+        <img src="kongu-times-logo.png" alt="The Kongu Times" style="height:52px;width:auto;display:block;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.3))"/>
+      </a>
+      <div class="header-tagline">கொங்கு மண்டலத்தின் குரல் · Voice of the Kongu Region</div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="ta" onclick="switchLang('ta')">தமிழ்</button>
+        <button class="lang-btn" data-lang="en" onclick="switchLang('en')">English</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- REGION NAV -->
+  <nav class="region-nav" aria-label="Region Navigation">
+    <div class="region-nav-inner">
+      <a href="index.html" class="active">🏠 Home</a>
+      <a href="regions/erode.html">Erode · ஈரோடு</a>
+      <a href="regions/coimbatore.html">Coimbatore · கோயம்புத்தூர்</a>
+      <a href="regions/tiruppur.html">Tiruppur · திருப்பூர்</a>
+      <a href="regions/salem.html">Salem · சேலம்</a>
+      <a href="regions/namakkal.html">Namakkal · நாமக்கல்</a>
+      <a href="regions/karur.html">Karur · கரூர்</a>
+      <a href="regions/dharmapuri.html">Dharmapuri · தர்மபுரி</a>
+    </div>
+  </nav>
+
+  <!-- ELECTION BANNER -->
+  <div style="background:linear-gradient(90deg,#6B3FA0,#E8610A,#E8186D);padding:7px 0;text-align:center;">
+    <div style="font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:white;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;max-width:1280px;margin:0 auto;padding:0 24px;">
+      <span style="background:rgba(255,255,255,0.2);border-radius:3px;padding:2px 8px;font-size:10px;letter-spacing:0.08em;">🗳 ELECTION 2026</span>
+      <span>தமிழ்நாடு சட்டமன்றத் தேர்தல் · April 23, 2026 · Counting: May 4</span>
+      <span style="background:rgba(255,255,255,0.2);border-radius:3px;padding:2px 8px;font-size:10px;letter-spacing:0.08em;">234 தொகுதிகள்</span>
+    </div>
+  </div>
+
+  <!-- NEWS TICKER -->
+  <div class="news-ticker" aria-label="Breaking news ticker">
+    <div class="ticker-inner">
+      <span class="ticker-label">LIVE</span>
+      <div class="ticker-scroll">
+        <div class="ticker-track">
+          <span class="ticker-item">ஈரோடு மாவட்டத்தில் புதிய தொழில் வளாகம் அமைக்க அரசு அனுமதி</span>
+          <span class="ticker-item">Coimbatore Smart City project gets ₹500 crore boost from Centre</span>
+          <span class="ticker-item">திருப்பூரில் ஏற்றுமதி துறைக்கு புத்துணர்வு: ஜவுளி வரவு அதிகரிப்பு</span>
+          <span class="ticker-item">Salem Steel Plant announces 2,000 new job openings</span>
+          <span class="ticker-item">நாமக்கல் முட்டை உற்பத்தி இந்த ஆண்டு சாதனை படைக்கிறது</span>
+          <span class="ticker-item">Karur textiles exported to 45 countries this fiscal year</span>
+          <span class="ticker-item">தர்மபுரி மாவட்டத்தில் மழை வரவேற்பு — விவசாயிகள் மகிழ்ச்சி</span>
+          <!-- duplicate for seamless loop -->
+          <span class="ticker-item">ஈரோடு மாவட்டத்தில் புதிய தொழில் வளாகம் அமைக்க அரசு அனுமதி</span>
+          <span class="ticker-item">Coimbatore Smart City project gets ₹500 crore boost from Centre</span>
+          <span class="ticker-item">திருப்பூரில் ஏற்றுமதி துறைக்கு புத்துணர்வு: ஜவுளி வரவு அதிகரிப்பு</span>
+          <span class="ticker-item">Salem Steel Plant announces 2,000 new job openings</span>
+          <span class="ticker-item">நாமக்கல் முட்டை உற்பத்தி இந்த ஆண்டு சாதனை படைக்கிறது</span>
+          <span class="ticker-item">Karur textiles exported to 45 countries this fiscal year</span>
+          <span class="ticker-item">தர்மபுரி மாவட்டத்தில் மழை வரவேற்பு — விவசாயிகள் மகிழ்ச்சி</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="site-main">
+
+    <!-- HERO GRID -->
+    <section aria-label="Top stories">
+      <div class="hero-grid">
+        <!-- Lead story -->
+        <article class="hero-main">
+          <div class="hero-label">இன்றைய முக்கிய செய்தி · Top Story</div>
+          <div class="hero-img-placeholder">
+            <svg width="100%" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="200" fill="#E8DDD0"/>
+              <text x="300" y="90" text-anchor="middle" font-family="serif" font-size="18" fill="#6B5344">📷 Add your photo here</text>
+              <text x="300" y="118" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#9B8070">Replace this placeholder with a news image</text>
+            </svg>
+          </div>
+          <p class="img-caption">Image caption goes here · படத்தின் விளக்கம் இங்கே</p>
+          <h1 class="hero-headline">கொங்கு மண்டலத்தில் புதிய தொழில் வளர்ச்சி திட்டம் — ஆயிரக்கணக்கான வேலைகள் உருவாகும்</h1>
+          <p class="hero-lead">
+            தமிழ்நாடு அரசு கொங்கு மண்டலத்தில் பெரும் தொழில் வளர்ச்சி திட்டத்தை அறிவித்துள்ளது. ஈரோடு, கோயம்புத்தூர், திருப்பூர் மாவட்டங்களில் புதிய தொழிற்பேட்டைகள் அமைக்கப்படும் என தெரிவிக்கப்பட்டுள்ளது.
+          </p>
+          <p class="hero-lead" style="display:none" data-lang="en">
+            The Tamil Nadu government has announced a major industrial development plan for the Kongu region. New industrial estates are set to be established in Erode, Coimbatore, and Tiruppur districts, expected to create thousands of jobs.
+          </p>
+          <div class="hero-meta">
+            <span>📅 April 10, 2026</span>
+            <span>✍️ கொங்கு டைம்ஸ் நிருபர்</span>
+            <span>🏷 Economy</span>
+          </div>
+        </article>
+
+        <!-- Side story 1 -->
+        <article class="hero-side-top">
+          <div class="hero-label" style="font-size:9px">Salem · சேலம்</div>
+          <div class="hero-img-placeholder" style="aspect-ratio:3/1;margin-bottom:12px">
+            <svg width="100%" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect width="300" height="60" fill="#E8DDD0"/>
+              <text x="150" y="36" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#9B8070">Add photo</text>
+            </svg>
+          </div>
+          <h2 class="side-article-title">Salem Steel Plant to add 2,000 jobs — New phase inaugurated by CM</h2>
+          <p class="side-article-lead">The plant's Phase 4 expansion was officially launched, boosting output capacity by 30% and creating employment for local youth.</p>
+          <div class="hero-meta" style="margin-top:10px">
+            <span>📅 April 9, 2026</span>
+            <span>🏷 Industry</span>
+          </div>
+        </article>
+
+        <!-- Side story 2 -->
+        <article class="hero-side-bottom">
+          <div class="hero-label" style="font-size:9px">Namakkal · நாமக்கல்</div>
+          <h2 class="side-article-title">நாமக்கல் முட்டை உற்பத்தியாளர்கள் புதிய சந்தைகளை நோக்கி — ஏற்றுமதி 40% உயர்வு</h2>
+          <p class="side-article-lead">நாமக்கல் மாவட்ட கோழிப்பண்ணை அமைப்பு இந்த ஆண்டு வரலாறு காணாத அளவில் ஏற்றுமதியை அதிகரித்துள்ளது.</p>
+          <div class="hero-meta" style="margin-top:10px">
+            <span>📅 April 8, 2026</span>
+            <span>🏷 Agriculture</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- REGION TILES -->
+    <section aria-labelledby="region-head">
+      <div class="section-head">
+        <h2 id="region-head" data-en="Browse by Region" data-ta="மண்டலங்கள்">மண்டலங்கள்</h2>
+        <span class="section-tamil" data-en="Browse by Region" data-ta="மண்டல செய்திகள்">மண்டல செய்திகள்</span>
+        <div class="section-head-line"></div>
+      </div>
+      <div class="region-grid">
+        <a href="regions/erode.html" class="region-card">
+          <div class="region-card-icon">🌿</div>
+          <div class="region-card-name">Erode</div>
+          <div class="region-card-tamil">ஈரோடு</div>
+          <div class="region-card-count">Turmeric Capital</div>
+        </a>
+        <a href="regions/coimbatore.html" class="region-card">
+          <div class="region-card-icon">🏙️</div>
+          <div class="region-card-name">Coimbatore</div>
+          <div class="region-card-tamil">கோயம்புத்தூர்</div>
+          <div class="region-card-count">Manchester of South India</div>
+        </a>
+        <a href="regions/tiruppur.html" class="region-card">
+          <div class="region-card-icon">🧵</div>
+          <div class="region-card-name">Tiruppur</div>
+          <div class="region-card-tamil">திருப்பூர்</div>
+          <div class="region-card-count">Knitwear Capital</div>
+        </a>
+        <a href="regions/salem.html" class="region-card">
+          <div class="region-card-icon">⚙️</div>
+          <div class="region-card-name">Salem</div>
+          <div class="region-card-tamil">சேலம்</div>
+          <div class="region-card-count">Steel City</div>
+        </a>
+        <a href="regions/namakkal.html" class="region-card">
+          <div class="region-card-icon">🥚</div>
+          <div class="region-card-name">Namakkal</div>
+          <div class="region-card-tamil">நாமக்கல்</div>
+          <div class="region-card-count">Egg Town of India</div>
+        </a>
+        <a href="regions/karur.html" class="region-card">
+          <div class="region-card-icon">🏮</div>
+          <div class="region-card-name">Karur</div>
+          <div class="region-card-tamil">கரூர்</div>
+          <div class="region-card-count">Textile Hub</div>
+        </a>
+        <a href="regions/dharmapuri.html" class="region-card">
+          <div class="region-card-icon">🌾</div>
+          <div class="region-card-name">Dharmapuri</div>
+          <div class="region-card-tamil">தர்மபுரி</div>
+          <div class="region-card-count">Mango District</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- LATEST NEWS GRID -->
+    <section aria-labelledby="latest-head">
+      <div class="section-head">
+        <h2 id="latest-head" data-en="Latest News" data-ta="சமீபத்திய செய்திகள்">சமீபத்திய செய்திகள்</h2>
+        <div class="section-head-line"></div>
+      </div>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="card-region">Coimbatore</div>
+          <a href="regions/coimbatore.html" class="card-title">Coimbatore Smart City ₹500 crore project — Roads, parks and digital kiosks</a>
+          <p class="card-excerpt">The Centre has approved ₹500 crore for Coimbatore's Smart City makeover, covering road upgrades, new public parks, and digital information kiosks across 12 zones.</p>
+          <div class="card-meta">
+            <span>Apr 10, 2026</span><span class="meta-dot">·</span><span>City</span>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="card-region">Tiruppur</div>
+          <a href="regions/tiruppur.html" class="card-title">திருப்பூர் ஜவுளி ஏற்றுமதி 20% உயர்வு — ஐரோப்பிய சந்தை விரிவாக்கம்</a>
+          <p class="card-excerpt">திருப்பூரில் இருந்து ஐரோப்பிய நாடுகளுக்கு ஜவுளி ஏற்றுமதி கடந்த ஆண்டை விட 20 சதவீதம் அதிகரித்துள்ளது என தொழில் வட்டாரங்கள் தெரிவிக்கின்றன.</p>
+          <div class="card-meta">
+            <span>Apr 9, 2026</span><span class="meta-dot">·</span><span>Trade</span>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="card-region">Erode</div>
+          <a href="regions/erode.html" class="card-title">ஈரோடு மஞ்சள் ஏலம் — இந்த மாதம் விலை சாதனை படைக்கிறது</a>
+          <p class="card-excerpt">ஈரோடு மஞ்சள் ஏல மையத்தில் கிலோ 18,000 ரூபாயை தாண்டி விலை சென்றது. விவசாயிகள் மகிழ்ச்சியடைந்துள்ளனர்.</p>
+          <div class="card-meta">
+            <span>Apr 8, 2026</span><span class="meta-dot">·</span><span>Agriculture</span>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="card-region">Karur</div>
+          <a href="regions/karur.html" class="card-title">Karur Bus Terminus upgraded — New facilities for 50,000 daily passengers</a>
+          <p class="card-excerpt">The newly renovated Karur Central Bus Stand now features modern waiting halls, clean restrooms, food court and digital departure boards.</p>
+          <div class="card-meta">
+            <span>Apr 7, 2026</span><span class="meta-dot">·</span><span>Infrastructure</span>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="card-region">Salem</div>
+          <a href="regions/salem.html" class="card-title">சேலம் — மேட்டூர் அணை நீர்மட்டம் உயர்வு: விவசாயிகளுக்கு நல்ல செய்தி</a>
+          <p class="card-excerpt">மேட்டூர் அணையில் நீர்மட்டம் 90 அடியை தாண்டியுள்ளது. கோடை பயிர்களுக்கு நீர் வழங்கல் உறுதி செய்யப்பட்டுள்ளது.</p>
+          <div class="card-meta">
+            <span>Apr 7, 2026</span><span class="meta-dot">·</span><span>Water</span>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="card-region">Dharmapuri</div>
+          <a href="regions/dharmapuri.html" class="card-title">Dharmapuri Mango season begins — Farmers expect bumper harvest this year</a>
+          <p class="card-excerpt">With timely rains and good weather, Dharmapuri mango farmers are expecting a 25% higher yield this season compared to last year.</p>
+          <div class="card-meta">
+            <span>Apr 6, 2026</span><span class="meta-dot">·</span><span>Agriculture</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">The <span>Kongu</span> Times</div>
+          <p class="footer-desc">Trusted news from the heart of Tamil Nadu's Kongu region.</p>
+          <p class="footer-desc-tamil">கொங்கு மண்டலத்தின் நம்பகமான செய்தி ஆதாரம்.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Regions</div>
+          <a href="regions/erode.html">Erode · ஈரோடு</a>
+          <a href="regions/coimbatore.html">Coimbatore · கோயம்புத்தூர்</a>
+          <a href="regions/tiruppur.html">Tiruppur · திருப்பூர்</a>
+          <a href="regions/salem.html">Salem · சேலம்</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">More Regions</div>
+          <a href="regions/namakkal.html">Namakkal · நாமக்கல்</a>
+          <a href="regions/karur.html">Karur · கரூர்</a>
+          <a href="regions/dharmapuri.html">Dharmapuri · தர்மபுரி</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">About</div>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Submit News</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 The Kongu Times · கொங்கு டைம்ஸ். All rights reserved.</span>
+        <span>Made with ❤️ for the Kongu people</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
