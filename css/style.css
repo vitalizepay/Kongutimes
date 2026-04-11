@@ -756,3 +756,14 @@ body {
   .footer-grid { grid-template-columns: 1fr; }
   .region-title { font-size: 30px; }
 }
+
+/* Candidates 2026 highlight link */
+.region-nav-inner a.candidates-link {
+  color: var(--gold, #E8610A);
+  border-bottom: 3px solid rgba(232,97,10,0.35);
+}
+.region-nav-inner a.candidates-link:hover,
+.region-nav-inner a.candidates-link.active {
+  color: #FFD700;
+  border-bottom-color: var(--orange, #E8610A);
+}
