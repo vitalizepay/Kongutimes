@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Tamil Nadu Election 2026 — Full candidates list for all 234 constituencies. DMK, AIADMK, TVK, NTK candidates."/>
+  <title>Candidates 2026 | The Kongu Times</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Tamil&family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --orange:#E8610A;--pink:#E8186D;--purple:#6B3FA0;
+      --dmk:#E8610A;--aiadmk:#1A5276;--tvk:#6B3FA0;--ntk:#1D6B34;
+      --ink:#1A1208;--ink-mid:#3D2B1F;--ink-light:#6B5344;
+      --paper:#FBF7F0;--paper-mid:#F2EBE0;--paper-dark:#E8DDD0;
+      --white:#fff;--border:#D6C9BB;
+    }
+    body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);}
+
+    /* HEADER */
+    .site-header{background:linear-gradient(135deg,#1a0a2e 0%,#2d1654 50%,#1a0a2e 100%);border-bottom:3px solid var(--orange);}
+    .header-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 24px;gap:12px;}
+    .logo-img{height:48px;width:auto;}
+    .header-tagline{font-family:'Tiro Tamil',serif;font-size:12px;color:rgba(255,255,255,0.6);text-align:center;}
+    .lang-toggle{display:flex;gap:3px;background:rgba(255,255,255,0.08);border-radius:6px;padding:3px;}
+    .lang-btn{font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:4px 12px;border:none;border-radius:4px;cursor:pointer;background:transparent;color:rgba(255,255,255,0.55);}
+    .lang-btn.active{background:var(--orange);color:white;}
+
+    /* REGION NAV */
+    .region-nav{background:#2d1654;border-bottom:1px solid rgba(255,255,255,0.08);}
+    .region-nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;padding:0 24px;overflow-x:auto;scrollbar-width:none;}
+    .region-nav-inner::-webkit-scrollbar{display:none}
+    .region-nav-inner a{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:rgba(255,255,255,0.65);text-decoration:none;padding:9px 12px;white-space:nowrap;border-bottom:3px solid transparent;transition:all 0.2s;}
+    .region-nav-inner a:hover,.region-nav-inner a.active{color:white;border-bottom-color:var(--orange);}
+
+    /* ELECTION BANNER */
+    .election-banner{background:linear-gradient(90deg,#6B3FA0,#E8610A,#E8186D);padding:7px 0;text-align:center;}
+    .election-banner-inner{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:white;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;}
+    .elect-badge{background:rgba(255,255,255,0.2);border-radius:3px;padding:2px 8px;font-size:10px;letter-spacing:0.08em;}
+
+    /* PAGE HERO */
+    .page-hero{background:linear-gradient(135deg,#1a0a2e,#2d1654);padding:36px 24px 28px;border-bottom:3px solid var(--orange);}
+    .page-hero-inner{max-width:1280px;margin:0 auto;}
+    .page-breadcrumb{font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:10px;}
+    .page-breadcrumb a{color:var(--orange);text-decoration:none;}
+    .page-title{font-family:'Playfair Display',serif;font-size:38px;font-weight:900;color:white;line-height:1.1;}
+    .page-title span{color:var(--orange);}
+    .page-title-ta{font-family:'Tiro Tamil',serif;font-size:20px;color:rgba(255,255,255,0.7);margin-top:6px;}
+    .page-subtitle{font-size:14px;color:rgba(255,255,255,0.55);margin-top:10px;}
+
+    /* STATS ROW */
+    .stats-row{max-width:1280px;margin:0 auto;padding:20px 24px;display:flex;gap:12px;flex-wrap:wrap;}
+    .stat-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:14px 20px;flex:1;min-width:140px;text-align:center;border-top:3px solid var(--orange);}
+    .stat-num{font-size:28px;font-weight:700;color:var(--ink);line-height:1;}
+    .stat-label{font-size:11px;color:var(--ink-light);margin-top:4px;letter-spacing:0.04em;}
+    .stat-card.dmk{border-top-color:var(--dmk);} .stat-card.dmk .stat-num{color:var(--dmk);}
+    .stat-card.aiadmk{border-top-color:var(--aiadmk);} .stat-card.aiadmk .stat-num{color:var(--aiadmk);}
+    .stat-card.tvk{border-top-color:var(--tvk);} .stat-card.tvk .stat-num{color:var(--tvk);}
+    .stat-card.ntk{border-top-color:var(--ntk);} .stat-card.ntk .stat-num{color:var(--ntk);}
+
+    /* SEARCH + FILTERS */
+    .controls{max-width:1280px;margin:0 auto;padding:0 24px 16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+    .search-wrap{flex:1;min-width:200px;position:relative;}
+    .search-wrap input{width:100%;padding:9px 12px 9px 36px;border:1px solid var(--border);border-radius:6px;font-family:'DM Sans',sans-serif;font-size:13px;background:var(--white);color:var(--ink);}
+    .search-wrap::before{content:'🔍';position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:13px;}
+    .filter-btn{padding:8px 16px;border:1px solid var(--border);border-radius:6px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;background:var(--white);color:var(--ink-mid);transition:all 0.15s;white-space:nowrap;}
+    .filter-btn:hover{border-color:var(--orange);color:var(--orange);}
+    .filter-btn.active{background:var(--orange);color:white;border-color:var(--orange);}
+    .filter-btn.dmk.active{background:var(--dmk);border-color:var(--dmk);}
+    .filter-btn.aiadmk.active{background:var(--aiadmk);border-color:var(--aiadmk);}
+    .filter-btn.tvk.active{background:var(--tvk);border-color:var(--tvk);}
+    .filter-btn.ntk.active{background:var(--ntk);border-color:var(--ntk);}
+    .result-count{font-size:12px;color:var(--ink-light);white-space:nowrap;}
+
+    /* TABLE */
+    .table-wrap{max-width:1280px;margin:0 auto;padding:0 24px 48px;overflow-x:auto;}
+    table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--border);border-radius:8px;overflow:hidden;font-size:13px;}
+    thead{background:var(--ink);}
+    thead th{padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.7);border-bottom:none;}
+    thead th.dmk-h{background:#C05008;color:white;}
+    thead th.aiadmk-h{background:#154360;color:white;}
+    thead th.tvk-h{background:#512E8F;color:white;}
+    thead th.ntk-h{background:#145A27;color:white;}
+    .candidate-row td{padding:10px 14px;border-bottom:1px solid var(--paper-dark);vertical-align:middle;}
+    .candidate-row:last-child td{border-bottom:none;}
+    .candidate-row:nth-child(even) td{background:#FDFAF6;}
+    .candidate-row:hover td{background:#FEF3E8;}
+    .ac-no{font-weight:700;color:var(--ink-light);font-size:12px;min-width:48px;}
+    .constituency-name{font-weight:700;color:var(--ink);font-size:14px;min-width:160px;}
+    .candidate{min-width:160px;}
+    .cname{display:inline-block;padding:3px 8px;border-radius:3px;font-size:12px;font-weight:500;}
+    td.dmk .cname{background:#FEF0E7;color:#8B3A06;}
+    td.aiadmk .cname{background:#EAF0F8;color:#154360;}
+    td.tvk .cname{background:#F0EAF8;color:#3D1F7A;}
+    td.ntk .cname{background:#E8F5ED;color:#0F4020;}
+    .hidden{display:none;}
+
+    /* LEGEND */
+    .legend{max-width:1280px;margin:0 auto;padding:0 24px 10px;display:flex;gap:16px;flex-wrap:wrap;}
+    .legend-item{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;}
+    .legend-dot{width:10px;height:10px;border-radius:50%;}
+
+    /* FOOTER */
+    .site-footer{background:linear-gradient(135deg,#1a0a2e,#2d1654);color:rgba(255,255,255,0.6);padding:32px 24px 20px;}
+    .footer-inner{max-width:1280px;margin:0 auto;}
+    .footer-bottom{display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:6px;border-top:1px solid rgba(255,255,255,0.1);padding-top:16px;}
+    .footer-logo-img{height:36px;margin-bottom:10px;}
+    .footer-links{display:flex;gap:24px;margin-bottom:16px;flex-wrap:wrap;}
+    .footer-links a{font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.15s;}
+    .footer-links a:hover{color:white;}
+
+    @media(max-width:700px){
+      .page-title{font-size:26px;}
+      .stats-row{gap:8px;}
+      .stat-card{min-width:100px;padding:10px 12px;}
+      .stat-num{font-size:22px;}
+      thead th{padding:8px 6px;font-size:9px;}
+      .candidate-row td{padding:8px 6px;}
+      .cname{font-size:11px;padding:2px 5px;}
+      .constituency-name{font-size:12px;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html"><img class="logo-img" src="kongu-times-logo.png" alt="The Kongu Times"/></a>
+    <div class="header-tagline">கொங்கு மண்டலத்தின் குரல் · Voice of the Kongu Region</div>
+    <div class="lang-toggle">
+      <button class="lang-btn active">தமிழ்</button>
+      <button class="lang-btn">English</button>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="region-nav">
+  <div class="region-nav-inner">
+    <a href="index.html">🏠 Home</a>
+    <a href="regions/erode.html">Erode · ஈரோடு</a>
+    <a href="regions/coimbatore.html">Coimbatore · கோயம்புத்தூர்</a>
+    <a href="regions/tiruppur.html">Tiruppur · திருப்பூர்</a>
+    <a href="regions/salem.html">Salem · சேலம்</a>
+    <a href="regions/namakkal.html">Namakkal · நாமக்கல்</a>
+    <a href="regions/karur.html">Karur · கரூர்</a>
+    <a href="regions/dharmapuri.html">Dharmapuri · தர்மபுரி</a>
+    <a href="candidates-2026.html" class="active">🗳 Candidates 2026</a>
+  </div>
+</nav>
+
+<!-- ELECTION BANNER -->
+<div class="election-banner">
+  <div class="election-banner-inner">
+    <span class="elect-badge">🗳 ELECTION 2026</span>
+    <span>தமிழ்நாடு சட்டமன்றத் தேர்தல் · April 23, 2026 · Counting: May 4</span>
+    <span class="elect-badge">234 தொகுதிகள்</span>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-breadcrumb"><a href="index.html">Home</a> › Candidates 2026</div>
+    <h1 class="page-title">🗳 Candidates <span>2026</span></h1>
+    <div class="page-title-ta">2026 தமிழ்நாடு சட்டமன்றத் தேர்தல் — வேட்பாளர்கள் பட்டியல்</div>
+    <p class="page-subtitle">All 234 constituencies · DMK (SPA) · AIADMK (NDA) · TVK · NTK — Polling: April 23 · Results: May 4</p>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat-card"><div class="stat-num">234</div><div class="stat-label">Total Constituencies</div></div>
+  <div class="stat-card dmk"><div class="stat-num">DMK</div><div class="stat-label">SPA Alliance</div></div>
+  <div class="stat-card aiadmk"><div class="stat-num">AIADMK</div><div class="stat-label">NDA Alliance</div></div>
+  <div class="stat-card tvk"><div class="stat-num">TVK</div><div class="stat-label">Vijay's Party · Solo</div></div>
+  <div class="stat-card ntk"><div class="stat-num">NTK</div><div class="stat-label">Seeman's Party</div></div>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#E8610A"></div>DMK (SPA)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#1A5276"></div>AIADMK (NDA)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#6B3FA0"></div>TVK</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#1D6B34"></div>NTK</div>
+</div>
+
+<!-- CONTROLS -->
+<div class="controls">
+  <div class="search-wrap">
+    <input type="text" id="searchBox" placeholder="Search constituency or candidate name..." oninput="filterTable()"/>
+  </div>
+  <button class="filter-btn active" onclick="filterParty('all',this)">All Parties</button>
+  <button class="filter-btn dmk" onclick="filterParty('dmk',this)">DMK (SPA)</button>
+  <button class="filter-btn aiadmk" onclick="filterParty('aiadmk',this)">AIADMK (NDA)</button>
+  <button class="filter-btn tvk" onclick="filterParty('tvk',this)">TVK</button>
+  <button class="filter-btn ntk" onclick="filterParty('ntk',this)">NTK</button>
+  <span class="result-count" id="resultCount">234 constituencies</span>
+</div>
+
+<!-- TABLE -->
+<div class="table-wrap">
+  <table id="candidatesTable">
+    <thead>
+      <tr>
+        <th>AC No.</th>
+        <th>Constituency · தொகுதி</th>
+        <th class="dmk-h">DMK (SPA)</th>
+        <th class="aiadmk-h">AIADMK (NDA)</th>
+        <th class="tvk-h">TVK</th>
+        <th class="ntk-h">NTK</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      
+    <tr class="candidate-row" data-index="0">
+      <td class="ac-no">1</td>
+      <td class="constituency-name">Gummidipoondi</td>
+      <td class="candidate dmk"><span class="cname">T. J. Govindarajan</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. Sudhakar</span></td>
+      <td class="candidate tvk"><span class="cname">S. Vijayakumar</span></td>
+      <td class="candidate ntk"><span class="cname">Sridhar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="1">
+      <td class="ac-no">2</td>
+      <td class="constituency-name">Ponneri (SC)</td>
+      <td class="candidate dmk"><span class="cname">Durai Chandrasekar</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Balaraman</span></td>
+      <td class="candidate tvk"><span class="cname">Dr. M.S. Ravi</span></td>
+      <td class="candidate ntk"><span class="cname">Rajathi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="2">
+      <td class="ac-no">3</td>
+      <td class="constituency-name">Tiruttani</td>
+      <td class="candidate dmk"><span class="cname">D. Krishnamoorthy</span></td>
+      <td class="candidate aiadmk"><span class="cname">G. Hari</span></td>
+      <td class="candidate tvk"><span class="cname">Dr. M. Sathiyakumar</span></td>
+      <td class="candidate ntk"><span class="cname">Chandran</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="3">
+      <td class="ac-no">4</td>
+      <td class="constituency-name">Thiruvallur</td>
+      <td class="candidate dmk"><span class="cname">V. G. Raajendran</span></td>
+      <td class="candidate aiadmk"><span class="cname">B. V. Ramana</span></td>
+      <td class="candidate tvk"><span class="cname">M. Thangavel</span></td>
+      <td class="candidate ntk"><span class="cname">Senthil Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="4">
+      <td class="ac-no">5</td>
+      <td class="constituency-name">Poonamallee (SC)</td>
+      <td class="candidate dmk"><span class="cname">A. Krishnaswamy</span></td>
+      <td class="candidate aiadmk"><span class="cname">T. A. Elumalai</span></td>
+      <td class="candidate tvk"><span class="cname">S.K. Sathya</span></td>
+      <td class="candidate ntk"><span class="cname">Mehala</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="5">
+      <td class="ac-no">6</td>
+      <td class="constituency-name">Avadi</td>
+      <td class="candidate dmk"><span class="cname">S. M. Nasar</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Rajasimha Mahendra</span></td>
+      <td class="candidate tvk"><span class="cname">S. Gopalakrishnan</span></td>
+      <td class="candidate ntk"><span class="cname">Punitha</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="6">
+      <td class="ac-no">7</td>
+      <td class="constituency-name">Maduravoyal</td>
+      <td class="candidate dmk"><span class="cname">K. Ganapathy</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Benjamin</span></td>
+      <td class="candidate tvk"><span class="cname">P. Thirupathi</span></td>
+      <td class="candidate ntk"><span class="cname">Revathi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="7">
+      <td class="ac-no">8</td>
+      <td class="constituency-name">Ambattur</td>
+      <td class="candidate dmk"><span class="cname">A. P. Poornima</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. N. Sekar</span></td>
+      <td class="candidate tvk"><span class="cname">V. Karthiga Kanmani</span></td>
+      <td class="candidate ntk"><span class="cname">Aadhithan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="8">
+      <td class="ac-no">9</td>
+      <td class="constituency-name">Madhavaram</td>
+      <td class="candidate dmk"><span class="cname">S. Sudharsanam</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. Moorthy</span></td>
+      <td class="candidate tvk"><span class="cname">S. Ragavendran</span></td>
+      <td class="candidate ntk"><span class="cname">Kruthika Elumalai</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="9">
+      <td class="ac-no">10</td>
+      <td class="constituency-name">Thiruvottiyur</td>
+      <td class="candidate dmk"><span class="cname">L. Sundararajan</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Kuppan</span></td>
+      <td class="candidate tvk"><span class="cname">K. Elango</span></td>
+      <td class="candidate ntk"><span class="cname">Sathya Baskar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="10">
+      <td class="ac-no">11</td>
+      <td class="constituency-name">Dr. Radhakrishnan Nagar</td>
+      <td class="candidate dmk"><span class="cname">J. John Ebenezer</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. S. Rajesh</span></td>
+      <td class="candidate tvk"><span class="cname">A. Varadhan</span></td>
+      <td class="candidate ntk"><span class="cname">Vennila Thayumanavan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="11">
+      <td class="ac-no">12</td>
+      <td class="constituency-name">Perambur</td>
+      <td class="candidate dmk"><span class="cname">R. D. Shekar</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Thilagabama</span></td>
+      <td class="candidate tvk"><span class="cname">C. Joseph Vijay</span></td>
+      <td class="candidate ntk"><span class="cname">Vetrithamizan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="12">
+      <td class="ac-no">13</td>
+      <td class="constituency-name">Kolathur</td>
+      <td class="candidate dmk"><span class="cname">M. K. Stalin</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Santhana Krishnan</span></td>
+      <td class="candidate tvk"><span class="cname">V.S. Babu</span></td>
+      <td class="candidate ntk"><span class="cname">Soundrapandian</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="13">
+      <td class="ac-no">14</td>
+      <td class="constituency-name">Villivakkam</td>
+      <td class="candidate dmk"><span class="cname">Karthik Mohan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. R. Vijayakumar</span></td>
+      <td class="candidate tvk"><span class="cname">Adhav Arjuna</span></td>
+      <td class="candidate ntk"><span class="cname">Roshini</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="14">
+      <td class="ac-no">15</td>
+      <td class="constituency-name">Thiru-Vi-Ka-Nagar (SC)</td>
+      <td class="candidate dmk"><span class="cname">K. S. Ravichandran</span></td>
+      <td class="candidate aiadmk"><span class="cname">Porkodi Armstrong</span></td>
+      <td class="candidate tvk"><span class="cname">M. Kamaraj</span></td>
+      <td class="candidate ntk"><span class="cname">Jegadeesh Chander</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="15">
+      <td class="ac-no">16</td>
+      <td class="constituency-name">Egmore (SC)</td>
+      <td class="candidate dmk"><span class="cname">Tamilan Prasanna</span></td>
+      <td class="candidate aiadmk"><span class="cname">Abhishek Rengasamy</span></td>
+      <td class="candidate tvk"><span class="cname">A. Rajmohan</span></td>
+      <td class="candidate ntk"><span class="cname">Saranya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="16">
+      <td class="ac-no">17</td>
+      <td class="constituency-name">Royapuram</td>
+      <td class="candidate dmk"><span class="cname">Subair Khan</span></td>
+      <td class="candidate aiadmk"><span class="cname">D. Jayakumar</span></td>
+      <td class="candidate tvk"><span class="cname">E. Nithish Karthik</span></td>
+      <td class="candidate ntk"><span class="cname">Babumailan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="17">
+      <td class="ac-no">18</td>
+      <td class="constituency-name">Harbour</td>
+      <td class="candidate dmk"><span class="cname">P. K. Sekar Babu</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Manohar</span></td>
+      <td class="candidate tvk"><span class="cname">I. Suresh Babu</span></td>
+      <td class="candidate ntk"><span class="cname">Rufhkan Sheriff</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="18">
+      <td class="ac-no">19</td>
+      <td class="constituency-name">Chepauk-Thiruvallikeni</td>
+      <td class="candidate dmk"><span class="cname">Udhayanidhi Stalin</span></td>
+      <td class="candidate aiadmk"><span class="cname">Adhi Rajaram</span></td>
+      <td class="candidate tvk"><span class="cname">D. Selvam</span></td>
+      <td class="candidate ntk"><span class="cname">Ayisha Beham</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="19">
+      <td class="ac-no">20</td>
+      <td class="constituency-name">Thousand Lights</td>
+      <td class="candidate dmk"><span class="cname">Ezhilan Naganathan</span></td>
+      <td class="candidate aiadmk"><span class="cname">B. Valarmathi</span></td>
+      <td class="candidate tvk"><span class="cname">N. Anand</span></td>
+      <td class="candidate ntk"><span class="cname">Kalanjiyam</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="20">
+      <td class="ac-no">21</td>
+      <td class="constituency-name">Anna Nagar</td>
+      <td class="candidate dmk"><span class="cname">N. Chitrasu</span></td>
+      <td class="candidate aiadmk"><span class="cname">Gokula Indira</span></td>
+      <td class="candidate tvk"><span class="cname">V K Ramkumar</span></td>
+      <td class="candidate ntk"><span class="cname">C. Shankar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="21">
+      <td class="ac-no">22</td>
+      <td class="constituency-name">Virugambakkam</td>
+      <td class="candidate dmk"><span class="cname">A. M. V. Prabhakara Raja</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. N. Ravi</span></td>
+      <td class="candidate tvk"><span class="cname">Sabarinathan</span></td>
+      <td class="candidate ntk"><span class="cname">Santhosh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="22">
+      <td class="ac-no">23</td>
+      <td class="constituency-name">Saidapet</td>
+      <td class="candidate dmk"><span class="cname">Ma. Subramanian</span></td>
+      <td class="candidate aiadmk"><span class="cname">G. Senthamizhan</span></td>
+      <td class="candidate tvk"><span class="cname">M. Arul Prakasam</span></td>
+      <td class="candidate ntk"><span class="cname">Srividhya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="23">
+      <td class="ac-no">24</td>
+      <td class="constituency-name">Thiyagarayanagar</td>
+      <td class="candidate dmk"><span class="cname">Raja Anbalagan</span></td>
+      <td class="candidate aiadmk"><span class="cname">B. Sathyanarayanan</span></td>
+      <td class="candidate tvk"><span class="cname">N. Anand Ex. MLA</span></td>
+      <td class="candidate ntk"><span class="cname">Anusha Vijayakumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="24">
+      <td class="ac-no">25</td>
+      <td class="constituency-name">Mylapore</td>
+      <td class="candidate dmk"><span class="cname">Dha. Velu</span></td>
+      <td class="candidate aiadmk"><span class="cname">Tamilisai Soundararajan</span></td>
+      <td class="candidate tvk"><span class="cname">N. Anand Ex. MLA</span></td>
+      <td class="candidate ntk"><span class="cname">Anusha Vijayakumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="25">
+      <td class="ac-no">26</td>
+      <td class="constituency-name">Velachery</td>
+      <td class="candidate dmk"><span class="cname">J. M. H. Hasan Moulana</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. K. Ashok</span></td>
+      <td class="candidate tvk"><span class="cname">P. Venkataramanan</span></td>
+      <td class="candidate ntk"><span class="cname">Arun</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="26">
+      <td class="ac-no">27</td>
+      <td class="constituency-name">Sholinganallur</td>
+      <td class="candidate dmk"><span class="cname">S. Aravind Ramesh</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. P. Kandan</span></td>
+      <td class="candidate tvk"><span class="cname">R. Baskar</span></td>
+      <td class="candidate ntk"><span class="cname">Keerthana</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="27">
+      <td class="ac-no">28</td>
+      <td class="constituency-name">Alandur</td>
+      <td class="candidate dmk"><span class="cname">T. M. Anbarasan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Saravanan</span></td>
+      <td class="candidate tvk"><span class="cname">T. Kuppusamy</span></td>
+      <td class="candidate ntk"><span class="cname">Jayalakshmi Raman</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="28">
+      <td class="ac-no">29</td>
+      <td class="constituency-name">Sriperumbudur (SC)</td>
+      <td class="candidate dmk"><span class="cname">K. Selvaperunthagai</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Palani</span></td>
+      <td class="candidate tvk"><span class="cname">S. Srinivasan</span></td>
+      <td class="candidate ntk"><span class="cname">Mahalakshmi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="29">
+      <td class="ac-no">30</td>
+      <td class="constituency-name">Pallavaram</td>
+      <td class="candidate dmk"><span class="cname">D. Murugesan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Venkatesan</span></td>
+      <td class="candidate tvk"><span class="cname">L. Perumal</span></td>
+      <td class="candidate ntk"><span class="cname">Sindhu</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="30">
+      <td class="ac-no">31</td>
+      <td class="constituency-name">Tambaram</td>
+      <td class="candidate dmk"><span class="cname">R.S. Krithika Devi</span></td>
+      <td class="candidate aiadmk"><span class="cname">Chitlapakkam S. Rajendran</span></td>
+      <td class="candidate tvk"><span class="cname">I. Kaleeswaran</span></td>
+      <td class="candidate ntk"><span class="cname">Karthikeyan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="31">
+      <td class="ac-no">32</td>
+      <td class="constituency-name">Chengalpattu</td>
+      <td class="candidate dmk"><span class="cname">M. K. T. Karthik Dhandapani</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Gajendran</span></td>
+      <td class="candidate tvk"><span class="cname">A. Senthilkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Tamilselvi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="32">
+      <td class="ac-no">33</td>
+      <td class="constituency-name">Thiruporur</td>
+      <td class="candidate dmk"><span class="cname">Panneer Doss</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Balu</span></td>
+      <td class="candidate tvk"><span class="cname">S. Mathivanan</span></td>
+      <td class="candidate ntk"><span class="cname">Amutha Nambiyar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="33">
+      <td class="ac-no">34</td>
+      <td class="constituency-name">Cheyyur (SC)</td>
+      <td class="candidate dmk"><span class="cname">Sinthanai Selvan</span></td>
+      <td class="candidate aiadmk"><span class="cname">E. Rajashekar</span></td>
+      <td class="candidate tvk"><span class="cname">S. Tamilmani</span></td>
+      <td class="candidate ntk"><span class="cname">Swathi Lakshmi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="34">
+      <td class="ac-no">35</td>
+      <td class="constituency-name">Madurantakam (SC)</td>
+      <td class="candidate dmk"><span class="cname">S. Amulu Ponmalar</span></td>
+      <td class="candidate aiadmk"><span class="cname">Maragatham Kumaravel</span></td>
+      <td class="candidate tvk"><span class="cname">S. Chandran</span></td>
+      <td class="candidate ntk"><span class="cname">Janaki Raman</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="35">
+      <td class="ac-no">36</td>
+      <td class="constituency-name">Uthiramerur</td>
+      <td class="candidate dmk"><span class="cname">K. Sundar</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Maheshkumar</span></td>
+      <td class="candidate tvk"><span class="cname">K. Pugazhenthi</span></td>
+      <td class="candidate ntk"><span class="cname">Maram maasilamani</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="36">
+      <td class="ac-no">37</td>
+      <td class="constituency-name">Kancheepuram</td>
+      <td class="candidate dmk"><span class="cname">Nithya Sugumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. Somasundaram</span></td>
+      <td class="candidate tvk"><span class="cname">M.S.M. Meeran Syed Ibrahim</span></td>
+      <td class="candidate ntk"><span class="cname">Vetriselvi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="37">
+      <td class="ac-no">38</td>
+      <td class="constituency-name">Arakkonam (SC)</td>
+      <td class="candidate dmk"><span class="cname">Ezhil Caroline</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Ravi</span></td>
+      <td class="candidate tvk"><span class="cname">D. Rajendran</span></td>
+      <td class="candidate ntk"><span class="cname">Raj Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="38">
+      <td class="ac-no">39</td>
+      <td class="constituency-name">Sholinghur</td>
+      <td class="candidate dmk"><span class="cname">A. M. Munirathinam</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Saravanan</span></td>
+      <td class="candidate tvk"><span class="cname">G. Kapil</span></td>
+      <td class="candidate ntk"><span class="cname">Ashok Kumar alias Magizhan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="39">
+      <td class="ac-no">40</td>
+      <td class="constituency-name">Katpadi</td>
+      <td class="candidate dmk"><span class="cname">Durai Murugan</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. Ramu</span></td>
+      <td class="candidate tvk"><span class="cname">T. Arunkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Thirukumaran</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="40">
+      <td class="ac-no">41</td>
+      <td class="constituency-name">Ranipet</td>
+      <td class="candidate dmk"><span class="cname">R. Gandhi</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. M. Karthikeyan</span></td>
+      <td class="candidate tvk"><span class="cname">G. Mageshwaran</span></td>
+      <td class="candidate ntk"><span class="cname">Tharikka salman</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="41">
+      <td class="ac-no">42</td>
+      <td class="constituency-name">Arcot</td>
+      <td class="candidate dmk"><span class="cname">J. L. Eswarappan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. M. Sukumar</span></td>
+      <td class="candidate tvk"><span class="cname">V. Paraman</span></td>
+      <td class="candidate ntk"><span class="cname">Archaha</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="42">
+      <td class="ac-no">43</td>
+      <td class="constituency-name">Vellore</td>
+      <td class="candidate dmk"><span class="cname">P. Karthikeyan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. R. K. Appu</span></td>
+      <td class="candidate tvk"><span class="cname">R. Marimuthu</span></td>
+      <td class="candidate ntk"><span class="cname">Soniya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="43">
+      <td class="ac-no">44</td>
+      <td class="constituency-name">Anaikattu</td>
+      <td class="candidate dmk"><span class="cname">A. P. Nandakumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">T. Velazhagan</span></td>
+      <td class="candidate tvk"><span class="cname">R. Jeganathan</span></td>
+      <td class="candidate ntk"><span class="cname">Ravi Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="44">
+      <td class="ac-no">45</td>
+      <td class="constituency-name">Kilvaithinankuppam (SC)</td>
+      <td class="candidate dmk"><span class="cname">Rajeswari Mohankandhi</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Jagan Moorthy</span></td>
+      <td class="candidate tvk"><span class="cname">T.S. Sathiyaseelan</span></td>
+      <td class="candidate ntk"><span class="cname">Kalaiyendri</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="45">
+      <td class="ac-no">46</td>
+      <td class="constituency-name">Gudiyattam (SC)</td>
+      <td class="candidate dmk"><span class="cname">K. B. Pratap</span></td>
+      <td class="candidate aiadmk"><span class="cname">G. Faridha Purushothaman</span></td>
+      <td class="candidate tvk"><span class="cname">K. Sindhu</span></td>
+      <td class="candidate ntk"><span class="cname">Imalan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="46">
+      <td class="ac-no">47</td>
+      <td class="constituency-name">Vaniyambadi</td>
+      <td class="candidate dmk"><span class="cname">Sayyed Farooq</span></td>
+      <td class="candidate aiadmk"><span class="cname">G. Senthilkumar</span></td>
+      <td class="candidate tvk"><span class="cname">Isha S. Navajudeen</span></td>
+      <td class="candidate ntk"><span class="cname">Murugesan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="47">
+      <td class="ac-no">48</td>
+      <td class="constituency-name">Ambur</td>
+      <td class="candidate dmk"><span class="cname">A. C. Vilvanathan</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Venkatesan</span></td>
+      <td class="candidate tvk"><span class="cname">N.M. Navajudeen Basha</span></td>
+      <td class="candidate ntk"><span class="cname">Afsia Thoufic Bikrid</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="48">
+      <td class="ac-no">49</td>
+      <td class="constituency-name">Jolarpet</td>
+      <td class="candidate dmk"><span class="cname">Kavitha Dhandapani</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. C. Veeramani</span></td>
+      <td class="candidate tvk"><span class="cname">M. Muthukumar</span></td>
+      <td class="candidate ntk"><span class="cname">Sasi Rekha</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="49">
+      <td class="ac-no">50</td>
+      <td class="constituency-name">Tirupattur</td>
+      <td class="candidate dmk"><span class="cname">A. Nallathambi</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. Gnanasekar</span></td>
+      <td class="candidate tvk"><span class="cname">N. Srinivasan</span></td>
+      <td class="candidate ntk"><span class="cname">Aarumugam</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="50">
+      <td class="ac-no">51</td>
+      <td class="constituency-name">Uthangarai (SC)</td>
+      <td class="candidate dmk"><span class="cname">R. Kuppusamy</span></td>
+      <td class="candidate aiadmk"><span class="cname">T. M. Tamilselvam</span></td>
+      <td class="candidate tvk"><span class="cname">P. Kumaravel</span></td>
+      <td class="candidate ntk"><span class="cname">Megala</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="51">
+      <td class="ac-no">52</td>
+      <td class="constituency-name">Bargur</td>
+      <td class="candidate dmk"><span class="cname">D. Mathiazhagan</span></td>
+      <td class="candidate aiadmk"><span class="cname">E. C. Govindarajan</span></td>
+      <td class="candidate tvk"><span class="cname">A. Kolanjappan</span></td>
+      <td class="candidate ntk"><span class="cname">Kavin</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="52">
+      <td class="ac-no">53</td>
+      <td class="constituency-name">Krishnagiri</td>
+      <td class="candidate dmk"><span class="cname">A. Chellakumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Ashok Kumar</span></td>
+      <td class="candidate tvk"><span class="cname">S. Naveen Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Suganthi Parthiban</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="53">
+      <td class="ac-no">54</td>
+      <td class="constituency-name">Veppanahalli</td>
+      <td class="candidate dmk"><span class="cname">P. S. Sreenivasan</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. P. Munusamy</span></td>
+      <td class="candidate tvk"><span class="cname">G. Madan</span></td>
+      <td class="candidate ntk"><span class="cname">Nagaraj</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="54">
+      <td class="ac-no">55</td>
+      <td class="constituency-name">Hosur</td>
+      <td class="candidate dmk"><span class="cname">S. A. Sathya</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Balakrishna Reddy</span></td>
+      <td class="candidate tvk"><span class="cname">Dr. A. Rajesh</span></td>
+      <td class="candidate ntk"><span class="cname">Stalin</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="55">
+      <td class="ac-no">56</td>
+      <td class="constituency-name">Thalli</td>
+      <td class="candidate dmk"><span class="cname">T. Ramachandran</span></td>
+      <td class="candidate aiadmk"><span class="cname">Nagesh Kumar</span></td>
+      <td class="candidate tvk"><span class="cname">J. Gnanavel</span></td>
+      <td class="candidate ntk"><span class="cname">Narasimman</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="56">
+      <td class="ac-no">57</td>
+      <td class="constituency-name">Palacode</td>
+      <td class="candidate dmk"><span class="cname">S. Senthilkumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. P. Anbalagan</span></td>
+      <td class="candidate tvk"><span class="cname">M. Dhinesh Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Boopathy</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="57">
+      <td class="ac-no">58</td>
+      <td class="constituency-name">Pennagaram</td>
+      <td class="candidate dmk"><span class="cname">G. K. M. Tamilkumaran</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. Selvam</span></td>
+      <td class="candidate tvk"><span class="cname">S. Rajkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Palaniyammal</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="58">
+      <td class="ac-no">59</td>
+      <td class="constituency-name">Dharmapuri</td>
+      <td class="candidate dmk"><span class="cname">V. Elangovan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Sowmiya Anbumani</span></td>
+      <td class="candidate tvk"><span class="cname">Dr. P. Senthil Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Santha Lakshmi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="59">
+      <td class="ac-no">60</td>
+      <td class="constituency-name">Pappireddippatti</td>
+      <td class="candidate dmk"><span class="cname">P. Palaniappan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Maragatham Vetrivel</span></td>
+      <td class="candidate tvk"><span class="cname">M. Govindasamy</span></td>
+      <td class="candidate ntk"><span class="cname">Archana Tamil Aruvi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="60">
+      <td class="ac-no">61</td>
+      <td class="constituency-name">Harur (SC)</td>
+      <td class="candidate dmk"><span class="cname">A. Shanmugam</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. Sampathkumar</span></td>
+      <td class="candidate tvk"><span class="cname">M.M. Kanagaraj</span></td>
+      <td class="candidate ntk"><span class="cname">Anitha Annadurai</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="61">
+      <td class="ac-no">62</td>
+      <td class="constituency-name">Chengam (SC)</td>
+      <td class="candidate dmk"><span class="cname">M. P. Giri</span></td>
+      <td class="candidate aiadmk"><span class="cname">T. S. Velu</span></td>
+      <td class="candidate tvk"><span class="cname">R. Nagarajan</span></td>
+      <td class="candidate ntk"><span class="cname">J Shobha</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="62">
+      <td class="ac-no">63</td>
+      <td class="constituency-name">Tiruvannamalai</td>
+      <td class="candidate dmk"><span class="cname">E. V. Velu</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. Ezhumalai</span></td>
+      <td class="candidate tvk"><span class="cname">M. Ramesh</span></td>
+      <td class="candidate ntk"><span class="cname">Vignesh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="63">
+      <td class="ac-no">64</td>
+      <td class="constituency-name">Kilpennathur</td>
+      <td class="candidate dmk"><span class="cname">K. Pitchandi</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Ramachandran</span></td>
+      <td class="candidate tvk"><span class="cname">M. Shanmugam</span></td>
+      <td class="candidate ntk"><span class="cname">V. Loganathan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="64">
+      <td class="ac-no">65</td>
+      <td class="constituency-name">Kalasapakkam</td>
+      <td class="candidate dmk"><span class="cname">P. S. T. Saravanan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Agri S. S. Krishnamurthy</span></td>
+      <td class="candidate tvk"><span class="cname">K. Murugan</span></td>
+      <td class="candidate ntk"><span class="cname">Seetha</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="65">
+      <td class="ac-no">66</td>
+      <td class="constituency-name">Polur</td>
+      <td class="candidate dmk"><span class="cname">T. P. Saravanan</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. R. Bhaskaran</span></td>
+      <td class="candidate tvk"><span class="cname">K. Ravichandran</span></td>
+      <td class="candidate ntk"><span class="cname">Umadevi Prakash</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="66">
+      <td class="ac-no">67</td>
+      <td class="constituency-name">Arani</td>
+      <td class="candidate dmk"><span class="cname">Mahalakshmi Govarthanan</span></td>
+      <td class="candidate aiadmk"><span class="cname">L. Jaya Sudha</span></td>
+      <td class="candidate tvk"><span class="cname">S. Gnanasekar</span></td>
+      <td class="candidate ntk"><span class="cname">Thavamani Ramesh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="67">
+      <td class="ac-no">68</td>
+      <td class="constituency-name">Cheyyar</td>
+      <td class="candidate dmk"><span class="cname">O. Jothi</span></td>
+      <td class="candidate aiadmk"><span class="cname">Mukkur N. Subramanian</span></td>
+      <td class="candidate tvk"><span class="cname">S. Harichandran</span></td>
+      <td class="candidate ntk"><span class="cname">Tamil Selvan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="68">
+      <td class="ac-no">69</td>
+      <td class="constituency-name">Vandavasi (SC)</td>
+      <td class="candidate dmk"><span class="cname">Ambethkumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Rani</span></td>
+      <td class="candidate tvk"><span class="cname">P. Jeevadharanam</span></td>
+      <td class="candidate ntk"><span class="cname">Ganesh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="69">
+      <td class="ac-no">70</td>
+      <td class="constituency-name">Gingee</td>
+      <td class="candidate dmk"><span class="cname">K. S. Masthan</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. Ganeshkumar</span></td>
+      <td class="candidate tvk"><span class="cname">G. Saravanan</span></td>
+      <td class="candidate ntk"><span class="cname">Krishnan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="70">
+      <td class="ac-no">71</td>
+      <td class="constituency-name">Mailam</td>
+      <td class="candidate dmk"><span class="cname">L. Venkatesan</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. Ve. Shanmugam</span></td>
+      <td class="candidate tvk"><span class="cname">V. Anandkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Vijay Vikram</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="71">
+      <td class="ac-no">72</td>
+      <td class="constituency-name">Tindivanam</td>
+      <td class="candidate dmk"><span class="cname">Vanniyarasu</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Arjunan</span></td>
+      <td class="candidate tvk"><span class="cname">K.M. Babu</span></td>
+      <td class="candidate ntk"><span class="cname">Petchimuthu</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="72">
+      <td class="ac-no">73</td>
+      <td class="constituency-name">Vanur (SC)</td>
+      <td class="candidate dmk"><span class="cname">Gautham Dravidamani</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Murugan</span></td>
+      <td class="candidate tvk"><span class="cname">T. Dharmadurai</span></td>
+      <td class="candidate ntk"><span class="cname">Karikazhan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="73">
+      <td class="ac-no">74</td>
+      <td class="constituency-name">Villupuram</td>
+      <td class="candidate dmk"><span class="cname">R. Lakshmanan</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Vijaya</span></td>
+      <td class="candidate tvk"><span class="cname">P. Ragavaperumal</span></td>
+      <td class="candidate ntk"><span class="cname">Abhinaya Ponnivalavan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="74">
+      <td class="ac-no">75</td>
+      <td class="constituency-name">Vikravandi</td>
+      <td class="candidate dmk"><span class="cname">Anniyur Siva</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. Sivakumar</span></td>
+      <td class="candidate tvk"><span class="cname">P. Chandrasekaran</span></td>
+      <td class="candidate ntk"><span class="cname">Suba Chandrasekaran</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="75">
+      <td class="ac-no">76</td>
+      <td class="constituency-name">Tirukkoyilur</td>
+      <td class="candidate dmk"><span class="cname">Gautham Sigamani</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Palaniswami</span></td>
+      <td class="candidate tvk"><span class="cname">K. Manikandan</span></td>
+      <td class="candidate ntk"><span class="cname">Hemarajan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="76">
+      <td class="ac-no">77</td>
+      <td class="constituency-name">Ulundurpettai</td>
+      <td class="candidate dmk"><span class="cname">G. R. Vasanthavelu</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Kumaraguru</span></td>
+      <td class="candidate tvk"><span class="cname">G. Ayyanar</span></td>
+      <td class="candidate ntk"><span class="cname">Logeshwari</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="77">
+      <td class="ac-no">78</td>
+      <td class="constituency-name">Rishivandiyam</td>
+      <td class="candidate dmk"><span class="cname">Vasantham Karthikeyan</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. P. Chezhiyan</span></td>
+      <td class="candidate tvk"><span class="cname">N. Saravanan</span></td>
+      <td class="candidate ntk"><span class="cname">Radhika</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="78">
+      <td class="ac-no">79</td>
+      <td class="constituency-name">Sankarapuram</td>
+      <td class="candidate dmk"><span class="cname">T. Udhaya Suriyan</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Rakesh</span></td>
+      <td class="candidate tvk"><span class="cname">S. Dhandapani</span></td>
+      <td class="candidate ntk"><span class="cname">Ramesh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="79">
+      <td class="ac-no">80</td>
+      <td class="constituency-name">Kallakurichi (SC)</td>
+      <td class="candidate dmk"><span class="cname">Malathi</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Rajiv Gandhi</span></td>
+      <td class="candidate tvk"><span class="cname">P. Gopinath</span></td>
+      <td class="candidate ntk"><span class="cname">Nagammal</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="80">
+      <td class="ac-no">81</td>
+      <td class="constituency-name">Gangavalli (SC)</td>
+      <td class="candidate dmk"><span class="cname">K. Chinnadurai</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. Nallathambi</span></td>
+      <td class="candidate tvk"><span class="cname">K. Palanisamy</span></td>
+      <td class="candidate ntk"><span class="cname">Abirami Neduncheralathan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="81">
+      <td class="ac-no">82</td>
+      <td class="constituency-name">Attur (SC)</td>
+      <td class="candidate dmk"><span class="cname">S. K. Arthanari</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. P. Jayasankaran</span></td>
+      <td class="candidate tvk"><span class="cname">C. Suresh</span></td>
+      <td class="candidate ntk"><span class="cname">Monisha chinnadurai</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="82">
+      <td class="ac-no">83</td>
+      <td class="constituency-name">Yercaud (ST)</td>
+      <td class="candidate dmk"><span class="cname">T. M. Revathi Matheswaran</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Usharani</span></td>
+      <td class="candidate tvk"><span class="cname">S. Murugan</span></td>
+      <td class="candidate ntk"><span class="cname">Palanisamy</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="83">
+      <td class="ac-no">84</td>
+      <td class="constituency-name">Omalur</td>
+      <td class="candidate dmk"><span class="cname">A. R. Elangovan</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Mani</span></td>
+      <td class="candidate tvk"><span class="cname">V. Palani</span></td>
+      <td class="candidate ntk"><span class="cname">Siva Sakthi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="84">
+      <td class="ac-no">85</td>
+      <td class="constituency-name">Mettur</td>
+      <td class="candidate dmk"><span class="cname">Mithun Chakravarthy</span></td>
+      <td class="candidate aiadmk"><span class="cname">G. Venkatachalam</span></td>
+      <td class="candidate tvk"><span class="cname">S. Sendhilkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Vidhya Veerapan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="85">
+      <td class="ac-no">86</td>
+      <td class="constituency-name">Edappadi</td>
+      <td class="candidate dmk"><span class="cname">Kasi</span></td>
+      <td class="candidate aiadmk"><span class="cname">Edappadi K. Palaniswami</span></td>
+      <td class="candidate tvk"><span class="cname">I.S.R. Selvam</span></td>
+      <td class="candidate ntk"><span class="cname">Priyadharshini</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="86">
+      <td class="ac-no">87</td>
+      <td class="constituency-name">Sangagiri</td>
+      <td class="candidate dmk"><span class="cname">M. Manikandan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Vetrivel</span></td>
+      <td class="candidate tvk"><span class="cname">S. Vetrimaran</span></td>
+      <td class="candidate ntk"><span class="cname">Nithya Arul</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="87">
+      <td class="ac-no">88</td>
+      <td class="constituency-name">Salem (West)</td>
+      <td class="candidate dmk"><span class="cname">Azhagappuram Mohan Raj</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Karthi</span></td>
+      <td class="candidate tvk"><span class="cname">S.G. Ravi</span></td>
+      <td class="candidate ntk"><span class="cname">Suresh Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="88">
+      <td class="ac-no">89</td>
+      <td class="constituency-name">Salem (North)</td>
+      <td class="candidate dmk"><span class="cname">R. Rajendran</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Sadhasivam</span></td>
+      <td class="candidate tvk"><span class="cname">P.K. Kalaichelvan</span></td>
+      <td class="candidate ntk"><span class="cname">Gunaseela</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="89">
+      <td class="ac-no">90</td>
+      <td class="constituency-name">Salem (South)</td>
+      <td class="candidate dmk"><span class="cname">M. Loganathan</span></td>
+      <td class="candidate aiadmk"><span class="cname">J. Vinodh</span></td>
+      <td class="candidate tvk"><span class="cname">K. Saravanan</span></td>
+      <td class="candidate ntk"><span class="cname">Sophiya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="90">
+      <td class="ac-no">91</td>
+      <td class="constituency-name">Veerapandi</td>
+      <td class="candidate dmk"><span class="cname">A. K. Tharun</span></td>
+      <td class="candidate aiadmk"><span class="cname">Sri Balaji Sukumar</span></td>
+      <td class="candidate tvk"><span class="cname">N. Gopinath</span></td>
+      <td class="candidate ntk"><span class="cname">Rajesh Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="91">
+      <td class="ac-no">92</td>
+      <td class="constituency-name">Rasipuram (SC)</td>
+      <td class="candidate dmk"><span class="cname">M. Mathivendhan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. D. Premkumar</span></td>
+      <td class="candidate tvk"><span class="cname">N. Arun Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Sasikala</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="92">
+      <td class="ac-no">93</td>
+      <td class="constituency-name">Senthamangalam (ST)</td>
+      <td class="candidate dmk"><span class="cname">P. Poomalar</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. Chandrashekhar</span></td>
+      <td class="candidate tvk"><span class="cname">S. Mathivanan</span></td>
+      <td class="candidate ntk"><span class="cname">Ponnumani</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="93">
+      <td class="ac-no">94</td>
+      <td class="constituency-name">Namakkal</td>
+      <td class="candidate dmk"><span class="cname">P. Rani</span></td>
+      <td class="candidate aiadmk"><span class="cname">Sridevi P. S. Mohan</span></td>
+      <td class="candidate tvk"><span class="cname">M. Balamurugan</span></td>
+      <td class="candidate ntk"><span class="cname">Praveen</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="94">
+      <td class="ac-no">95</td>
+      <td class="constituency-name">Paramathi-Velur</td>
+      <td class="candidate dmk"><span class="cname">K. S. Moorthy</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Sekar</span></td>
+      <td class="candidate tvk"><span class="cname">V.A. Panneerselvam</span></td>
+      <td class="candidate ntk"><span class="cname">Aravindh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="95">
+      <td class="ac-no">96</td>
+      <td class="constituency-name">Tiruchengodu</td>
+      <td class="candidate dmk"><span class="cname">E. R. Eswaran</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Chandrashekhar</span></td>
+      <td class="candidate tvk"><span class="cname">Dr. K.G. Arunkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Revathi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="96">
+      <td class="ac-no">97</td>
+      <td class="constituency-name">Kumarapalayam</td>
+      <td class="candidate dmk"><span class="cname">S. Balu</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Thangamani</span></td>
+      <td class="candidate tvk"><span class="cname">C. Vijayalakshmi</span></td>
+      <td class="candidate ntk"><span class="cname">Yuvarani</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="97">
+      <td class="ac-no">98</td>
+      <td class="constituency-name">Erode (East)</td>
+      <td class="candidate dmk"><span class="cname">Gobinath Palaniappan</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Manoharan</span></td>
+      <td class="candidate tvk"><span class="cname">V. Manikandan</span></td>
+      <td class="candidate ntk"><span class="cname">Thandava Moorthy</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="98">
+      <td class="ac-no">99</td>
+      <td class="constituency-name">Erode (West)</td>
+      <td class="candidate dmk"><span class="cname">S. Muthusamy</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Yuvaraj</span></td>
+      <td class="candidate tvk"><span class="cname">R. Murugan</span></td>
+      <td class="candidate ntk"><span class="cname">Vijay</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="99">
+      <td class="ac-no">100</td>
+      <td class="constituency-name">Modakkurichi</td>
+      <td class="candidate dmk"><span class="cname">Senthilnathan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Kirthika Sivakumar</span></td>
+      <td class="candidate tvk"><span class="cname">M. Muthukumar</span></td>
+      <td class="candidate ntk"><span class="cname">Arun</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="100">
+      <td class="ac-no">101</td>
+      <td class="constituency-name">Dharapuram (SC)</td>
+      <td class="candidate dmk"><span class="cname">Indirani</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Sathyabama</span></td>
+      <td class="candidate tvk"><span class="cname">V. Palani</span></td>
+      <td class="candidate ntk"><span class="cname">divya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="101">
+      <td class="ac-no">102</td>
+      <td class="constituency-name">Kangayam</td>
+      <td class="candidate dmk"><span class="cname">M. P. Saminathan</span></td>
+      <td class="candidate aiadmk"><span class="cname">N. S. N. Nataraj</span></td>
+      <td class="candidate tvk"><span class="cname">M.R. Vijayabhaskar</span></td>
+      <td class="candidate ntk"><span class="cname">Karmegan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="102">
+      <td class="ac-no">103</td>
+      <td class="constituency-name">Perundurai</td>
+      <td class="candidate dmk"><span class="cname">N. D. Venkatachalam</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Jayakumar</span></td>
+      <td class="candidate tvk"><span class="cname">A. Muthusamy</span></td>
+      <td class="candidate ntk"><span class="cname">Logu</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="103">
+      <td class="ac-no">104</td>
+      <td class="constituency-name">Bhavani</td>
+      <td class="candidate dmk"><span class="cname">K. A. Chandrasekhar</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. C. Karuppannan</span></td>
+      <td class="candidate tvk"><span class="cname">M. Senthilkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Menaka Devi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="104">
+      <td class="ac-no">105</td>
+      <td class="constituency-name">Anthiyur</td>
+      <td class="candidate dmk"><span class="cname">M. Sivabalan</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Haribhaskar</span></td>
+      <td class="candidate tvk"><span class="cname">Dr. T.R. Anbukarasan</span></td>
+      <td class="candidate ntk"><span class="cname">Anandhi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="105">
+      <td class="ac-no">106</td>
+      <td class="constituency-name">Gobichettipalayam</td>
+      <td class="candidate dmk"><span class="cname">N. Nallasivam</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. B. Prabhu</span></td>
+      <td class="candidate tvk"><span class="cname">K.A. Sengottaiyan</span></td>
+      <td class="candidate ntk"><span class="cname">Seetha Lakshmi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="106">
+      <td class="ac-no">107</td>
+      <td class="constituency-name">Bhavanisagar (SC)</td>
+      <td class="candidate dmk"><span class="cname">P. L. Sundaram</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. Bannari</span></td>
+      <td class="candidate tvk"><span class="cname">R. Elango</span></td>
+      <td class="candidate ntk"><span class="cname">Soundarya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="107">
+      <td class="ac-no">108</td>
+      <td class="constituency-name">Udhagamandalam</td>
+      <td class="candidate dmk"><span class="cname">B. Ramachandran</span></td>
+      <td class="candidate aiadmk"><span class="cname">Bhojarajan</span></td>
+      <td class="candidate tvk"><span class="cname">S. Murugesan</span></td>
+      <td class="candidate ntk"><span class="cname">Ragupathu Deepan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="108">
+      <td class="ac-no">109</td>
+      <td class="constituency-name">Gudalur (SC)</td>
+      <td class="candidate dmk"><span class="cname">Dravidamani</span></td>
+      <td class="candidate aiadmk"><span class="cname">Pon. Jayaseelan</span></td>
+      <td class="candidate tvk"><span class="cname">C.K. Santhosh Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Karthik Ramakrishnan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="109">
+      <td class="ac-no">110</td>
+      <td class="constituency-name">Coonoor</td>
+      <td class="candidate dmk"><span class="cname">K. M. Raju</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. Ramu</span></td>
+      <td class="candidate tvk"><span class="cname">R.S.F. Solomon Kennedy</span></td>
+      <td class="candidate ntk"><span class="cname">dheenu</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="110">
+      <td class="ac-no">111</td>
+      <td class="constituency-name">Mettupalayam</td>
+      <td class="candidate dmk"><span class="cname">Kavitha Kalyanachundaram</span></td>
+      <td class="candidate aiadmk"><span class="cname">O. K. Chinnaraj</span></td>
+      <td class="candidate tvk"><span class="cname">S.D. Pandeeswaran</span></td>
+      <td class="candidate ntk"><span class="cname">Gopalakrishnan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="111">
+      <td class="ac-no">112</td>
+      <td class="constituency-name">Avanashi (SC)</td>
+      <td class="candidate dmk"><span class="cname">Gokilamani</span></td>
+      <td class="candidate aiadmk"><span class="cname">L. Murugan</span></td>
+      <td class="candidate tvk"><span class="cname">R. Ramasamy</span></td>
+      <td class="candidate ntk"><span class="cname">Menaga</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="112">
+      <td class="ac-no">113</td>
+      <td class="constituency-name">Tiruppur (North)</td>
+      <td class="candidate dmk"><span class="cname">Ravi Subramanian</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. S. M. Anandan</span></td>
+      <td class="candidate tvk"><span class="cname">V. Sathyabama</span></td>
+      <td class="candidate ntk"><span class="cname">Abhinaya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="113">
+      <td class="ac-no">114</td>
+      <td class="constituency-name">Tiruppur (South)</td>
+      <td class="candidate dmk"><span class="cname">K. Dineshkumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Thangaraj</span></td>
+      <td class="candidate tvk"><span class="cname">A. Rajeshkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Perarivalan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="114">
+      <td class="ac-no">115</td>
+      <td class="constituency-name">Palladam</td>
+      <td class="candidate dmk"><span class="cname">K. Selvaraj</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. P. Paramasivam</span></td>
+      <td class="candidate tvk"><span class="cname">M. Kalyanasundaram</span></td>
+      <td class="candidate ntk"><span class="cname">Thamizhiniyan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="115">
+      <td class="ac-no">116</td>
+      <td class="constituency-name">Sulur</td>
+      <td class="candidate dmk"><span class="cname">S. Murugesan</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. P. Kandasamy</span></td>
+      <td class="candidate tvk"><span class="cname">S. Paramasivam</span></td>
+      <td class="candidate ntk"><span class="cname">Rajasekhar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="116">
+      <td class="ac-no">117</td>
+      <td class="constituency-name">Kavundampalayam</td>
+      <td class="candidate dmk"><span class="cname">K. P. Suryaprakash</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. R. G. Arunkumar</span></td>
+      <td class="candidate tvk"><span class="cname">G. Madheswaran</span></td>
+      <td class="candidate ntk"><span class="cname">Kalamani</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="117">
+      <td class="ac-no">118</td>
+      <td class="constituency-name">Coimbatore (North)</td>
+      <td class="candidate dmk"><span class="cname">Senthamizhselvan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Vanathi Srinivasan</span></td>
+      <td class="candidate tvk"><span class="cname">K. Sivakumar</span></td>
+      <td class="candidate ntk"><span class="cname">Narmatha</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="118">
+      <td class="ac-no">119</td>
+      <td class="constituency-name">Thondamuthur</td>
+      <td class="candidate dmk"><span class="cname">N. R. Karthikeyan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. P. Velumani</span></td>
+      <td class="candidate tvk"><span class="cname">R. Ravikumar</span></td>
+      <td class="candidate ntk"><span class="cname">Rajabunisha</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="119">
+      <td class="ac-no">120</td>
+      <td class="constituency-name">Coimbatore (South)</td>
+      <td class="candidate dmk"><span class="cname">V. Senthil Balaji</span></td>
+      <td class="candidate aiadmk"><span class="cname">Amman K. Arjunan</span></td>
+      <td class="candidate tvk"><span class="cname">R. Arunraaj</span></td>
+      <td class="candidate ntk"><span class="cname">Perarivalan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="120">
+      <td class="ac-no">121</td>
+      <td class="constituency-name">Singanallur</td>
+      <td class="candidate dmk"><span class="cname">V. Srinidhi Naidu</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. R. Jayaraman</span></td>
+      <td class="candidate tvk"><span class="cname">D. Narmadha</span></td>
+      <td class="candidate ntk"><span class="cname">Nehruji</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="121">
+      <td class="ac-no">122</td>
+      <td class="constituency-name">Kinathukadavu</td>
+      <td class="candidate dmk"><span class="cname">K. V. K. S. Sabari Karthikeyan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Damodaran</span></td>
+      <td class="candidate tvk"><span class="cname">R. Ananthapadmanabhan</span></td>
+      <td class="candidate ntk"><span class="cname">Banupriya senthil kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="122">
+      <td class="ac-no">123</td>
+      <td class="constituency-name">Pollachi</td>
+      <td class="candidate dmk"><span class="cname">K. Nithyanandhan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Pollachi V. Jayaraman</span></td>
+      <td class="candidate tvk"><span class="cname">D. Seetharaman</span></td>
+      <td class="candidate ntk"><span class="cname">Senthil</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="123">
+      <td class="ac-no">124</td>
+      <td class="constituency-name">Valparai (SC)</td>
+      <td class="candidate dmk"><span class="cname">A. Sudhakar</span></td>
+      <td class="candidate aiadmk"><span class="cname">D. Lakshmana Singh</span></td>
+      <td class="candidate tvk"><span class="cname">Dr. A. Sridharan</span></td>
+      <td class="candidate ntk"><span class="cname">Uma Devi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="124">
+      <td class="ac-no">125</td>
+      <td class="constituency-name">Udumalaipettai</td>
+      <td class="candidate dmk"><span class="cname">K. Radhakrishnan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Udumalai K. Radhakrishnan</span></td>
+      <td class="candidate tvk"><span class="cname">S. Pandian</span></td>
+      <td class="candidate ntk"><span class="cname">Ram Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="125">
+      <td class="ac-no">126</td>
+      <td class="constituency-name">Madathukulam</td>
+      <td class="candidate dmk"><span class="cname">R. Jayaramakrishnan</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. Shanmugavelu</span></td>
+      <td class="candidate tvk"><span class="cname">M. Suresh</span></td>
+      <td class="candidate ntk"><span class="cname">Radhamani</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="126">
+      <td class="ac-no">127</td>
+      <td class="constituency-name">Palani</td>
+      <td class="candidate dmk"><span class="cname">N. Pandi</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Ravi Manoharan</span></td>
+      <td class="candidate tvk"><span class="cname">J. Arumugam</span></td>
+      <td class="candidate ntk"><span class="cname">Murugeshwari</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="127">
+      <td class="ac-no">128</td>
+      <td class="constituency-name">Oddanchatram</td>
+      <td class="candidate dmk"><span class="cname">R. Sakkarapani</span></td>
+      <td class="candidate aiadmk"><span class="cname">Vidiyal Sekar</span></td>
+      <td class="candidate tvk"><span class="cname">R. Haridoss</span></td>
+      <td class="candidate ntk"><span class="cname">Ragupathi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="128">
+      <td class="ac-no">129</td>
+      <td class="constituency-name">Athoor</td>
+      <td class="candidate dmk"><span class="cname">I. Periyasamy</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. Viswanathan</span></td>
+      <td class="candidate tvk"><span class="cname">P.S. Sathish Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Simon Justin</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="129">
+      <td class="ac-no">130</td>
+      <td class="constituency-name">Nilakottai (SC)</td>
+      <td class="candidate dmk"><span class="cname">Nagajothi</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Thaenmozhi</span></td>
+      <td class="candidate tvk"><span class="cname">P. Vijaya</span></td>
+      <td class="candidate ntk"><span class="cname">Kailai Rajan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="130">
+      <td class="ac-no">131</td>
+      <td class="constituency-name">Natham</td>
+      <td class="candidate dmk"><span class="cname">K. K. Selvakumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">Natham R. Viswanathan</span></td>
+      <td class="candidate tvk"><span class="cname">D. Senthilkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Alagammal</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="131">
+      <td class="ac-no">132</td>
+      <td class="constituency-name">Dindigul</td>
+      <td class="candidate dmk"><span class="cname">I. P. Senthilkumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">Dindigul C. Sreenivasan</span></td>
+      <td class="candidate tvk"><span class="cname">L. Arunkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Mutharasi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="132">
+      <td class="ac-no">133</td>
+      <td class="constituency-name">Vedasandur</td>
+      <td class="candidate dmk"><span class="cname">S. Gandhirajan</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. P. B. Paramasivam</span></td>
+      <td class="candidate tvk"><span class="cname">T. Ramasamy</span></td>
+      <td class="candidate ntk"><span class="cname">Hussain</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="133">
+      <td class="ac-no">134</td>
+      <td class="constituency-name">Aravakurichi</td>
+      <td class="candidate dmk"><span class="cname">Monjanur R. Elango</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Selvakumar</span></td>
+      <td class="candidate tvk"><span class="cname">S. Priya</span></td>
+      <td class="candidate ntk"><span class="cname">Narain</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="134">
+      <td class="ac-no">135</td>
+      <td class="constituency-name">Karur</td>
+      <td class="candidate dmk"><span class="cname">Asi. M. Thyagarajan</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. R. Vijayabhaskar</span></td>
+      <td class="candidate tvk"><span class="cname">V.K.T. Balan</span></td>
+      <td class="candidate ntk"><span class="cname">Karuppaiah</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="135">
+      <td class="ac-no">136</td>
+      <td class="constituency-name">Krishnarayapuram (SC)</td>
+      <td class="candidate dmk"><span class="cname">C. K. Raja</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Dhivya</span></td>
+      <td class="candidate tvk"><span class="cname">G. Sivachandran</span></td>
+      <td class="candidate ntk"><span class="cname">Sathya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="136">
+      <td class="ac-no">137</td>
+      <td class="constituency-name">Kulithalai</td>
+      <td class="candidate dmk"><span class="cname">Suriyanur A. Chandiran</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Karunakaran</span></td>
+      <td class="candidate tvk"><span class="cname">A. Palaniswami</span></td>
+      <td class="candidate ntk"><span class="cname">Nanmarran</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="137">
+      <td class="ac-no">138</td>
+      <td class="constituency-name">Manapaarai</td>
+      <td class="candidate dmk"><span class="cname">P. Abdul Samad</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. L. Vijayakumar</span></td>
+      <td class="candidate tvk"><span class="cname">V. Vignesh</span></td>
+      <td class="candidate ntk"><span class="cname">Arunagiri</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="138">
+      <td class="ac-no">139</td>
+      <td class="constituency-name">Srirangam</td>
+      <td class="candidate dmk"><span class="cname">S. Durairaj</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Manoharan</span></td>
+      <td class="candidate tvk"><span class="cname">S. Nagaraj</span></td>
+      <td class="candidate ntk"><span class="cname">Dharmaraj</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="139">
+      <td class="ac-no">140</td>
+      <td class="constituency-name">Tiruchirappalli (West)</td>
+      <td class="candidate dmk"><span class="cname">K. N. Nehru</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Rajasekhar</span></td>
+      <td class="candidate tvk"><span class="cname">S. Prem Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Bhuvaneshwari</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="140">
+      <td class="ac-no">141</td>
+      <td class="constituency-name">Tiruchirappalli (East)</td>
+      <td class="candidate dmk"><span class="cname">Inigo Irudhayaraj</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Rajasekaran</span></td>
+      <td class="candidate tvk"><span class="cname">C. Joseph Vijay</span></td>
+      <td class="candidate ntk"><span class="cname">Krishnasamy</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="141">
+      <td class="ac-no">142</td>
+      <td class="constituency-name">Thiruverumbur</td>
+      <td class="candidate dmk"><span class="cname">Anbil Mahesh Poyyamozhi</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Kumar</span></td>
+      <td class="candidate tvk"><span class="cname">M. Pradeep</span></td>
+      <td class="candidate ntk"><span class="cname">Jallikattu Rajesh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="142">
+      <td class="ac-no">143</td>
+      <td class="constituency-name">Lalgudi</td>
+      <td class="candidate dmk"><span class="cname">A. Soundara Pandian</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Leema Rose</span></td>
+      <td class="candidate tvk"><span class="cname">Ku. Pa. Krishnan</span></td>
+      <td class="candidate ntk"><span class="cname">Madhan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="143">
+      <td class="ac-no">144</td>
+      <td class="constituency-name">Manachanallur</td>
+      <td class="candidate dmk"><span class="cname">S. Kathiravan</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. V. Bharathan</span></td>
+      <td class="candidate tvk"><span class="cname">S.P. Rajeshkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Thenmozhi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="144">
+      <td class="ac-no">145</td>
+      <td class="constituency-name">Musiri</td>
+      <td class="candidate dmk"><span class="cname">N. S. N. Karunairaja</span></td>
+      <td class="candidate aiadmk"><span class="cname">N. Yoganathan</span></td>
+      <td class="candidate tvk"><span class="cname">K. Nallasamy</span></td>
+      <td class="candidate ntk"><span class="cname">Bakya Lakshmi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="145">
+      <td class="ac-no">146</td>
+      <td class="constituency-name">Thuraiyur (SC)</td>
+      <td class="candidate dmk"><span class="cname">M. Vichu Lenin Prasath</span></td>
+      <td class="candidate aiadmk"><span class="cname">E. Suroja</span></td>
+      <td class="candidate tvk"><span class="cname">R. Rajmohan</span></td>
+      <td class="candidate ntk"><span class="cname">Gowsalya Suresh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="146">
+      <td class="ac-no">147</td>
+      <td class="constituency-name">Perambalur (SC)</td>
+      <td class="candidate dmk"><span class="cname">S. D. Jayalakshmi</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Thamizhselvan</span></td>
+      <td class="candidate tvk"><span class="cname">N. Rameshkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Johnsy Rani</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="147">
+      <td class="ac-no">148</td>
+      <td class="constituency-name">Kunnam</td>
+      <td class="candidate dmk"><span class="cname">S. S. Sivasankar</span></td>
+      <td class="candidate aiadmk"><span class="cname">Saranya Anbazhagan</span></td>
+      <td class="candidate tvk"><span class="cname">R. Jeeva</span></td>
+      <td class="candidate ntk"><span class="cname">Keerthi vasan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="148">
+      <td class="ac-no">149</td>
+      <td class="constituency-name">Ariyalur</td>
+      <td class="candidate dmk"><span class="cname">Latha Balu</span></td>
+      <td class="candidate aiadmk"><span class="cname">Thamarai S. Rajendran</span></td>
+      <td class="candidate tvk"><span class="cname">K.R. Selva</span></td>
+      <td class="candidate ntk"><span class="cname">Pugalendhi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="149">
+      <td class="ac-no">150</td>
+      <td class="constituency-name">Jayankondam</td>
+      <td class="candidate dmk"><span class="cname">Ka. So. Ka. Kannan</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Vaithi</span></td>
+      <td class="candidate tvk"><span class="cname">M. Mariselvan</span></td>
+      <td class="candidate ntk"><span class="cname">Revathi Kalaimani</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="150">
+      <td class="ac-no">151</td>
+      <td class="constituency-name">Tittakudi (SC)</td>
+      <td class="candidate dmk"><span class="cname">C. V. Ganesan</span></td>
+      <td class="candidate aiadmk"><span class="cname">N. Murugumaran</span></td>
+      <td class="candidate tvk"><span class="cname">A. Rajasekar</span></td>
+      <td class="candidate ntk"><span class="cname">Mahalakshmi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="151">
+      <td class="ac-no">152</td>
+      <td class="constituency-name">Virudhachalam</td>
+      <td class="candidate dmk"><span class="cname">Premalatha Vijayakanth</span></td>
+      <td class="candidate aiadmk"><span class="cname">Tamilarasi Adhimoolam</span></td>
+      <td class="candidate tvk"><span class="cname">M.K. Arjunan</span></td>
+      <td class="candidate ntk"><span class="cname">Amudha nambi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="152">
+      <td class="ac-no">153</td>
+      <td class="constituency-name">Neyveli</td>
+      <td class="candidate dmk"><span class="cname">Saba. Rajendran</span></td>
+      <td class="candidate aiadmk"><span class="cname">Sorathur R. Rajendran</span></td>
+      <td class="candidate tvk"><span class="cname">V. Gopinath</span></td>
+      <td class="candidate ntk"><span class="cname">Veeramani</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="153">
+      <td class="ac-no">154</td>
+      <td class="constituency-name">Panruti</td>
+      <td class="candidate dmk"><span class="cname">Abdul Rahman</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Mohan</span></td>
+      <td class="candidate tvk"><span class="cname">M. Govindarasu</span></td>
+      <td class="candidate ntk"><span class="cname">Banu Priya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="154">
+      <td class="ac-no">155</td>
+      <td class="constituency-name">Cuddalore</td>
+      <td class="candidate dmk"><span class="cname">A. S. Chandrashekhar</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. C. Sampath</span></td>
+      <td class="candidate tvk"><span class="cname">V. Rajkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Sarasu</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="155">
+      <td class="ac-no">156</td>
+      <td class="constituency-name">Kurinjipadi</td>
+      <td class="candidate dmk"><span class="cname">M. R. K. Panneerselvam</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. Bhuvanendhran</span></td>
+      <td class="candidate tvk"><span class="cname">Rajkumar</span></td>
+      <td class="candidate ntk"><span class="cname">Kavitha Renganathan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="156">
+      <td class="ac-no">157</td>
+      <td class="constituency-name">Bhuvanagiri</td>
+      <td class="candidate dmk"><span class="cname">Durai K. Saravana</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. Arunmozhithevan</span></td>
+      <td class="candidate tvk"><span class="cname">D. M. Mahalingam</span></td>
+      <td class="candidate ntk"><span class="cname">Sumathi Seenivasan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="157">
+      <td class="ac-no">158</td>
+      <td class="constituency-name">Chidambaram</td>
+      <td class="candidate dmk"><span class="cname">Thamimun Ansari</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. A. Pandian</span></td>
+      <td class="candidate tvk"><span class="cname">Nedunchezhiyan</span></td>
+      <td class="candidate ntk"><span class="cname">Tamizh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="158">
+      <td class="ac-no">159</td>
+      <td class="constituency-name">Kattumannarkoil (SC)</td>
+      <td class="candidate dmk"><span class="cname">Jothimani Ilayaperumal</span></td>
+      <td class="candidate aiadmk"><span class="cname">Anbu Cholan</span></td>
+      <td class="candidate tvk"><span class="cname">S. Srinivasan</span></td>
+      <td class="candidate ntk"><span class="cname">Sivajothi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="159">
+      <td class="ac-no">160</td>
+      <td class="constituency-name">Sirkazhi (SC)</td>
+      <td class="candidate dmk"><span class="cname">Senthil Selvan</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Sakthi</span></td>
+      <td class="candidate tvk"><span class="cname">C. S. Gopinath</span></td>
+      <td class="candidate ntk"><span class="cname">Subash</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="160">
+      <td class="ac-no">161</td>
+      <td class="constituency-name">Mayiladuthurai</td>
+      <td class="candidate dmk"><span class="cname">Jamal Yunus Muhammed</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. A. Palanichamy</span></td>
+      <td class="candidate tvk"><span class="cname">S. S. Haroon Rasheeth</span></td>
+      <td class="candidate ntk"><span class="cname">Kasiraman</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="161">
+      <td class="ac-no">162</td>
+      <td class="constituency-name">Poompuhar</td>
+      <td class="candidate dmk"><span class="cname">Nivedha M. Murugan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Pavunraj</span></td>
+      <td class="candidate tvk"><span class="cname">K. Vijayalayan</span></td>
+      <td class="candidate ntk"><span class="cname">Ilaya Nagulan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="162">
+      <td class="ac-no">163</td>
+      <td class="constituency-name">Nagapattinam</td>
+      <td class="candidate dmk"><span class="cname">M. H. Jawahirullah</span></td>
+      <td class="candidate aiadmk"><span class="cname">Thanga Kathiravan</span></td>
+      <td class="candidate tvk"><span class="cname">Sukumar</span></td>
+      <td class="candidate ntk"><span class="cname">Fathima Farhana</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="163">
+      <td class="ac-no">164</td>
+      <td class="constituency-name">Kilvelur (SC)</td>
+      <td class="candidate dmk"><span class="cname">D. Latha</span></td>
+      <td class="candidate aiadmk"><span class="cname">Vadivel Ravan</span></td>
+      <td class="candidate tvk"><span class="cname">T.A.P. Senthil pandiyan</span></td>
+      <td class="candidate ntk"><span class="cname">M. Karthika</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="164">
+      <td class="ac-no">165</td>
+      <td class="constituency-name">Vedaranyam</td>
+      <td class="candidate dmk"><span class="cname">Ma.Me. Pugazhendhi</span></td>
+      <td class="candidate aiadmk"><span class="cname">O. S. Manian</span></td>
+      <td class="candidate tvk"><span class="cname">A. Kingsley Gerald</span></td>
+      <td class="candidate ntk"><span class="cname">Idumbavanam Karthick</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="165">
+      <td class="ac-no">166</td>
+      <td class="constituency-name">Thiruthuraipoondi (SC)</td>
+      <td class="candidate dmk"><span class="cname">K. Marimuthu</span></td>
+      <td class="candidate aiadmk"><span class="cname">U. Paladhandayutham</span></td>
+      <td class="candidate tvk"><span class="cname">S. Pandiyan</span></td>
+      <td class="candidate ntk"><span class="cname">R. Vinothini</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="166">
+      <td class="ac-no">167</td>
+      <td class="constituency-name">Mannargudi</td>
+      <td class="candidate dmk"><span class="cname">T. R. B. Rajaa</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Kamaraj</span></td>
+      <td class="candidate tvk"><span class="cname">U. V. M. Rajarajan</span></td>
+      <td class="candidate ntk"><span class="cname">R. Bharathi Selvan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="167">
+      <td class="ac-no">168</td>
+      <td class="constituency-name">Thiruvarur</td>
+      <td class="candidate dmk"><span class="cname">K. Poondi Kalaivanan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Govi Chandru</span></td>
+      <td class="candidate tvk"><span class="cname">V. Veeramani</span></td>
+      <td class="candidate ntk"><span class="cname">Aswini Boopathibalan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="168">
+      <td class="ac-no">169</td>
+      <td class="constituency-name">Nannilam</td>
+      <td class="candidate dmk"><span class="cname">V. M. S. Mohammed Mubarak</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Kamaraj</span></td>
+      <td class="candidate tvk"><span class="cname">S. Prabhakaran</span></td>
+      <td class="candidate ntk"><span class="cname">Theanmozhi Dileepkumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="169">
+      <td class="ac-no">170</td>
+      <td class="constituency-name">Thiruvidaimarudur (SC)</td>
+      <td class="candidate dmk"><span class="cname">Govi. Chezhian</span></td>
+      <td class="candidate aiadmk"><span class="cname">Ilamathi Subramanian</span></td>
+      <td class="candidate tvk"><span class="cname">S. Prabhakaran</span></td>
+      <td class="candidate ntk"><span class="cname">Divya Bharathi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="170">
+      <td class="ac-no">171</td>
+      <td class="constituency-name">Kumbakonam</td>
+      <td class="candidate dmk"><span class="cname">G. Anbalagan</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. K. R. Ashok Kumar</span></td>
+      <td class="candidate tvk"><span class="cname">R. Vinoth</span></td>
+      <td class="candidate ntk"><span class="cname">M. Anand</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="171">
+      <td class="ac-no">172</td>
+      <td class="constituency-name">Papanasam</td>
+      <td class="candidate dmk"><span class="cname">A. M. Shahjahan</span></td>
+      <td class="candidate aiadmk"><span class="cname">D. Shanmugaprabhu</span></td>
+      <td class="candidate tvk"><span class="cname">U. Azarudeen</span></td>
+      <td class="candidate ntk"><span class="cname">Anees Fathima Hamsath</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="172">
+      <td class="ac-no">173</td>
+      <td class="constituency-name">Thiruvaiyaru</td>
+      <td class="candidate dmk"><span class="cname">Durai. Chandrashekhar</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. Karthikeyan</span></td>
+      <td class="candidate tvk"><span class="cname">M. Manikandan</span></td>
+      <td class="candidate ntk"><span class="cname">Dr. Senthilnathan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="173">
+      <td class="ac-no">174</td>
+      <td class="constituency-name">Thanjavur</td>
+      <td class="candidate dmk"><span class="cname">Ramanathan</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Muruganantham</span></td>
+      <td class="candidate tvk"><span class="cname">R. Vijay Saravanan</span></td>
+      <td class="candidate ntk"><span class="cname">Poet Krishna Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="174">
+      <td class="ac-no">175</td>
+      <td class="constituency-name">Orathanadu</td>
+      <td class="candidate dmk"><span class="cname">R. Vaithialingam</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Sekar</span></td>
+      <td class="candidate tvk"><span class="cname">Dr. K. Aravind</span></td>
+      <td class="candidate ntk"><span class="cname">Thirumurugan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="175">
+      <td class="ac-no">176</td>
+      <td class="constituency-name">Pattukkottai</td>
+      <td class="candidate dmk"><span class="cname">K. Annadurai</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. V. Sekar</span></td>
+      <td class="candidate tvk"><span class="cname">C Madhan</span></td>
+      <td class="candidate ntk"><span class="cname">Kannan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="176">
+      <td class="ac-no">177</td>
+      <td class="constituency-name">Peravurani</td>
+      <td class="candidate dmk"><span class="cname">N. Ashokkumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">Govi Ilango</span></td>
+      <td class="candidate tvk"><span class="cname">T Chandra Kaandeeban</span></td>
+      <td class="candidate ntk"><span class="cname">M. Bhuvana</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="177">
+      <td class="ac-no">178</td>
+      <td class="constituency-name">Gandarvakottai (SC)</td>
+      <td class="candidate dmk"><span class="cname">M. Chinnadurai</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. Udhayakumar</span></td>
+      <td class="candidate tvk"><span class="cname">N Subramanian</span></td>
+      <td class="candidate ntk"><span class="cname">Nadhiya Tamilselvan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="178">
+      <td class="ac-no">179</td>
+      <td class="constituency-name">Viralimalai</td>
+      <td class="candidate dmk"><span class="cname">K. K. Chellapandian</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. Vijayabhaskar</span></td>
+      <td class="candidate tvk"><span class="cname">P Murugesan</span></td>
+      <td class="candidate ntk"><span class="cname">Sathya Lakshmi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="179">
+      <td class="ac-no">180</td>
+      <td class="constituency-name">Pudukkottai</td>
+      <td class="candidate dmk"><span class="cname">V. Muthuraja</span></td>
+      <td class="candidate aiadmk"><span class="cname">N. Ramachandran</span></td>
+      <td class="candidate tvk"><span class="cname">K. M. Shareef</span></td>
+      <td class="candidate ntk"><span class="cname">Ezhilarasi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="180">
+      <td class="ac-no">181</td>
+      <td class="constituency-name">Thirumayam</td>
+      <td class="candidate dmk"><span class="cname">S. Regupathy</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. K. Vairamuthu</span></td>
+      <td class="candidate tvk"><span class="cname">C Sindhamani</span></td>
+      <td class="candidate ntk"><span class="cname">Lakshmi Seenivasan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="181">
+      <td class="ac-no">182</td>
+      <td class="constituency-name">Alangudi</td>
+      <td class="candidate dmk"><span class="cname">Siva V. Meyyanathan</span></td>
+      <td class="candidate aiadmk"><span class="cname">D. Vimal</span></td>
+      <td class="candidate tvk"><span class="cname">Durai Kandasamy</span></td>
+      <td class="candidate ntk"><span class="cname">R. Rajaram</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="182">
+      <td class="ac-no">183</td>
+      <td class="constituency-name">Aranthangi</td>
+      <td class="candidate dmk"><span class="cname">T. Ramachandran</span></td>
+      <td class="candidate aiadmk"><span class="cname">Kavitha Srikanth</span></td>
+      <td class="candidate tvk"><span class="cname">J Mohamad Parvez</span></td>
+      <td class="candidate ntk"><span class="cname">Muthu Lakshmi Selvarathinam</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="183">
+      <td class="ac-no">184</td>
+      <td class="constituency-name">Karaikudi</td>
+      <td class="candidate dmk"><span class="cname">S. Mangudi</span></td>
+      <td class="candidate aiadmk"><span class="cname">Dherpoki V. Pandi</span></td>
+      <td class="candidate tvk"><span class="cname">T. K. Prabhu</span></td>
+      <td class="candidate ntk"><span class="cname">Seeman</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="184">
+      <td class="ac-no">185</td>
+      <td class="constituency-name">Tiruppattur</td>
+      <td class="candidate dmk"><span class="cname">K. R. Periyakaruppan</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. C. Thirumaran</span></td>
+      <td class="candidate tvk"><span class="cname">Srinivasa Sethupathi</span></td>
+      <td class="candidate ntk"><span class="cname">Ramya Mohan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="185">
+      <td class="ac-no">186</td>
+      <td class="constituency-name">Sivaganga</td>
+      <td class="candidate dmk"><span class="cname">Karunas</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. R. Senthilnathan</span></td>
+      <td class="candidate tvk"><span class="cname">Kulandhai Rani Nachiar</span></td>
+      <td class="candidate ntk"><span class="cname">Indhuja Ramesh</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="186">
+      <td class="ac-no">187</td>
+      <td class="constituency-name">Manamadurai (SC)</td>
+      <td class="candidate dmk"><span class="cname">A. Tamilarasi</span></td>
+      <td class="candidate aiadmk"><span class="cname">Pon V. Balaganapathy</span></td>
+      <td class="candidate tvk"><span class="cname">D. Ilangovan</span></td>
+      <td class="candidate ntk"><span class="cname">M. Shanmuga Priya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="187">
+      <td class="ac-no">188</td>
+      <td class="constituency-name">Melur</td>
+      <td class="candidate dmk"><span class="cname">P. Viswanathan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Periyapullan alias Selvam</span></td>
+      <td class="candidate tvk"><span class="cname">A. Madurai Veeran</span></td>
+      <td class="candidate ntk"><span class="cname">Kottai Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="188">
+      <td class="ac-no">189</td>
+      <td class="constituency-name">Madurai East</td>
+      <td class="candidate dmk"><span class="cname">P. Moorthy</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Mahendran</span></td>
+      <td class="candidate tvk"><span class="cname">S. Karthikeyan</span></td>
+      <td class="candidate ntk"><span class="cname">Selvam</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="189">
+      <td class="ac-no">190</td>
+      <td class="constituency-name">Sholavandan (SC)</td>
+      <td class="candidate dmk"><span class="cname">A. Venkatesan</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Manickam</span></td>
+      <td class="candidate tvk"><span class="cname">M. V. Karuppaiah</span></td>
+      <td class="candidate ntk"><span class="cname">—</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="190">
+      <td class="ac-no">191</td>
+      <td class="constituency-name">Madurai North</td>
+      <td class="candidate dmk"><span class="cname">G. Thalapathy</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Saravanan</span></td>
+      <td class="candidate tvk"><span class="cname">A. Kallanai</span></td>
+      <td class="candidate ntk"><span class="cname">V. Thirunavukarasu</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="191">
+      <td class="ac-no">192</td>
+      <td class="constituency-name">Madurai South</td>
+      <td class="candidate dmk"><span class="cname">M. Boominathan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Raama Sreenivasan</span></td>
+      <td class="candidate tvk"><span class="cname">A. Kallanai</span></td>
+      <td class="candidate ntk"><span class="cname">V. Thirunavukarasu</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="192">
+      <td class="ac-no">193</td>
+      <td class="constituency-name">Madurai Central</td>
+      <td class="candidate dmk"><span class="cname">Palaniivel Thiaga Rajan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Sundar C</span></td>
+      <td class="candidate tvk"><span class="cname">J. Joe Peter</span></td>
+      <td class="candidate ntk"><span class="cname">Sumathi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="193">
+      <td class="ac-no">194</td>
+      <td class="constituency-name">Madurai West</td>
+      <td class="candidate dmk"><span class="cname">Raghu Balaji</span></td>
+      <td class="candidate aiadmk"><span class="cname">Sellur K. Raju</span></td>
+      <td class="candidate tvk"><span class="cname">J. Joe Peter</span></td>
+      <td class="candidate ntk"><span class="cname">J. Joe Peter</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="194">
+      <td class="ac-no">195</td>
+      <td class="constituency-name">Thiruparankundram</td>
+      <td class="candidate dmk"><span class="cname">S. Keerthiga Thangapandi</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. V. Rajan Chellappa</span></td>
+      <td class="candidate tvk"><span class="cname">V. M. S. Mustafa</span></td>
+      <td class="candidate ntk"><span class="cname">K. Abdul Hakkim</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="195">
+      <td class="ac-no">196</td>
+      <td class="constituency-name">Thirumangalam</td>
+      <td class="candidate dmk"><span class="cname">M. Manimaran</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. B. Udhayakumar</span></td>
+      <td class="candidate tvk"><span class="cname">S. R. Thangapandi</span></td>
+      <td class="candidate ntk"><span class="cname">Vignesh Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="196">
+      <td class="ac-no">197</td>
+      <td class="constituency-name">Usilampatti</td>
+      <td class="candidate dmk"><span class="cname">T. Saravanakumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">I. Mahendran</span></td>
+      <td class="candidate tvk"><span class="cname">CTR Nirmal Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Prof. Sathiya Devi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="197">
+      <td class="ac-no">198</td>
+      <td class="constituency-name">Andipatti</td>
+      <td class="candidate dmk"><span class="cname">A. Maharajan</span></td>
+      <td class="candidate aiadmk"><span class="cname">A. Logirajan</span></td>
+      <td class="candidate tvk"><span class="cname">N. Sathish Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Munees</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="198">
+      <td class="ac-no">199</td>
+      <td class="constituency-name">Periyakulam (SC)</td>
+      <td class="candidate dmk"><span class="cname">Attral Arasu</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Kathirkamu</span></td>
+      <td class="candidate tvk"><span class="cname">Vijay Mahalingam</span></td>
+      <td class="candidate ntk"><span class="cname">Abirami Dhanapal</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="199">
+      <td class="ac-no">200</td>
+      <td class="constituency-name">Bodinayakanur</td>
+      <td class="candidate dmk"><span class="cname">O. Panneerselvam</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. T. Narayanasamy</span></td>
+      <td class="candidate tvk"><span class="cname">S. Prakash Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Kalai Arasu</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="200">
+      <td class="ac-no">201</td>
+      <td class="constituency-name">Cumbum</td>
+      <td class="candidate dmk"><span class="cname">N. Eramakrishnan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. T. K. Jakkaiyan</span></td>
+      <td class="candidate tvk"><span class="cname">P. L. A. Jaganath</span></td>
+      <td class="candidate ntk"><span class="cname">A. Anbuselvi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="201">
+      <td class="ac-no">202</td>
+      <td class="constituency-name">Rajapalayam</td>
+      <td class="candidate dmk"><span class="cname">S. Thanga Pandian</span></td>
+      <td class="candidate aiadmk"><span class="cname">Priscilla Pandian</span></td>
+      <td class="candidate tvk"><span class="cname">K. Jagadeeswari</span></td>
+      <td class="candidate ntk"><span class="cname">Karthik</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="202">
+      <td class="ac-no">203</td>
+      <td class="constituency-name">Srivilliputhur (SC)</td>
+      <td class="candidate dmk"><span class="cname">P. Mahalingam</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. Chandra Prabha</span></td>
+      <td class="candidate tvk"><span class="cname">A. Karthi</span></td>
+      <td class="candidate ntk"><span class="cname">Karikal Pandian</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="203">
+      <td class="ac-no">204</td>
+      <td class="constituency-name">Sattur</td>
+      <td class="candidate dmk"><span class="cname">A. Kadarkarai Raj</span></td>
+      <td class="candidate aiadmk"><span class="cname">Nainar Nagendran</span></td>
+      <td class="candidate tvk"><span class="cname">M. Ajith</span></td>
+      <td class="candidate ntk"><span class="cname">Aanandha Raja</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="204">
+      <td class="ac-no">205</td>
+      <td class="constituency-name">Sivakasi</td>
+      <td class="candidate dmk"><span class="cname">Ganesan Ashokan</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. T. Rajenthra Bhalaji</span></td>
+      <td class="candidate tvk"><span class="cname">Keerthana</span></td>
+      <td class="candidate ntk"><span class="cname">Diana</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="205">
+      <td class="ac-no">206</td>
+      <td class="constituency-name">Virudhunagar</td>
+      <td class="candidate dmk"><span class="cname">Vijayaprabakar</span></td>
+      <td class="candidate aiadmk"><span class="cname">V. G. Ganesan</span></td>
+      <td class="candidate tvk"><span class="cname">S. P. Selvam</span></td>
+      <td class="candidate ntk"><span class="cname">Latchumanan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="206">
+      <td class="ac-no">207</td>
+      <td class="constituency-name">Aruppukkottai</td>
+      <td class="candidate dmk"><span class="cname">K. K. S. S. R. Ramachandran</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Sethupathi</span></td>
+      <td class="candidate tvk"><span class="cname">K. Karthik Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Mani Maaran</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="207">
+      <td class="ac-no">208</td>
+      <td class="constituency-name">Tiruchuli</td>
+      <td class="candidate dmk"><span class="cname">Thangam Thennarasu</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. S. R. Rajavarman</span></td>
+      <td class="candidate tvk"><span class="cname">S. Samayan</span></td>
+      <td class="candidate ntk"><span class="cname">Karthik Raja</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="208">
+      <td class="ac-no">209</td>
+      <td class="constituency-name">Paramakudi (SC)</td>
+      <td class="candidate dmk"><span class="cname">K. K. Kathiravan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Muthaiah</span></td>
+      <td class="candidate tvk"><span class="cname">G. Gopinathan</span></td>
+      <td class="candidate ntk"><span class="cname">R. Ezhil Ilavarasi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="209">
+      <td class="ac-no">210</td>
+      <td class="constituency-name">Tiruvadanai</td>
+      <td class="candidate dmk"><span class="cname">Karu Manickam</span></td>
+      <td class="candidate aiadmk"><span class="cname">Keerthika Muniyasamy</span></td>
+      <td class="candidate tvk"><span class="cname">V. K. Raji</span></td>
+      <td class="candidate ntk"><span class="cname">Premnath</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="210">
+      <td class="ac-no">211</td>
+      <td class="constituency-name">Ramanathapuram</td>
+      <td class="candidate dmk"><span class="cname">Katharbatcha Muthuramalingam</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. Nagendran</span></td>
+      <td class="candidate tvk"><span class="cname">E. K. Sahul Hameed</span></td>
+      <td class="candidate ntk"><span class="cname">Muthu Kesavan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="211">
+      <td class="ac-no">212</td>
+      <td class="constituency-name">Mudhukulathur</td>
+      <td class="candidate dmk"><span class="cname">R. S. Raja Kannappan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Pandi</span></td>
+      <td class="candidate tvk"><span class="cname">V. Malarvizhi Jayabala</span></td>
+      <td class="candidate ntk"><span class="cname">Dr.Chandira Praba</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="212">
+      <td class="ac-no">213</td>
+      <td class="constituency-name">Vilathikulam</td>
+      <td class="candidate dmk"><span class="cname">G. V. Markandayan</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Sathya</span></td>
+      <td class="candidate tvk"><span class="cname">Kasiram</span></td>
+      <td class="candidate ntk"><span class="cname">Balaji</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="213">
+      <td class="ac-no">214</td>
+      <td class="constituency-name">Thoothukkudi</td>
+      <td class="candidate dmk"><span class="cname">P. Geetha Jeevan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. T. Chellapandian</span></td>
+      <td class="candidate tvk"><span class="cname">A. Srinath</span></td>
+      <td class="candidate ntk"><span class="cname">R. Jacob Devadas Abhishek</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="214">
+      <td class="ac-no">215</td>
+      <td class="constituency-name">Tiruchendur</td>
+      <td class="candidate dmk"><span class="cname">Anitha R. Radhakrishnan</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. R. M. Radhakrishnan</span></td>
+      <td class="candidate tvk"><span class="cname">K. Murugan</span></td>
+      <td class="candidate ntk"><span class="cname">Obiliya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="215">
+      <td class="ac-no">216</td>
+      <td class="constituency-name">Srivaikuntam</td>
+      <td class="candidate dmk"><span class="cname">Oorvasi S. Amirtharaj</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. P. Shanmuganathan</span></td>
+      <td class="candidate tvk"><span class="cname">V. G. Saravanan</span></td>
+      <td class="candidate ntk"><span class="cname">Shanmuga Sundaram</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="216">
+      <td class="ac-no">217</td>
+      <td class="constituency-name">Ottapidaram (SC)</td>
+      <td class="candidate dmk"><span class="cname">M. C. Shunmugaiah</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Sundararaj</span></td>
+      <td class="candidate tvk"><span class="cname">P. Madhanraja</span></td>
+      <td class="candidate ntk"><span class="cname">Anusiya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="217">
+      <td class="ac-no">218</td>
+      <td class="constituency-name">Kovilpatti</td>
+      <td class="candidate dmk"><span class="cname">Ka. Karunanithi</span></td>
+      <td class="candidate aiadmk"><span class="cname">Kadambur Raju</span></td>
+      <td class="candidate tvk"><span class="cname">S. Balasubramaniam</span></td>
+      <td class="candidate ntk"><span class="cname">Paandi</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="218">
+      <td class="ac-no">219</td>
+      <td class="constituency-name">Sankarankovil (SC)</td>
+      <td class="candidate dmk"><span class="cname">Sangai Ganesan</span></td>
+      <td class="candidate aiadmk"><span class="cname">Dhileepan Jayasankaran</span></td>
+      <td class="candidate tvk"><span class="cname">C. Ramarajan</span></td>
+      <td class="candidate ntk"><span class="cname">M. Kavitha</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="219">
+      <td class="ac-no">220</td>
+      <td class="constituency-name">Vasudevanallur (SC)</td>
+      <td class="candidate dmk"><span class="cname">E. Raja</span></td>
+      <td class="candidate aiadmk"><span class="cname">Ananthan Ayyasamy</span></td>
+      <td class="candidate tvk"><span class="cname">R. Amudha Rani</span></td>
+      <td class="candidate ntk"><span class="cname">Isai Mathivanan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="220">
+      <td class="ac-no">221</td>
+      <td class="constituency-name">Kadayanallur</td>
+      <td class="candidate dmk"><span class="cname">T. M. Rajendran</span></td>
+      <td class="candidate aiadmk"><span class="cname">C. Krishnamurali</span></td>
+      <td class="candidate tvk"><span class="cname">R. K. Abdul Jalil</span></td>
+      <td class="candidate ntk"><span class="cname">M. Abubacker Siddique</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="221">
+      <td class="ac-no">222</td>
+      <td class="constituency-name">Tenkasi</td>
+      <td class="candidate dmk"><span class="cname">Kalai Kathiravan</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Selvamohandas Pandian</span></td>
+      <td class="candidate tvk"><span class="cname">A. Raja Prakash</span></td>
+      <td class="candidate ntk"><span class="cname">Pushpalatha Mahalingam</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="222">
+      <td class="ac-no">223</td>
+      <td class="constituency-name">Alangulam</td>
+      <td class="candidate dmk"><span class="cname">Manoj Pandian</span></td>
+      <td class="candidate aiadmk"><span class="cname">K. R. P. Prabakaran</span></td>
+      <td class="candidate tvk"><span class="cname">V. Vipin Chakravarthi</span></td>
+      <td class="candidate ntk"><span class="cname">Dr. Balraj</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="223">
+      <td class="ac-no">224</td>
+      <td class="constituency-name">Tirunelveli</td>
+      <td class="candidate dmk"><span class="cname">Su. Subramanian</span></td>
+      <td class="candidate aiadmk"><span class="cname">Thachai N. Ganesaraja</span></td>
+      <td class="candidate tvk"><span class="cname">R. S. Murugan</span></td>
+      <td class="candidate ntk"><span class="cname">Sathya</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="224">
+      <td class="ac-no">225</td>
+      <td class="constituency-name">Ambasamudram</td>
+      <td class="candidate dmk"><span class="cname">V. P. Durai</span></td>
+      <td class="candidate aiadmk"><span class="cname">Isakki Subhaya</span></td>
+      <td class="candidate tvk"><span class="cname">S. Rajagopal</span></td>
+      <td class="candidate ntk"><span class="cname">V. Sivasankaran</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="225">
+      <td class="ac-no">226</td>
+      <td class="constituency-name">Palayamkottai</td>
+      <td class="candidate dmk"><span class="cname">M. Abdul Wahab</span></td>
+      <td class="candidate aiadmk"><span class="cname">Syed Sulthan Sumsuddin</span></td>
+      <td class="candidate tvk"><span class="cname">S. Maria John</span></td>
+      <td class="candidate ntk"><span class="cname">Dr. Sankara Narayanan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="226">
+      <td class="ac-no">227</td>
+      <td class="constituency-name">Nanguneri</td>
+      <td class="candidate dmk"><span class="cname">Rubi Manoharan</span></td>
+      <td class="candidate aiadmk"><span class="cname">R. Esakkimuthu</span></td>
+      <td class="candidate tvk"><span class="cname">V. Reddiarpatti Narayanan</span></td>
+      <td class="candidate ntk"><span class="cname">Selvam</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="227">
+      <td class="ac-no">228</td>
+      <td class="constituency-name">Radhapuram</td>
+      <td class="candidate dmk"><span class="cname">M. Appavu</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. P. Balakrishnan</span></td>
+      <td class="candidate tvk"><span class="cname">K. Satheesh Christopher</span></td>
+      <td class="candidate ntk"><span class="cname">Girija Thamarai Pandian</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="228">
+      <td class="ac-no">229</td>
+      <td class="constituency-name">Kanniyakumari</td>
+      <td class="candidate dmk"><span class="cname">R. Mahesh</span></td>
+      <td class="candidate aiadmk"><span class="cname">Thalavai N. Sundaram</span></td>
+      <td class="candidate tvk"><span class="cname">S. R. Madhavan</span></td>
+      <td class="candidate ntk"><span class="cname">Maria Jennifer</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="229">
+      <td class="ac-no">230</td>
+      <td class="constituency-name">Nagercoil</td>
+      <td class="candidate dmk"><span class="cname">S. Austin</span></td>
+      <td class="candidate aiadmk"><span class="cname">M. R. Gandhi</span></td>
+      <td class="candidate tvk"><span class="cname">G. Pervin King</span></td>
+      <td class="candidate ntk"><span class="cname">Muthu Kumar</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="230">
+      <td class="ac-no">231</td>
+      <td class="constituency-name">Colachal</td>
+      <td class="candidate dmk"><span class="cname">Tharahai Cuthbert</span></td>
+      <td class="candidate aiadmk"><span class="cname">T. Sivakumar</span></td>
+      <td class="candidate tvk"><span class="cname">Prem Alex Lawrence</span></td>
+      <td class="candidate ntk"><span class="cname">Ancy Shoba Rani</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="231">
+      <td class="ac-no">232</td>
+      <td class="constituency-name">Padmanabhapuram</td>
+      <td class="candidate dmk"><span class="cname">R. Chellasamy</span></td>
+      <td class="candidate aiadmk"><span class="cname">P. Ramesh</span></td>
+      <td class="candidate tvk"><span class="cname">S. Krishna Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Seelan</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="232">
+      <td class="ac-no">233</td>
+      <td class="constituency-name">Vilavancode</td>
+      <td class="candidate dmk"><span class="cname">T. T. Pravin</span></td>
+      <td class="candidate aiadmk"><span class="cname">S. Vijayadharani</span></td>
+      <td class="candidate tvk"><span class="cname">K. Michael Kumar</span></td>
+      <td class="candidate ntk"><span class="cname">Maria Stella R.</span></td>
+    </tr>
+    <tr class="candidate-row" data-index="233">
+      <td class="ac-no">234</td>
+      <td class="constituency-name">Killiyoor</td>
+      <td class="candidate dmk"><span class="cname">S. Rajesh Kumar</span></td>
+      <td class="candidate aiadmk"><span class="cname">Nivin Simon</span></td>
+      <td class="candidate tvk"><span class="cname">S. Sabeer</span></td>
+      <td class="candidate ntk"><span class="cname">Himler P.V.</span></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img class="footer-logo-img" src="kongu-times-logo.png" alt="The Kongu Times"/>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="regions/erode.html">Erode</a>
+      <a href="regions/coimbatore.html">Coimbatore</a>
+      <a href="regions/tiruppur.html">Tiruppur</a>
+      <a href="regions/salem.html">Salem</a>
+      <a href="regions/namakkal.html">Namakkal</a>
+      <a href="regions/karur.html">Karur</a>
+      <a href="regions/dharmapuri.html">Dharmapuri</a>
+      <a href="candidates-2026.html">Candidates 2026</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Kongu Times · கொங்கு டைம்ஸ். All rights reserved.</span>
+      <span>Data: Official Election Commission of India</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+let activeParty = 'all';
+
+function filterTable() {
+  const q = document.getElementById('searchBox').value.toLowerCase();
+  const rows = document.querySelectorAll('#tableBody .candidate-row');
+  let visible = 0;
+  rows.forEach(row => {
+    const text = row.textContent.toLowerCase();
+    const matchSearch = !q || text.includes(q);
+    let matchParty = true;
+    if (activeParty !== 'all') {
+      const cell = row.querySelector('td.' + activeParty + ' .cname');
+      matchParty = cell && cell.textContent.trim() !== '—';
+    }
+    if (matchSearch && matchParty) {
+      row.classList.remove('hidden');
+      visible++;
+    } else {
+      row.classList.add('hidden');
+    }
+  });
+  document.getElementById('resultCount').textContent = visible + ' ' + (visible === 1 ? 'constituency' : 'constituencies');
+}
+
+function filterParty(party, btn) {
+  activeParty = party;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  filterTable();
+}
+</script>
+</body>
+</html>
