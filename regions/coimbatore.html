@@ -3,174 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coimbatore - News</title>
+<title>Kongu Times - Coimbatore</title>
 
 <style>
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #12002b;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY */
+body {
+  background: #1a0033;
   color: white;
 }
 
-/* HEADER (UNCHANGED STYLE) */
-.header {
-  background: #2b0a4a;
-  padding: 15px;
+/* TOP HEADER */
+.top-bar {
+  background: #2b004d;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 40px;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, orange, pink);
+  border-radius: 8px;
+}
+
+.lang-switch button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lang-switch .active {
+  background: gold;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #3d0066;
+  padding: 12px 40px;
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a.active {
+  border-bottom: 3px solid orange;
+  padding-bottom: 5px;
+}
+
+/* ELECTION BAR */
+.election-bar {
+  background: linear-gradient(90deg, #ff4d4d, #ff944d);
+  padding: 10px 40px;
   font-weight: bold;
 }
 
-.tabs {
-  display: flex;
-  gap: 20px;
-  background: #3d1766;
-  padding: 10px 20px;
-}
-
-.tabs a {
-  color: white;
-  text-decoration: none;
-}
-
-/* PAGE TITLE */
-.page-title {
-  padding: 40px 20px;
-}
-
-.page-title h1 {
-  margin: 0;
-  font-size: 40px;
-}
-
-/* NEWS SECTION */
-.news-container {
-  background: white;
+/* LIVE BAR */
+.live-bar {
+  background: #ffcc00;
   color: black;
-  padding: 20px;
+  padding: 8px 40px;
+  font-size: 14px;
 }
 
-.news-item {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
+/* HERO SECTION */
+.hero {
+  padding: 60px 40px;
 }
 
-.news-item h4 {
-  margin: 0;
+.breadcrumb {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero h2 {
+  color: gold;
+  margin-top: 10px;
+}
+
+.tagline {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.description {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   font-size: 16px;
+  line-height: 1.6;
 }
 
-.news-item p {
-  margin: 5px 0 0;
-  font-size: 13px;
-  color: #555;
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .description {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    gap: 15px;
+  }
 }
 </style>
 
 </head>
+
 <body>
 
-<!-- HEADER -->
-<div class="header">
-  <div class="logo">The Kongu Times</div>
-  <div>April 13, 2026</div>
+<!-- TOP HEADER -->
+<div class="top-bar">
+  <div class="logo">
+    <div class="logo-box"></div>
+    <h3>The Kongu Times</h3>
+  </div>
+
+  <div class="lang-switch">
+    <button class="active">தமிழ்</button>
+    <button>English</button>
+  </div>
 </div>
 
-<!-- TABS -->
-<div class="tabs">
+<!-- NAVBAR -->
+<div class="navbar">
   <a href="#">Home</a>
-  <a href="#">Candidates 2026</a>
+  <a href="#" class="active">Candidates 2026</a>
   <a href="#">Erode</a>
-  <a href="#"><b>Coimbatore</b></a>
+  <a href="#">Coimbatore</a>
   <a href="#">Tiruppur</a>
   <a href="#">Salem</a>
+  <a href="#">Namakkal</a>
 </div>
 
-<!-- TITLE -->
-<div class="page-title">
+<!-- ELECTION BAR -->
+<div class="election-bar">
+  🗳️ Election 2026 — April 23, 2026 | Counting: May 4 | 234 Constituencies
+</div>
+
+<!-- LIVE BAR -->
+<div class="live-bar">
+  🔴 LIVE: Coimbatore South: DMK vs AIADMK vs TVK — Major 2026 battle
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+
+  <div class="breadcrumb">
+    Home > Coimbatore
+  </div>
+
   <h1>Coimbatore</h1>
-  <p>Manchester of South India</p>
+  <h2>கோயம்புத்தூர்</h2>
+
+  <div class="tagline">
+    MANCHESTER OF SOUTH INDIA • தொழில்துறையின் மான்செஸ்டர்
+  </div>
+
+  <div class="description">
+    <p>
+      Tamil Nadu's second largest city and an industrial powerhouse —
+      textiles, engineering, IT, and a growing startup ecosystem.
+      With 11 assembly constituencies and over 26 lakh voters,
+      Coimbatore plays a key role in state politics.
+    </p>
+
+    <p>
+      தமிழ்நாட்டின் இரண்டாவது பெரிய நகரம்.
+      தொழில், பொறியியல், தகவல் தொழில்நுட்பம் ஆகிய துறைகளில் முன்னணி.
+      11 தொகுதிகள் கொண்ட முக்கிய நகரமாகும்.
+    </p>
+  </div>
+
 </div>
-
-<!-- NEWS SECTION -->
-<div class="news-container">
-  <h2>Latest News</h2>
-  <div id="news-list"></div>
-</div>
-
-<script>
-const newsData = [
-  "Metro Phase 1 approved",
-  "Textile exports rise",
-  "New IT park announced",
-  "Water project launched",
-  "Airport expansion ongoing",
-  "Startup ecosystem grows",
-  "Smart roads initiative",
-  "Electric buses added",
-  "Real estate boom",
-  "New flyover planned",
-  "Rainwater harvesting drive",
-  "Hospital upgrade",
-  "Pollution control measures",
-  "New colleges approved",
-  "Tourism boost",
-  "EV stations increase",
-  "Digital governance rollout",
-  "Waste management upgrade",
-  "Rail connectivity improved",
-  "Election campaigns heat up",
-  "AI startups emerging",
-  "Industrial corridor update",
-  "Women entrepreneurs rise",
-  "Solar adoption grows",
-  "Traffic plan announced",
-  "Health camps organized",
-  "Lake restoration project",
-  "Transport upgrade",
-  "Food inspections increase",
-  "Startup summit hosted",
-  "Farm market boost",
-  "Skill programs expand",
-  "Cyber awareness drive",
-  "Smart city phase 2",
-  "New malls planned",
-  "Road widening works",
-  "Tourism increases",
-  "Park renovation",
-  "IT exports rise",
-  "Housing schemes launched",
-  "Electric auto subsidies",
-  "Flood prevention plan",
-  "New police stations",
-  "Clean city ranking improves",
-  "Logistics hub proposed",
-  "Cargo expansion",
-  "Education reforms",
-  "Industrial jobs rise",
-  "Digital payments grow",
-  "City branding campaign"
-];
-
-const container = document.getElementById("news-list");
-
-newsData.forEach((item, index) => {
-  const div = document.createElement("div");
-  div.className = "news-item";
-
-  div.innerHTML = `
-    <h4>${index + 1}. ${item}</h4>
-    <p>Short update about ${item.toLowerCase()} in Coimbatore.</p>
-  `;
-
-  container.appendChild(div);
-});
-</script>
 
 </body>
 </html>
