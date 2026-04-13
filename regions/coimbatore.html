@@ -2,176 +2,174 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Kongu Times - Regions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coimbatore - News</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f0f1a;
+  background: #12002b;
   color: white;
 }
 
-/* HEADER */
+/* HEADER (UNCHANGED STYLE) */
 .header {
-  background: #1a1a2e;
+  background: #2b0a4a;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.logo {
+  font-weight: bold;
+}
+
 .tabs {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  background: #3d1766;
+  padding: 10px 20px;
 }
 
 .tabs a {
-  color: #ccc;
+  color: white;
   text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 6px;
 }
 
-.tabs a:hover {
-  background: #333;
-  color: white;
+/* PAGE TITLE */
+.page-title {
+  padding: 40px 20px;
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 40px;
 }
 
 /* NEWS SECTION */
-.news-section {
+.news-container {
+  background: white;
+  color: black;
   padding: 20px;
 }
 
-#region-title {
-  margin-bottom: 20px;
+.news-item {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
 }
 
-/* NEWS CARD */
-.news-card {
-  background: #1e1e2f;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  transition: 0.2s;
+.news-item h4 {
+  margin: 0;
+  font-size: 16px;
 }
 
-.news-card:hover {
-  background: #29294a;
-}
-
-.news-card h3 {
-  margin: 0 0 5px;
-}
-
-.news-card p {
-  margin: 0 0 5px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-.news-card span {
-  font-size: 12px;
-  color: #aaa;
+.news-item p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #555;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<!-- HEADER (UNCHANGED STYLE) -->
+<!-- HEADER -->
 <div class="header">
-  <h2>Kongu Times</h2>
+  <div class="logo">The Kongu Times</div>
+  <div>April 13, 2026</div>
+</div>
 
-  <div class="tabs">
-    <a href="#" data-region="tiruppur">Tiruppur</a>
-    <a href="#" data-region="erode">Erode</a>
-    <a href="#" data-region="coimbatore">Coimbatore</a>
-    <a href="#" data-region="salem">Salem</a>
-  </div>
+<!-- TABS -->
+<div class="tabs">
+  <a href="#">Home</a>
+  <a href="#">Candidates 2026</a>
+  <a href="#">Erode</a>
+  <a href="#"><b>Coimbatore</b></a>
+  <a href="#">Tiruppur</a>
+  <a href="#">Salem</a>
+</div>
+
+<!-- TITLE -->
+<div class="page-title">
+  <h1>Coimbatore</h1>
+  <p>Manchester of South India</p>
 </div>
 
 <!-- NEWS SECTION -->
-<section class="news-section">
-  <h2 id="region-title">Latest News</h2>
-  <div id="news-container"></div>
-</section>
+<div class="news-container">
+  <h2>Latest News</h2>
+  <div id="news-list"></div>
+</div>
 
 <script>
-/* =========================
-   NEWS DATA (50 each)
-========================= */
-function generateNews(region) {
-  return Array.from({ length: 50 }, (_, i) => ({
-    title: `${region.toUpperCase()} News ${i + 1}`,
-    desc: `Short update about ${region} event ${i + 1}.`,
-    time: "Today"
-  }));
-}
+const newsData = [
+  "Metro Phase 1 approved",
+  "Textile exports rise",
+  "New IT park announced",
+  "Water project launched",
+  "Airport expansion ongoing",
+  "Startup ecosystem grows",
+  "Smart roads initiative",
+  "Electric buses added",
+  "Real estate boom",
+  "New flyover planned",
+  "Rainwater harvesting drive",
+  "Hospital upgrade",
+  "Pollution control measures",
+  "New colleges approved",
+  "Tourism boost",
+  "EV stations increase",
+  "Digital governance rollout",
+  "Waste management upgrade",
+  "Rail connectivity improved",
+  "Election campaigns heat up",
+  "AI startups emerging",
+  "Industrial corridor update",
+  "Women entrepreneurs rise",
+  "Solar adoption grows",
+  "Traffic plan announced",
+  "Health camps organized",
+  "Lake restoration project",
+  "Transport upgrade",
+  "Food inspections increase",
+  "Startup summit hosted",
+  "Farm market boost",
+  "Skill programs expand",
+  "Cyber awareness drive",
+  "Smart city phase 2",
+  "New malls planned",
+  "Road widening works",
+  "Tourism increases",
+  "Park renovation",
+  "IT exports rise",
+  "Housing schemes launched",
+  "Electric auto subsidies",
+  "Flood prevention plan",
+  "New police stations",
+  "Clean city ranking improves",
+  "Logistics hub proposed",
+  "Cargo expansion",
+  "Education reforms",
+  "Industrial jobs rise",
+  "Digital payments grow",
+  "City branding campaign"
+];
 
-const newsData = {
-  tiruppur: generateNews("tiruppur"),
-  erode: generateNews("erode"),
-  coimbatore: generateNews("coimbatore"),
-  salem: generateNews("salem")
-};
+const container = document.getElementById("news-list");
 
-/* =========================
-   LOAD NEWS FUNCTION
-========================= */
-function loadNews(region) {
-  const container = document.getElementById("news-container");
-  const title = document.getElementById("region-title");
+newsData.forEach((item, index) => {
+  const div = document.createElement("div");
+  div.className = "news-item";
 
-  container.innerHTML = "";
-  title.innerText = region.toUpperCase() + " NEWS";
+  div.innerHTML = `
+    <h4>${index + 1}. ${item}</h4>
+    <p>Short update about ${item.toLowerCase()} in Coimbatore.</p>
+  `;
 
-  const newsList = newsData[region] || [];
-
-  newsList.forEach(news => {
-    const item = document.createElement("div");
-    item.className = "news-card";
-
-    item.innerHTML = `
-      <h3>${news.title}</h3>
-      <p>${news.desc}</p>
-      <span>${news.time}</span>
-    `;
-
-    container.appendChild(item);
-  });
-}
-
-/* =========================
-   TAB CLICK (NO RELOAD)
-========================= */
-document.querySelectorAll(".tabs a").forEach(tab => {
-  tab.addEventListener("click", (e) => {
-    e.preventDefault();
-    const region = tab.dataset.region;
-
-    loadNews(region);
-
-    // update URL (optional)
-    history.pushState(null, "", `#${region}`);
-  });
+  container.appendChild(div);
 });
-
-/* =========================
-   LOAD BASED ON URL
-========================= */
-function detectRegion() {
-  const hash = window.location.hash.replace("#", "");
-  return hash || "tiruppur";
-}
-
-/* =========================
-   INITIAL LOAD
-========================= */
-window.onload = () => {
-  const region = detectRegion();
-  loadNews(region);
-};
 </script>
 
 </body>
