@@ -1,116 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>News Feed</title>
+<div id="news-container"></div>
+<script>
+const newsData = [
+    {title: "Textile exports show strong growth", desc: "Export demand increases across markets"},
+    {title: "New flyover project approved", desc: "Traffic congestion expected to reduce soon"},
+    {title: "Startups attract investments", desc: "Tech companies receive new funding"},
+    {title: "Agriculture output rises", desc: "Farmers report better yield this season"},
+    {title: "Industrial park planned", desc: "Thousands of jobs expected to be created"},
+    {title: "Transport services expanded", desc: "More buses introduced for public"},
+    {title: "Healthcare upgraded", desc: "Hospitals receive modern equipment"},
+    {title: "Retail markets busy", desc: "Weekend shoppers increase"},
+    {title: "Road repairs begin", desc: "Highway maintenance underway"},
+    {title: "Digital learning adopted", desc: "Schools introduce smart classes"},
+    {title: "Power supply stabilized", desc: "Improved infrastructure reduces outages"},
+    {title: "Water conservation improves", desc: "New projects boost water levels"},
+    {title: "IT hiring increases", desc: "Companies expand workforce"},
+    {title: "New shopping complex opens", desc: "Attracts visitors and businesses"},
+    {title: "Digital payments grow", desc: "Cashless economy expanding"},
+    {title: "Solar energy expands", desc: "Renewable adoption increases"},
+    {title: "Sports training camps begin", desc: "Teams prepare for tournaments"},
+    {title: "Waste management improves", desc: "Cleanliness initiatives succeed"},
+    {title: "Real estate demand rises", desc: "Suburban housing increases"},
+    {title: "Tourism sees growth", desc: "More visitors during weekends"},
+];
 
+// Fill up to 50 automatically
+while (newsData.length < 50) {
+    newsData.push({
+        title: "Latest update " + newsData.length,
+        desc: "Breaking news content " + newsData.length
+    });
+}
+
+const container = document.getElementById("news-container");
+
+newsData.forEach((news) => {
+    const card = document.createElement("div");
+    card.className = "news-card";
+
+    card.innerHTML = `
+        <div class="news-title">${news.title}</div>
+        <div class="news-desc">${news.desc}</div>
+        <div class="news-date">April 13, 2026</div>
+    `;
+
+    container.appendChild(card);
+});
+</script>
 <style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #0e0220;
-    color: #fff;
-}
-
-.container {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-
 .news-card {
     background: #1c0a3a;
-    margin-bottom: 12px;
+    margin: 10px 0;
     padding: 15px;
     border-radius: 8px;
 }
 
 .news-title {
-    font-size: 16px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .news-desc {
-    font-size: 14px;
     color: #ccc;
+    font-size: 14px;
 }
 
 .news-date {
     font-size: 12px;
-    color: #aaa;
+    color: #888;
 }
 </style>
-</head>
-
-<body>
-
-<div class="container">
-<h2>Latest News</h2>
-
-<!-- 50 NEWS ITEMS -->
-
-<div class="news-card"><div class="news-title">News 1</div><div class="news-desc">Breaking update content 1</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 2</div><div class="news-desc">Breaking update content 2</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 3</div><div class="news-desc">Breaking update content 3</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 4</div><div class="news-desc">Breaking update content 4</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 5</div><div class="news-desc">Breaking update content 5</div><div class="news-date">April 13, 2026</div></div>
-
-<div class="news-card"><div class="news-title">News 6</div><div class="news-desc">Breaking update content 6</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 7</div><div class="news-desc">Breaking update content 7</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 8</div><div class="news-desc">Breaking update content 8</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 9</div><div class="news-desc">Breaking update content 9</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 10</div><div class="news-desc">Breaking update content 10</div><div class="news-date">April 13, 2026</div></div>
-
-<div class="news-card"><div class="news-title">News 11</div><div class="news-desc">Breaking update content 11</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 12</div><div class="news-desc">Breaking update content 12</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 13</div><div class="news-desc">Breaking update content 13</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 14</div><div class="news-desc">Breaking update content 14</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 15</div><div class="news-desc">Breaking update content 15</div><div class="news-date">April 13, 2026</div></div>
-
-<div class="news-card"><div class="news-title">News 16</div><div class="news-desc">Breaking update content 16</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 17</div><div class="news-desc">Breaking update content 17</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 18</div><div class="news-desc">Breaking update content 18</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 19</div><div class="news-desc">Breaking update content 19</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 20</div><div class="news-desc">Breaking update content 20</div><div class="news-date">April 13, 2026</div></div>
-
-<div class="news-card"><div class="news-title">News 21</div><div class="news-desc">Breaking update content 21</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 22</div><div class="news-desc">Breaking update content 22</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 23</div><div class="news-desc">Breaking update content 23</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 24</div><div class="news-desc">Breaking update content 24</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 25</div><div class="news-desc">Breaking update content 25</div><div class="news-date">April 13, 2026</div></div>
-
-<div class="news-card"><div class="news-title">News 26</div><div class="news-desc">Breaking update content 26</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 27</div><div class="news-desc">Breaking update content 27</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 28</div><div class="news-desc">Breaking update content 28</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 29</div><div class="news-desc">Breaking update content 29</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 30</div><div class="news-desc">Breaking update content 30</div><div class="news-date">April 13, 2026</div></div>
-
-<div class="news-card"><div class="news-title">News 31</div><div class="news-desc">Breaking update content 31</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 32</div><div class="news-desc">Breaking update content 32</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 33</div><div class="news-desc">Breaking update content 33</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 34</div><div class="news-desc">Breaking update content 34</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 35</div><div class="news-desc">Breaking update content 35</div><div class="news-date">April 13, 2026</div></div>
-
-<div class="news-card"><div class="news-title">News 36</div><div class="news-desc">Breaking update content 36</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 37</div><div class="news-desc">Breaking update content 37</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 38</div><div class="news-desc">Breaking update content 38</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 39</div><div class="news-desc">Breaking update content 39</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 40</div><div class="news-desc">Breaking update content 40</div><div class="news-date">April 13, 2026</div></div>
-
-<div class="news-card"><div class="news-title">News 41</div><div class="news-desc">Breaking update content 41</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 42</div><div class="news-desc">Breaking update content 42</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 43</div><div class="news-desc">Breaking update content 43</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 44</div><div class="news-desc">Breaking update content 44</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 45</div><div class="news-desc">Breaking update content 45</div><div class="news-date">April 13, 2026</div></div>
-
-<div class="news-card"><div class="news-title">News 46</div><div class="news-desc">Breaking update content 46</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 47</div><div class="news-desc">Breaking update content 47</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 48</div><div class="news-desc">Breaking update content 48</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 49</div><div class="news-desc">Breaking update content 49</div><div class="news-date">April 13, 2026</div></div>
-<div class="news-card"><div class="news-title">News 50</div><div class="news-desc">Breaking update content 50</div><div class="news-date">April 13, 2026</div></div>
-
-</div>
-
-</body>
-</html>
