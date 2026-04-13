@@ -1,160 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Coimbatore News</title>
+<meta charset="UTF-8">
+<title>Kongu Times - Regions</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f1a;
+  color: white;
+}
 
-    .header {
-      background: #2c3e50;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 22px;
-    }
+/* HEADER */
+.header {
+  background: #1a1a2e;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .tabs {
-      display: flex;
-      background: #34495e;
-    }
+.tabs {
+  display: flex;
+  gap: 15px;
+}
 
-    .tab {
-      flex: 1;
-      padding: 12px;
-      text-align: center;
-      color: white;
-      cursor: pointer;
-    }
+.tabs a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
 
-    .tab:hover {
-      background: #1abc9c;
-    }
+.tabs a:hover {
+  background: #333;
+  color: white;
+}
 
-    .news-container {
-      padding: 15px;
-    }
+/* NEWS SECTION */
+.news-section {
+  padding: 20px;
+}
 
-    .news-card {
-      background: white;
-      margin-bottom: 10px;
-      padding: 12px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+#region-title {
+  margin-bottom: 20px;
+}
 
-    .news-card h4 {
-      margin: 0 0 5px;
-      color: #2c3e50;
-    }
+/* NEWS CARD */
+.news-card {
+  background: #1e1e2f;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
 
-    .news-card p {
-      margin: 0;
-      color: #555;
-      font-size: 14px;
-    }
-  </style>
+.news-card:hover {
+  background: #29294a;
+}
+
+.news-card h3 {
+  margin: 0 0 5px;
+}
+
+.news-card p {
+  margin: 0 0 5px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.news-card span {
+  font-size: 12px;
+  color: #aaa;
+}
+</style>
 </head>
+
 <body>
 
-  <!-- HEADER (UNCHANGED) -->
-  <div class="header">
-    Coimbatore News Portal
-  </div>
+<!-- HEADER (UNCHANGED STYLE) -->
+<div class="header">
+  <h2>Kongu Times</h2>
 
-  <!-- TABS (UNCHANGED) -->
   <div class="tabs">
-    <div class="tab" onclick="loadNews()">All</div>
-    <div class="tab" onclick="loadNews()">Local</div>
-    <div class="tab" onclick="loadNews()">Market</div>
-    <div class="tab" onclick="loadNews()">Weather</div>
+    <a href="#" data-region="tiruppur">Tiruppur</a>
+    <a href="#" data-region="erode">Erode</a>
+    <a href="#" data-region="coimbatore">Coimbatore</a>
+    <a href="#" data-region="salem">Salem</a>
   </div>
+</div>
 
-  <!-- ONLY NEWS CHANGES -->
-  <div id="news-container" class="news-container"></div>
+<!-- NEWS SECTION -->
+<section class="news-section">
+  <h2 id="region-title">Latest News</h2>
+  <div id="news-container"></div>
+</section>
 
-  <script>
-    const coimbatoreNews = [
-      {title:"Rain in Coimbatore",summary:"Light rain reported across city areas."},
-      {title:"Traffic Congestion",summary:"Heavy traffic near Gandhipuram."},
-      {title:"Metro Plan Update",summary:"Metro rail project discussion continues."},
-      {title:"IT Park Expansion",summary:"New IT companies entering Coimbatore."},
-      {title:"Water Supply Issue",summary:"Water disruption in some areas."},
-      {title:"Temple Festival",summary:"Marudamalai temple sees large crowd."},
-      {title:"Bus Delay",summary:"City buses delayed due to rain."},
-      {title:"Health Camp",summary:"Free medical camp organized."},
-      {title:"Power Cut",summary:"Scheduled maintenance announced."},
-      {title:"Farmers Market",summary:"Uzhavar Sandhai sees heavy sales."},
+<script>
+/* =========================
+   NEWS DATA (50 each)
+========================= */
+function generateNews(region) {
+  return Array.from({ length: 50 }, (_, i) => ({
+    title: `${region.toUpperCase()} News ${i + 1}`,
+    desc: `Short update about ${region} event ${i + 1}.`,
+    time: "Today"
+  }));
+}
 
-      {title:"New Flyover Plan",summary:"Proposal for new flyover approved."},
-      {title:"Police Patrol",summary:"Increased security in city zones."},
-      {title:"Library Opening",summary:"New public library opened."},
-      {title:"Gold Price Drop",summary:"Gold prices slightly reduced."},
-      {title:"Job Fair",summary:"Mega job fair this weekend."},
-      {title:"Weather Alert",summary:"Rain forecast for next 3 days."},
-      {title:"Sports Event",summary:"District sports meet begins."},
-      {title:"Clean City Drive",summary:"Corporation starts cleaning drive."},
-      {title:"Mall Opening",summary:"New shopping mall inaugurated."},
-      {title:"College Event",summary:"Tech fest conducted in college."},
+const newsData = {
+  tiruppur: generateNews("tiruppur"),
+  erode: generateNews("erode"),
+  coimbatore: generateNews("coimbatore"),
+  salem: generateNews("salem")
+};
 
-      {title:"Traffic Diversion",summary:"Road work causes diversions."},
-      {title:"Milk Price Rise",summary:"Price increased by ₹2."},
-      {title:"Water Tank Repair",summary:"Repair work in progress."},
-      {title:"Festival Security",summary:"Extra police deployed."},
-      {title:"Train Delay",summary:"Trains delayed due to rain."},
-      {title:"Farmer Protest",summary:"Farmers demand better prices."},
-      {title:"ATM Installed",summary:"New ATM near RS Puram."},
-      {title:"Hospital Upgrade",summary:"GH gets new equipment."},
-      {title:"Tree Plantation",summary:"Drive held in schools."},
-      {title:"Petrol Price",summary:"Prices remain steady."},
+/* =========================
+   LOAD NEWS FUNCTION
+========================= */
+function loadNews(region) {
+  const container = document.getElementById("news-container");
+  const title = document.getElementById("region-title");
 
-      {title:"Airport Expansion",summary:"Expansion work underway."},
-      {title:"New Park Opened",summary:"Park opened in Saibaba Colony."},
-      {title:"Bus Pass Online",summary:"Students can renew passes."},
-      {title:"Heavy Rain Alert",summary:"IMD issues warning."},
-      {title:"Railway Update",summary:"New train timings announced."},
-      {title:"Market Rush",summary:"Crowd increases in markets."},
-      {title:"Food Safety Check",summary:"Hotel inspections conducted."},
-      {title:"Online Services",summary:"Civic services go digital."},
-      {title:"LED Lights",summary:"New street lights installed."},
-      {title:"Bank Holiday",summary:"Banks closed tomorrow."},
+  container.innerHTML = "";
+  title.innerText = region.toUpperCase() + " NEWS";
 
-      {title:"Bridge Construction",summary:"New bridge work approved."},
-      {title:"School Reopen",summary:"Schools reopen after break."},
-      {title:"Dam Water Rise",summary:"Siruvani water level increases."},
-      {title:"Bus Stand Upgrade",summary:"Renovation begins."},
-      {title:"Taxi Strike",summary:"Drivers plan strike."},
-      {title:"Electric Bus Trial",summary:"Trial runs successful."},
-      {title:"Health Awareness",summary:"Dengue awareness drive."},
-      {title:"Accident Report",summary:"Minor accident on Avinashi road."},
-      {title:"New Course",summary:"College launches new program."},
-      {title:"Festival Holiday",summary:"Holiday announced in district."}
-    ];
+  const newsList = newsData[region] || [];
 
-    function loadNews() {
-      const container = document.getElementById("news-container");
-      container.innerHTML = "";
+  newsList.forEach(news => {
+    const item = document.createElement("div");
+    item.className = "news-card";
 
-      coimbatoreNews.forEach(news => {
-        const div = document.createElement("div");
-        div.className = "news-card";
+    item.innerHTML = `
+      <h3>${news.title}</h3>
+      <p>${news.desc}</p>
+      <span>${news.time}</span>
+    `;
 
-        div.innerHTML = `
-          <h4>${news.title}</h4>
-          <p>${news.summary}</p>
-        `;
+    container.appendChild(item);
+  });
+}
 
-        container.appendChild(div);
-      });
-    }
+/* =========================
+   TAB CLICK (NO RELOAD)
+========================= */
+document.querySelectorAll(".tabs a").forEach(tab => {
+  tab.addEventListener("click", (e) => {
+    e.preventDefault();
+    const region = tab.dataset.region;
 
-    window.onload = loadNews;
-  </script>
+    loadNews(region);
+
+    // update URL (optional)
+    history.pushState(null, "", `#${region}`);
+  });
+});
+
+/* =========================
+   LOAD BASED ON URL
+========================= */
+function detectRegion() {
+  const hash = window.location.hash.replace("#", "");
+  return hash || "tiruppur";
+}
+
+/* =========================
+   INITIAL LOAD
+========================= */
+window.onload = () => {
+  const region = detectRegion();
+  loadNews(region);
+};
+</script>
 
 </body>
 </html>
