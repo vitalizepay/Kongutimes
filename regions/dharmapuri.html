@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="ta">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dharmapuri news in Tamil and English — The Kongu Times. Famous for its alphonso and neelam mangoes, rich sericulture tradition, and the ancient Hogenakkal Falls — the 'Niagara of India'." />
-  <title>Dharmapuri · தர்மபுரி | The Kongu Times</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>" />
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Dharmapuri Tamil and English news — Famous for Alphonso and Neelam mangoes, rich sericulture tradition, and the spectacular Hogenakkal Falls — known as the "/>
+<title>Dharmapuri · தர்மபுரி | The Kongu Times</title>
+<link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-top">
-      <a href="../index.html" class="logo-block" style="text-decoration:none">
-        <span class="logo-title">The <span>Kongu</span> Times</span>
-        <span class="logo-tamil">கொங்கு டைம்ஸ்</span>
-      </a>
-      <div class="header-tagline">கொங்கு மண்டலத்தின் குரல் · Voice of the Kongu Region</div>
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="ta" onclick="switchLang('ta')">தமிழ்</button>
-        <button class="lang-btn" data-lang="en" onclick="switchLang('en')">English</button>
-      </div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo-link"><img class="logo-img" src="../kongu-times-logo.png" alt="The Kongu Times"/></a>
+    <div class="header-center">
+      <div class="header-tagline">VOICE OF THE KONGU REGION · April 13, 2026</div>
+      <div class="header-tagline-ta">கொங்கு மண்டலத்தின் குரல்</div>
     </div>
-  </header>
-
-  <!-- REGION NAV -->
-  <nav class="region-nav" aria-label="Region Navigation">
-    <div class="region-nav-inner">
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="this.classList.add('active');this.nextElementSibling.classList.remove('active')">தமிழ்</button>
+      <button class="lang-btn" onclick="this.classList.add('active');this.previousElementSibling.classList.remove('active')">English</button>
+    </div>
+  </div>
+</header>
+<nav class="region-nav"><div class="region-nav-inner">
       <a href="../index.html">🏠 Home</a>
       <a href="../candidates-2026.html" class="candidates-link">🗳 Candidates 2026</a>
       <a href="../regions/erode.html">Erode · ஈரோடு</a>
@@ -36,165 +29,104 @@
       <a href="../regions/salem.html">Salem · சேலம்</a>
       <a href="../regions/namakkal.html">Namakkal · நாமக்கல்</a>
       <a href="../regions/karur.html">Karur · கரூர்</a>
-      <a href="../regions/dharmapuri.html">Dharmapuri · தர்மபுரி</a>
-    </div>
-  </nav>
+      <a href="../regions/dharmapuri.html" class="active">Dharmapuri · தர்மபுரி</a>
+    </div></nav>
+<div class="election-banner"><div class="election-banner-inner">
+  <span class="elect-badge">🗳 ELECTION 2026</span>
+  <span>தமிழ்நாடு சட்டமன்றத் தேர்தல் · April 23, 2026 · Counting: May 4</span>
+  <span class="elect-badge">234 தொகுதிகள்</span>
+</div></div>
+<div class="news-ticker"><div class="ticker-inner"><span class="ticker-label">LIVE</span><div class="ticker-scroll"><div class="ticker-track"><span class="ticker-item">Dharmapuri mango season — 25% bumper yield, Gulf export demand strong</span><span class="ticker-item">தர்மபுரி பட்டு விவசாயிகள் — தேசிய விருது பெற்றனர்</span><span class="ticker-item">Hogenakkal eco-tourism packages launched for 2026 summer season</span><span class="ticker-item">Election 2026: PMK contests Dharmapuri and Pennagaram under NDA</span><span class="ticker-item">Dharmapuri mango season — 25% bumper yield, Gulf export demand strong</span><span class="ticker-item">தர்மபுரி பட்டு விவசாயிகள் — தேசிய விருது பெற்றனர்</span><span class="ticker-item">Hogenakkal eco-tourism packages launched for 2026 summer season</span><span class="ticker-item">Election 2026: PMK contests Dharmapuri and Pennagaram under NDA</span></div></div></div></div>
 
-  <!-- NEWS TICKER -->
-  <div class="news-ticker">
-    <div class="ticker-inner">
-      <span class="ticker-label">LIVE</span>
-      <div class="ticker-scroll">
-        <div class="ticker-track">
-          <span class="ticker-item">Dharmapuri — மாம்பழம் மற்றும் பட்டுப்புழு மாவட்டம்</span>
-          <span class="ticker-item">தர்மபுரி மாம்பழ சீசன் — இந்த ஆண்டு 25% அதிக மகசூல் எதிர்பார்ப்பு</span>
-          <span class="ticker-item">Hogenakkal Falls — New eco-tourism packages launched for summer</span>
-          <span class="ticker-item">தர்மபுரி பட்டு — மத்திய அரசின் விருது பெற்ற உழவர்கள்</span>
-          <span class="ticker-item">Dharmapuri — மாம்பழம் மற்றும் பட்டுப்புழு மாவட்டம்</span>
-          <span class="ticker-item">தர்மபுரி மாம்பழ சீசன் — இந்த ஆண்டு 25% அதிக மகசூல் எதிர்பார்ப்பு</span>
-          <span class="ticker-item">Hogenakkal Falls — New eco-tourism packages launched for summer</span>
-          <span class="ticker-item">தர்மபுரி பட்டு — மத்திய அரசின் விருது பெற்ற உழவர்கள்</span>
-        </div>
-      </div>
+<div class="region-hero">
+  <div class="region-hero-inner">
+    <div class="region-breadcrumb"><a href="../index.html">Home</a> › Dharmapuri</div>
+    <span class="region-icon">🌾</span>
+    <h1 class="region-title">Dharmapuri</h1>
+    <div class="region-title-tamil">தர்மபுரி</div>
+    <div class="region-tagline">Mango & Sericulture District · மாம்பழம் மற்றும் பட்டுப்புழு மாவட்டம்</div>
+    <div class="region-desc-block">
+      <p class="region-desc">Famous for Alphonso and Neelam mangoes, rich sericulture tradition, and the spectacular Hogenakkal Falls — known as the Niagara of India. PMK holds strong political influence here, having swept all five seats in 2021 under NDA.</p>
+      <p class="region-desc-ta">அல்போன்சா மாம்பழங்கள், பட்டுப்புழு பாரம்பரியம் மற்றும் ஹொகேனக்கல் அருவி — இந்தியாவின் நயாகரா. 2021ல் NDA 5 தொகுதியும் வென்ற மாவட்டம்.</p>
     </div>
-  </div>
-
-  <!-- REGION HERO -->
-  <div class="region-hero">
-    <div class="region-hero-inner">
-      <div class="region-breadcrumb">
-        <a href="../index.html">Home</a> &rsaquo; Dharmapuri
-      </div>
-      <h1 class="region-title">🌾 Dharmapuri</h1>
-      <div class="region-title-tamil">தர்மபுரி</div>
-      <p class="region-desc">Famous for its alphonso and neelam mangoes, rich sericulture tradition, and the ancient Hogenakkal Falls — the 'Niagara of India'.</p>
-      <p class="region-desc" style="font-family:'Tiro Tamil',serif;margin-top:8px">அல்போன்சா மற்றும் நீலம் மாம்பழங்கள், பட்டுப்புழு வளர்ப்பு பாரம்பரியம் மற்றும் ஹொகேனக்கல் அருவி — இந்தியாவின் நயாகரா.</p>
+    <div style="display:flex;gap:28px;margin-top:18px;flex-wrap:wrap;">
+      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">5</div>Assembly Seats</div>
+      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">13,00,000</div>Registered Voters</div>
+      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">Apr 23</div>Polling Date</div>
     </div>
   </div>
+</div>
 
-  <!-- CONTENT + SIDEBAR -->
-  <div class="region-content">
-    <main>
-      <div class="section-head">
-        <h2 data-en="Latest from Dharmapuri" data-ta="தர்மபுரி செய்திகள்">தர்மபுரி செய்திகள்</h2>
-        <div class="section-head-line"></div>
-      </div>
-      
-        <article class="news-article">
-          <span class="article-label">Agriculture</span>
-          <h2 class="article-title">தர்மபுரி மாம்பழ சீசன் — இந்த ஆண்டு 25% அதிக மகசூல் எதிர்பார்ப்பு</h2>
-          <p class="article-body">சரியான நேரத்தில் பெய்த மழை மற்றும் சாதகமான வானிலையால் தர்மபுரி மாம்பழ விவசாயிகள் கடந்த ஆண்டை விட 25 சதவீதம் அதிக மகசூல் எதிர்பார்க்கின்றனர். ஜூன் முதல் ஏற்றுமதி தொடங்கும்.</p>
-          <div class="article-meta">
-            <span>📅 April 10, 2026</span>
-            <span class="meta-dot">·</span>
-            <span>🏷 Agriculture</span>
-          </div>
-        </article>
-        <article class="news-article">
-          <span class="article-label">Tourism</span>
-          <h2 class="article-title">Hogenakkal Falls — New eco-tourism packages launched for summer</h2>
-          <p class="article-body">The Tamil Nadu Tourism Development Corporation has launched special eco-tourism packages for Hogenakkal Falls ahead of the summer season. New facilities including improved coracle boat services, cafeteria, and visitor rest areas have been added.</p>
-          <div class="article-meta">
-            <span>📅 April 8, 2026</span>
-            <span class="meta-dot">·</span>
-            <span>🏷 Tourism</span>
-          </div>
-        </article>
-        <article class="news-article">
-          <span class="article-label">Sericulture</span>
-          <h2 class="article-title">தர்மபுரி பட்டு — மத்திய அரசின் விருது பெற்ற உழவர்கள்</h2>
-          <p class="article-body">தர்மபுரி மாவட்டத்தில் இருந்து 5 விவசாயிகள் மத்திய அரசின் தேசிய பட்டு வளர்ப்பு விருது பெற்றனர். மத்திய பட்டு வாரியம் தர்மபுரி பட்டின் தரத்தை மிகவும் பாராட்டியது.</p>
-          <div class="article-meta">
-            <span>📅 April 5, 2026</span>
-            <span class="meta-dot">·</span>
-            <span>🏷 Agriculture</span>
-          </div>
-        </article>
-
-      <!-- ADD MORE NEWS BELOW THIS LINE — copy the article block above -->
-
-    </main>
-
-    <aside class="sidebar">
-      <div class="sidebar-block">
-        <div class="sidebar-title">Other Regions</div>
-        
-            <a href="erode.html" class="sidebar-link">
-              <span class="sidebar-link-num">01</span>
-              <span class="sidebar-link-title">🌿 Erode · ஈரோடு</span>
-            </a>
-            <a href="coimbatore.html" class="sidebar-link">
-              <span class="sidebar-link-num">02</span>
-              <span class="sidebar-link-title">🏙️ Coimbatore · கோயம்புத்தூர்</span>
-            </a>
-            <a href="tiruppur.html" class="sidebar-link">
-              <span class="sidebar-link-num">03</span>
-              <span class="sidebar-link-title">🧵 Tiruppur · திருப்பூர்</span>
-            </a>
-            <a href="salem.html" class="sidebar-link">
-              <span class="sidebar-link-num">04</span>
-              <span class="sidebar-link-title">⚙️ Salem · சேலம்</span>
-            </a>
-            <a href="namakkal.html" class="sidebar-link">
-              <span class="sidebar-link-num">05</span>
-              <span class="sidebar-link-title">🥚 Namakkal · நாமக்கல்</span>
-            </a>
-            <a href="karur.html" class="sidebar-link">
-              <span class="sidebar-link-num">06</span>
-              <span class="sidebar-link-title">🏮 Karur · கரூர்</span>
-            </a>
-      </div>
-      <div class="sidebar-block" style="background:var(--red-light);border-color:var(--red)">
-        <div class="sidebar-title" style="border-bottom-color:var(--red);color:var(--red-dark)">Submit News</div>
-        <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:var(--ink-mid);line-height:1.6;margin-bottom:10px">
-          Have a story from Dharmapuri? Send it to us!<br>
-          <span style="font-family:'Tiro Tamil',serif">தர்மபுரி செய்தி அனுப்ப:</span>
-        </p>
-        <a href="mailto:news@thekongutimes.com" style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:var(--red);text-decoration:none">
-          ✉️ news@thekongutimes.com
-        </a>
-      </div>
-    </aside>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo">The <span>Kongu</span> Times</div>
-          <p class="footer-desc">Trusted news from the heart of Tamil Nadu's Kongu region.</p>
-          <p class="footer-desc-tamil">கொங்கு மண்டலத்தின் நம்பகமான செய்தி ஆதாரம்.</p>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Regions</div>
-          <a href="erode.html">Erode · ஈரோடு</a>
-          <a href="coimbatore.html">Coimbatore · கோயம்புத்தூர்</a>
-          <a href="tiruppur.html">Tiruppur · திருப்பூர்</a>
-          <a href="salem.html">Salem · சேலம்</a>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">More Regions</div>
-          <a href="namakkal.html">Namakkal · நாமக்கல்</a>
-          <a href="karur.html">Karur · கரூர்</a>
-          <a href="dharmapuri.html">Dharmapuri · தர்மபுரி</a>
-      <a href="../candidates-2026.html">🗳 Candidates 2026</a>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">About</div>
-          <a href="../index.html">Home</a>
-          <a href="#">Contact</a>
-          <a href="#">Submit News</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 The Kongu Times · கொங்கு டைம்ஸ். All rights reserved.</span>
-        <span>Made with ❤️ for the Kongu people</span>
-      </div>
+<div class="region-content">
+  <main>
+    <div class="sec-head" style="margin-top:0;">
+      <h2>தர்மபுரி செய்திகள்</h2>
+      <span class="sec-head-tamil">Dharmapuri News — April 13, 2026</span>
+      <div class="sec-head-line"></div>
     </div>
-  </footer>
+    <article class="news-article">
+  <span class="article-label">Agriculture</span>
+  <h2 class="article-title">தர்மபுரி மாம்பழ சீசன் — 25% அதிக மகசூல் எதிர்பார்ப்பு</h2>
+  <p class="article-body">சரியான நேரத்தில் பெய்த மழை மற்றும் சாதகமான வானிலையால் தர்மபுரி மாம்பழ விவசாயிகள் கடந்த ஆண்டை விட 25 சதவீதம் அதிக மகசூல் எதிர்பார்க்கின்றனர். அல்போன்சா மற்றும் நீலம் வகை மாம்பழங்களுக்கு வளைகுடா நாடுகளிலிருந்து ஏற்றுமதி கட்டளைகள் வர தொடங்கியுள்ளன. ஜூன் மாதம் ஏற்றுமதி தீவிரமாக தொடங்கும்.</p>
+  <div class="article-meta"><span>📅 April 12, 2026</span><span> · </span><span>🏷 Agriculture</span></div>
+</article>
+<article class="news-article">
+  <span class="article-label">Tourism</span>
+  <h2 class="article-title">Hogenakkal Falls — eco-tourism packages launched for 2026 summer</h2>
+  <p class="article-body">Tamil Nadu Tourism Development Corporation has launched eco-tourism packages for Hogenakkal Falls ahead of the summer season. Known as the Niagara of India, Hogenakkal attracts visitors from across Tamil Nadu, Karnataka and beyond. New facilities including improved coracle boat services, a visitor cafeteria and clean rest areas have been added for the 2026 season.</p>
+  <div class="article-meta"><span>📅 April 8, 2026</span><span> · </span><span>🏷 Tourism</span></div>
+</article>
+<article class="news-article">
+  <span class="article-label">Election 2026</span>
+  <h2 class="article-title">Dharmapuri 5 seats — PMK under NDA; TVK enters as new contestant</h2>
+  <p class="article-body">PMK has been allocated Dharmapuri and Pennagaram seats under the NDA alliance for 2026. In 2021, NDA achieved a clean sweep in all five Dharmapuri constituencies. The 2026 contest sees TVK entering as a new force. DMK has fielded V Elangovan in Dharmapuri constituency. The outcome here will be closely watched as an indicator of NDA's hold over its traditional strongholds.</p>
+  <div class="article-meta"><span>📅 April 13, 2026</span><span> · </span><span>🏷 Elections</span></div>
+</article>
 
-  <script src="../js/main.js"></script>
-</body>
-</html>
+  </main>
+  <aside class="sidebar">
+    <div class="sidebar-block">
+      <div class="sidebar-title">Dharmapuri Key Facts</div>
+      <a href="#" class="sidebar-link"><span class="sidebar-num">01</span><span class="sidebar-link-title"><strong>Mango Capital</strong><br>Alphonso and Neelam varieties — Gulf export</span></a>
+<a href="#" class="sidebar-link"><span class="sidebar-num">02</span><span class="sidebar-link-title"><strong>Hogenakkal Falls</strong><br>Niagara of India — eco-tourism hub</span></a>
+<a href="#" class="sidebar-link"><span class="sidebar-num">03</span><span class="sidebar-link-title"><strong>Sericulture Hub</strong><br>National award-winning silk farmers</span></a>
+<a href="#" class="sidebar-link"><span class="sidebar-num">04</span><span class="sidebar-link-title"><strong>5 Assembly Seats</strong><br>NDA historical stronghold — 2021 clean sweep</span></a>
+
+    </div>
+    <div class="sidebar-block" style="background:var(--red-light);border-color:var(--red);">
+      <div class="sidebar-title" style="border-bottom-color:var(--red);color:var(--red-dark);">Submit News</div>
+      <p style="font-family:DM Sans,sans-serif;font-size:13px;color:var(--ink-mid);line-height:1.6;margin-bottom:8px;">Have a story from Dharmapuri? Share it with us.</p>
+      <a href="mailto:news@thekongutimes.com" style="font-family:DM Sans,sans-serif;font-size:13px;font-weight:600;color:var(--red);text-decoration:none;">✉️ news@thekongutimes.com</a>
+    </div>
+    <div class="sidebar-block">
+      <div class="sidebar-title">Other Regions</div>
+      <a href="erode.html" class="sidebar-link"><span class="sidebar-num">01</span><span class="sidebar-link-title">🌿 Erode · ஈரோடு</span></a>
+<a href="coimbatore.html" class="sidebar-link"><span class="sidebar-num">02</span><span class="sidebar-link-title">🏙️ Coimbatore · கோயம்புத்தூர்</span></a>
+<a href="tiruppur.html" class="sidebar-link"><span class="sidebar-num">03</span><span class="sidebar-link-title">🧵 Tiruppur · திருப்பூர்</span></a>
+<a href="salem.html" class="sidebar-link"><span class="sidebar-num">04</span><span class="sidebar-link-title">⚙️ Salem · சேலம்</span></a>
+<a href="namakkal.html" class="sidebar-link"><span class="sidebar-num">05</span><span class="sidebar-link-title">🥚 Namakkal · நாமக்கல்</span></a>
+<a href="karur.html" class="sidebar-link"><span class="sidebar-num">06</span><span class="sidebar-link-title">🏮 Karur · கரூர்</span></a>
+
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer"><div class="footer-inner">
+  <div class="footer-grid">
+    <div><img class="footer-logo-img" src="../kongu-times-logo.png" alt="The Kongu Times"/>
+    <p class="footer-desc">Trusted Tamil and English news from the Kongu region — updated daily.</p>
+    <p class="footer-desc-ta">கொங்கு மண்டலத்தின் நம்பகமான செய்தி ஆதாரம் — ஏப்ரல் 13, 2026.</p></div>
+    <div class="footer-col"><div class="footer-col-title">Regions</div>
+    <a href="erode.html">Erode</a><a href="coimbatore.html">Coimbatore</a>
+    <a href="tiruppur.html">Tiruppur</a><a href="salem.html">Salem</a></div>
+    <div class="footer-col"><div class="footer-col-title">More</div>
+    <a href="namakkal.html">Namakkal</a><a href="karur.html">Karur</a>
+    <a href="dharmapuri.html">Dharmapuri</a><a href="../candidates-2026.html">🗳 Candidates 2026</a></div>
+    <div class="footer-col"><div class="footer-col-title">About</div>
+    <a href="#">About Us</a><a href="#">Submit News</a><a href="#">Contact</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Kongu Times · கொங்கு டைம்ஸ். All rights reserved.</span>
+    <span>Updated: April 13, 2026</span>
+  </div>
+</div></footer></body></html>

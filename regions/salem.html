@@ -1,200 +1,132 @@
 <!DOCTYPE html>
 <html lang="ta">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Salem news in Tamil and English — The Kongu Times. Home to Salem Steel Plant, rich in mineral resources, and a key commercial hub connecting the Kongu and northern regions of Tamil Nadu." />
-  <title>Salem · சேலம் | The Kongu Times</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>" />
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Salem Tamil and English news — Home to the Salem Steel Plant and Mettur Dam — one of Tamil Nadu's most important water reservoirs. With 27.5 lakh voter"/>
+<title>Salem · சேலம் | The Kongu Times</title>
+<link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-top">
-      <a href="../index.html" class="logo-block" style="text-decoration:none">
-        <span class="logo-title">The <span>Kongu</span> Times</span>
-        <span class="logo-tamil">கொங்கு டைம்ஸ்</span>
-      </a>
-      <div class="header-tagline">கொங்கு மண்டலத்தின் குரல் · Voice of the Kongu Region</div>
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="ta" onclick="switchLang('ta')">தமிழ்</button>
-        <button class="lang-btn" data-lang="en" onclick="switchLang('en')">English</button>
-      </div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo-link"><img class="logo-img" src="../kongu-times-logo.png" alt="The Kongu Times"/></a>
+    <div class="header-center">
+      <div class="header-tagline">VOICE OF THE KONGU REGION · April 13, 2026</div>
+      <div class="header-tagline-ta">கொங்கு மண்டலத்தின் குரல்</div>
     </div>
-  </header>
-
-  <!-- REGION NAV -->
-  <nav class="region-nav" aria-label="Region Navigation">
-    <div class="region-nav-inner">
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="this.classList.add('active');this.nextElementSibling.classList.remove('active')">தமிழ்</button>
+      <button class="lang-btn" onclick="this.classList.add('active');this.previousElementSibling.classList.remove('active')">English</button>
+    </div>
+  </div>
+</header>
+<nav class="region-nav"><div class="region-nav-inner">
       <a href="../index.html">🏠 Home</a>
       <a href="../candidates-2026.html" class="candidates-link">🗳 Candidates 2026</a>
       <a href="../regions/erode.html">Erode · ஈரோடு</a>
       <a href="../regions/coimbatore.html">Coimbatore · கோயம்புத்தூர்</a>
       <a href="../regions/tiruppur.html">Tiruppur · திருப்பூர்</a>
-      <a href="../regions/salem.html">Salem · சேலம்</a>
+      <a href="../regions/salem.html" class="active">Salem · சேலம்</a>
       <a href="../regions/namakkal.html">Namakkal · நாமக்கல்</a>
       <a href="../regions/karur.html">Karur · கரூர்</a>
       <a href="../regions/dharmapuri.html">Dharmapuri · தர்மபுரி</a>
-    </div>
-  </nav>
+    </div></nav>
+<div class="election-banner"><div class="election-banner-inner">
+  <span class="elect-badge">🗳 ELECTION 2026</span>
+  <span>தமிழ்நாடு சட்டமன்றத் தேர்தல் · April 23, 2026 · Counting: May 4</span>
+  <span class="elect-badge">234 தொகுதிகள்</span>
+</div></div>
+<div class="news-ticker"><div class="ticker-inner"><span class="ticker-label">LIVE</span><div class="ticker-scroll"><div class="ticker-track"><span class="ticker-item">Salem Steel Plant Phase 4 — 2,000 new jobs launched</span><span class="ticker-item">மேட்டூர் அணை நீர்மட்டம் 90 அடி — கோடை பயிர்களுக்கு உத்தரவாதம்</span><span class="ticker-item">Salem–Chengapalli NH 544 six-lane highway DPR underway</span><span class="ticker-item">Election 2026: Salem 10 seats — 27.5 lakh voters, highest in Kongu zone</span><span class="ticker-item">Salem Steel Plant Phase 4 — 2,000 new jobs launched</span><span class="ticker-item">மேட்டூர் அணை நீர்மட்டம் 90 அடி — கோடை பயிர்களுக்கு உத்தரவாதம்</span><span class="ticker-item">Salem–Chengapalli NH 544 six-lane highway DPR underway</span><span class="ticker-item">Election 2026: Salem 10 seats — 27.5 lakh voters, highest in Kongu zone</span></div></div></div></div>
 
-  <!-- NEWS TICKER -->
-  <div class="news-ticker">
-    <div class="ticker-inner">
-      <span class="ticker-label">LIVE</span>
-      <div class="ticker-scroll">
-        <div class="ticker-track">
-          <span class="ticker-item">Salem — தமிழ்நாட்டின் எஃகு நகரம்</span>
-          <span class="ticker-item">Salem Steel Plant Phase 4 — 2,000 new jobs, CM inaugurates</span>
-          <span class="ticker-item">Mettur Dam at 90 feet — Good news for farmers</span>
-          <span class="ticker-item">சேலம் — சென்னை வந்தே பாரத் ரயில் — தினசரி 2 சேவைகள்</span>
-          <span class="ticker-item">Salem — தமிழ்நாட்டின் எஃகு நகரம்</span>
-          <span class="ticker-item">Salem Steel Plant Phase 4 — 2,000 new jobs, CM inaugurates</span>
-          <span class="ticker-item">Mettur Dam at 90 feet — Good news for farmers</span>
-          <span class="ticker-item">சேலம் — சென்னை வந்தே பாரத் ரயில் — தினசரி 2 சேவைகள்</span>
-        </div>
-      </div>
+<div class="region-hero">
+  <div class="region-hero-inner">
+    <div class="region-breadcrumb"><a href="../index.html">Home</a> › Salem</div>
+    <span class="region-icon">⚙️</span>
+    <h1 class="region-title">Salem</h1>
+    <div class="region-title-tamil">சேலம்</div>
+    <div class="region-tagline">Steel City of Tamil Nadu · தமிழ்நாட்டின் எஃகு நகரம்</div>
+    <div class="region-desc-block">
+      <p class="region-desc">Home to the Salem Steel Plant and Mettur Dam — one of Tamil Nadu's most important water reservoirs. With 27.5 lakh voters across 10 seats, Salem is the largest district by voter count in the entire Kongu zone.</p>
+      <p class="region-desc-ta">சேலம் எஃகு ஆலை மற்றும் மேட்டூர் அணை. 27.5 லட்சம் வாக்காளர்கள் கொண்ட இந்த மாவட்டம் கொங்கு மண்டலத்தில் மிகவும் முக்கியமானது.</p>
     </div>
-  </div>
-
-  <!-- REGION HERO -->
-  <div class="region-hero">
-    <div class="region-hero-inner">
-      <div class="region-breadcrumb">
-        <a href="../index.html">Home</a> &rsaquo; Salem
-      </div>
-      <h1 class="region-title">⚙️ Salem</h1>
-      <div class="region-title-tamil">சேலம்</div>
-      <p class="region-desc">Home to Salem Steel Plant, rich in mineral resources, and a key commercial hub connecting the Kongu and northern regions of Tamil Nadu.</p>
-      <p class="region-desc" style="font-family:'Tiro Tamil',serif;margin-top:8px">சேலம் எஃகு ஆலை, கனிம வளங்கள் மற்றும் வடக்கு தமிழ்நாட்டை இணைக்கும் வணிக மையம்.</p>
+    <div style="display:flex;gap:28px;margin-top:18px;flex-wrap:wrap;">
+      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">10</div>Assembly Seats</div>
+      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">27,55,830</div>Registered Voters</div>
+      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">Apr 23</div>Polling Date</div>
     </div>
   </div>
+</div>
 
-  <!-- CONTENT + SIDEBAR -->
-  <div class="region-content">
-    <main>
-      <div class="section-head">
-        <h2 data-en="Latest from Salem" data-ta="சேலம் செய்திகள்">சேலம் செய்திகள்</h2>
-        <div class="section-head-line"></div>
-      </div>
-      
-        <article class="news-article">
-          <span class="article-label">Industry</span>
-          <h2 class="article-title">Salem Steel Plant Phase 4 — 2,000 new jobs, CM inaugurates</h2>
-          <p class="article-body">Chief Minister inaugurated the Phase 4 expansion of Salem Steel Plant today, boosting production capacity by 30%. The new phase will create 2,000 direct jobs and an estimated 8,000 indirect employment opportunities. The plant now ranks among the top five steel producers in India.</p>
-          <div class="article-meta">
-            <span>📅 April 9, 2026</span>
-            <span class="meta-dot">·</span>
-            <span>🏷 Industry</span>
-          </div>
-        </article>
-        <article class="news-article">
-          <span class="article-label">Water</span>
-          <h2 class="article-title">மேட்டூர் அணை நீர்மட்டம் 90 அடி — விவசாயிகளுக்கு நம்பிக்கை</h2>
-          <p class="article-body">மேட்டூர் அணையில் நீர்மட்டம் 90 அடியை தாண்டியுள்ளது. கோடைக்காலத்திலும் கால்வாய்களுக்கு தொடர்ந்து நீர் வழங்கப்படும் என அதிகாரிகள் தெரிவித்தனர். ஆயிரக்கணக்கான ஏக்கர் விளைநிலங்களுக்கு பாசன நீர் கிடைக்கும்.</p>
-          <div class="article-meta">
-            <span>📅 April 7, 2026</span>
-            <span class="meta-dot">·</span>
-            <span>🏷 Water Resources</span>
-          </div>
-        </article>
-        <article class="news-article">
-          <span class="article-label">Transport</span>
-          <h2 class="article-title">சேலம் — சென்னை வந்தே பாரத் ரயில் — தினசரி 2 சேவைகள்</h2>
-          <p class="article-body">சேலத்தில் இருந்து சென்னைக்கு தினசரி 2 வந்தே பாரத் ரயில் சேவைகள் ஜூன் மாதம் தொடங்கும் என ரயில்வே அதிகாரிகள் உறுதிப்படுத்தினர். பயண நேரம் 3 மணி நேரமாக குறையும்.</p>
-          <div class="article-meta">
-            <span>📅 April 5, 2026</span>
-            <span class="meta-dot">·</span>
-            <span>🏷 Transport</span>
-          </div>
-        </article>
-
-      <!-- ADD MORE NEWS BELOW THIS LINE — copy the article block above -->
-
-    </main>
-
-    <aside class="sidebar">
-      <div class="sidebar-block">
-        <div class="sidebar-title">Other Regions</div>
-        
-            <a href="erode.html" class="sidebar-link">
-              <span class="sidebar-link-num">01</span>
-              <span class="sidebar-link-title">🌿 Erode · ஈரோடு</span>
-            </a>
-            <a href="coimbatore.html" class="sidebar-link">
-              <span class="sidebar-link-num">02</span>
-              <span class="sidebar-link-title">🏙️ Coimbatore · கோயம்புத்தூர்</span>
-            </a>
-            <a href="tiruppur.html" class="sidebar-link">
-              <span class="sidebar-link-num">03</span>
-              <span class="sidebar-link-title">🧵 Tiruppur · திருப்பூர்</span>
-            </a>
-            <a href="namakkal.html" class="sidebar-link">
-              <span class="sidebar-link-num">04</span>
-              <span class="sidebar-link-title">🥚 Namakkal · நாமக்கல்</span>
-            </a>
-            <a href="karur.html" class="sidebar-link">
-              <span class="sidebar-link-num">05</span>
-              <span class="sidebar-link-title">🏮 Karur · கரூர்</span>
-            </a>
-            <a href="dharmapuri.html" class="sidebar-link">
-              <span class="sidebar-link-num">06</span>
-              <span class="sidebar-link-title">🌾 Dharmapuri · தர்மபுரி</span>
-            </a>
-      </div>
-      <div class="sidebar-block" style="background:var(--red-light);border-color:var(--red)">
-        <div class="sidebar-title" style="border-bottom-color:var(--red);color:var(--red-dark)">Submit News</div>
-        <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:var(--ink-mid);line-height:1.6;margin-bottom:10px">
-          Have a story from Salem? Send it to us!<br>
-          <span style="font-family:'Tiro Tamil',serif">சேலம் செய்தி அனுப்ப:</span>
-        </p>
-        <a href="mailto:news@thekongutimes.com" style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:var(--red);text-decoration:none">
-          ✉️ news@thekongutimes.com
-        </a>
-      </div>
-    </aside>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo">The <span>Kongu</span> Times</div>
-          <p class="footer-desc">Trusted news from the heart of Tamil Nadu's Kongu region.</p>
-          <p class="footer-desc-tamil">கொங்கு மண்டலத்தின் நம்பகமான செய்தி ஆதாரம்.</p>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Regions</div>
-          <a href="erode.html">Erode · ஈரோடு</a>
-          <a href="coimbatore.html">Coimbatore · கோயம்புத்தூர்</a>
-          <a href="tiruppur.html">Tiruppur · திருப்பூர்</a>
-          <a href="salem.html">Salem · சேலம்</a>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">More Regions</div>
-          <a href="namakkal.html">Namakkal · நாமக்கல்</a>
-          <a href="karur.html">Karur · கரூர்</a>
-          <a href="dharmapuri.html">Dharmapuri · தர்மபுரி</a>
-      <a href="../candidates-2026.html">🗳 Candidates 2026</a>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">About</div>
-          <a href="../index.html">Home</a>
-          <a href="#">Contact</a>
-          <a href="#">Submit News</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 The Kongu Times · கொங்கு டைம்ஸ். All rights reserved.</span>
-        <span>Made with ❤️ for the Kongu people</span>
-      </div>
+<div class="region-content">
+  <main>
+    <div class="sec-head" style="margin-top:0;">
+      <h2>சேலம் செய்திகள்</h2>
+      <span class="sec-head-tamil">Salem News — April 13, 2026</span>
+      <div class="sec-head-line"></div>
     </div>
-  </footer>
+    <article class="news-article">
+  <span class="article-label">Industry</span>
+  <h2 class="article-title">Salem Steel Plant Phase 4 — 2,000 new jobs, capacity up 30%</h2>
+  <p class="article-body">The Phase 4 expansion of the Salem Steel Plant has been officially launched, increasing production capacity by 30%. The expansion is expected to create 2,000 direct jobs and around 8,000 indirect employment opportunities. The plant now ranks among India's top steel producers. The expansion was completed ahead of the 2026 election and is a major talking point in Salem's political campaigning.</p>
+  <div class="article-meta"><span>📅 April 9, 2026</span><span> · </span><span>🏷 Industry</span></div>
+</article>
+<article class="news-article">
+  <span class="article-label">Water</span>
+  <h2 class="article-title">மேட்டூர் அணை நீர்மட்டம் 90 அடி — கோடை பயிர்களுக்கு நல்ல செய்தி</h2>
+  <p class="article-body">மேட்டூர் அணையில் நீர்மட்டம் 90 அடியை தாண்டியுள்ளது. இதனால் கோடைக்காலத்திலும் கால்வாய்களுக்கு தொடர்ந்து நீர் வழங்கப்படும் என அதிகாரிகள் தெரிவித்துள்ளனர். ஆயிரக்கணக்கான ஏக்கர் விளைநிலங்களுக்கு பாசன நீர் உறுதி செய்யப்படுவதால் விவசாயிகள் மகிழ்ச்சி அடைந்துள்ளனர்.</p>
+  <div class="article-meta"><span>📅 April 7, 2026</span><span> · </span><span>🏷 Water</span></div>
+</article>
+<article class="news-article">
+  <span class="article-label">Election 2026</span>
+  <h2 class="article-title">Salem 10 constituencies — highest voter count in Kongu at 27.5 lakh</h2>
+  <p class="article-body">Salem district has the largest voter base in the Kongu zone with 27,55,830 registered voters across 10 assembly constituencies. Key contests include Salem West (PMK/NDA), Salem East (DMK), Edappadi and Omalur. Congress has been allocated the Erode East seat in alliance sharing, while TVK contests all seats as an independent force.</p>
+  <div class="article-meta"><span>📅 April 13, 2026</span><span> · </span><span>🏷 Elections</span></div>
+</article>
 
-  <script src="../js/main.js"></script>
-</body>
-</html>
+  </main>
+  <aside class="sidebar">
+    <div class="sidebar-block">
+      <div class="sidebar-title">Salem Key Facts</div>
+      <a href="#" class="sidebar-link"><span class="sidebar-num">01</span><span class="sidebar-link-title"><strong>27.5 Lakh Voters</strong><br>Largest voter count in Kongu zone</span></a>
+<a href="#" class="sidebar-link"><span class="sidebar-num">02</span><span class="sidebar-link-title"><strong>Salem Steel Plant</strong><br>Phase 4 — top Indian steel producer</span></a>
+<a href="#" class="sidebar-link"><span class="sidebar-num">03</span><span class="sidebar-link-title"><strong>Mettur Dam</strong><br>90 feet water level — farming secured</span></a>
+<a href="#" class="sidebar-link"><span class="sidebar-num">04</span><span class="sidebar-link-title"><strong>10 Assembly Seats</strong><br>Most seats per district in Kongu</span></a>
+
+    </div>
+    <div class="sidebar-block" style="background:var(--red-light);border-color:var(--red);">
+      <div class="sidebar-title" style="border-bottom-color:var(--red);color:var(--red-dark);">Submit News</div>
+      <p style="font-family:DM Sans,sans-serif;font-size:13px;color:var(--ink-mid);line-height:1.6;margin-bottom:8px;">Have a story from Salem? Share it with us.</p>
+      <a href="mailto:news@thekongutimes.com" style="font-family:DM Sans,sans-serif;font-size:13px;font-weight:600;color:var(--red);text-decoration:none;">✉️ news@thekongutimes.com</a>
+    </div>
+    <div class="sidebar-block">
+      <div class="sidebar-title">Other Regions</div>
+      <a href="erode.html" class="sidebar-link"><span class="sidebar-num">01</span><span class="sidebar-link-title">🌿 Erode · ஈரோடு</span></a>
+<a href="coimbatore.html" class="sidebar-link"><span class="sidebar-num">02</span><span class="sidebar-link-title">🏙️ Coimbatore · கோயம்புத்தூர்</span></a>
+<a href="tiruppur.html" class="sidebar-link"><span class="sidebar-num">03</span><span class="sidebar-link-title">🧵 Tiruppur · திருப்பூர்</span></a>
+<a href="namakkal.html" class="sidebar-link"><span class="sidebar-num">04</span><span class="sidebar-link-title">🥚 Namakkal · நாமக்கல்</span></a>
+<a href="karur.html" class="sidebar-link"><span class="sidebar-num">05</span><span class="sidebar-link-title">🏮 Karur · கரூர்</span></a>
+<a href="dharmapuri.html" class="sidebar-link"><span class="sidebar-num">06</span><span class="sidebar-link-title">🌾 Dharmapuri · தர்மபுரி</span></a>
+
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer"><div class="footer-inner">
+  <div class="footer-grid">
+    <div><img class="footer-logo-img" src="../kongu-times-logo.png" alt="The Kongu Times"/>
+    <p class="footer-desc">Trusted Tamil and English news from the Kongu region — updated daily.</p>
+    <p class="footer-desc-ta">கொங்கு மண்டலத்தின் நம்பகமான செய்தி ஆதாரம் — ஏப்ரல் 13, 2026.</p></div>
+    <div class="footer-col"><div class="footer-col-title">Regions</div>
+    <a href="erode.html">Erode</a><a href="coimbatore.html">Coimbatore</a>
+    <a href="tiruppur.html">Tiruppur</a><a href="salem.html">Salem</a></div>
+    <div class="footer-col"><div class="footer-col-title">More</div>
+    <a href="namakkal.html">Namakkal</a><a href="karur.html">Karur</a>
+    <a href="dharmapuri.html">Dharmapuri</a><a href="../candidates-2026.html">🗳 Candidates 2026</a></div>
+    <div class="footer-col"><div class="footer-col-title">About</div>
+    <a href="#">About Us</a><a href="#">Submit News</a><a href="#">Contact</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Kongu Times · கொங்கு டைம்ஸ். All rights reserved.</span>
+    <span>Updated: April 13, 2026</span>
+  </div>
+</div></footer></body></html>

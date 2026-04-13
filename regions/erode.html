@@ -1,200 +1,132 @@
 <!DOCTYPE html>
 <html lang="ta">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Erode news in Tamil and English — The Kongu Times. Home to Asia's largest turmeric market, vibrant handloom weaving traditions, and the birthplace of social reformer Periyar E.V. Ramasamy." />
-  <title>Erode · ஈரோடு | The Kongu Times</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>" />
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Erode Tamil and English news — Home to Asia's largest turmeric market and the birthplace of social reformer Periyar E.V. Ramasamy. Erode's handloom ind"/>
+<title>Erode · ஈரோடு | The Kongu Times</title>
+<link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-top">
-      <a href="../index.html" class="logo-block" style="text-decoration:none">
-        <span class="logo-title">The <span>Kongu</span> Times</span>
-        <span class="logo-tamil">கொங்கு டைம்ஸ்</span>
-      </a>
-      <div class="header-tagline">கொங்கு மண்டலத்தின் குரல் · Voice of the Kongu Region</div>
-      <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="ta" onclick="switchLang('ta')">தமிழ்</button>
-        <button class="lang-btn" data-lang="en" onclick="switchLang('en')">English</button>
-      </div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="logo-link"><img class="logo-img" src="../kongu-times-logo.png" alt="The Kongu Times"/></a>
+    <div class="header-center">
+      <div class="header-tagline">VOICE OF THE KONGU REGION · April 13, 2026</div>
+      <div class="header-tagline-ta">கொங்கு மண்டலத்தின் குரல்</div>
     </div>
-  </header>
-
-  <!-- REGION NAV -->
-  <nav class="region-nav" aria-label="Region Navigation">
-    <div class="region-nav-inner">
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="this.classList.add('active');this.nextElementSibling.classList.remove('active')">தமிழ்</button>
+      <button class="lang-btn" onclick="this.classList.add('active');this.previousElementSibling.classList.remove('active')">English</button>
+    </div>
+  </div>
+</header>
+<nav class="region-nav"><div class="region-nav-inner">
       <a href="../index.html">🏠 Home</a>
       <a href="../candidates-2026.html" class="candidates-link">🗳 Candidates 2026</a>
-      <a href="../regions/erode.html">Erode · ஈரோடு</a>
+      <a href="../regions/erode.html" class="active">Erode · ஈரோடு</a>
       <a href="../regions/coimbatore.html">Coimbatore · கோயம்புத்தூர்</a>
       <a href="../regions/tiruppur.html">Tiruppur · திருப்பூர்</a>
       <a href="../regions/salem.html">Salem · சேலம்</a>
       <a href="../regions/namakkal.html">Namakkal · நாமக்கல்</a>
       <a href="../regions/karur.html">Karur · கரூர்</a>
       <a href="../regions/dharmapuri.html">Dharmapuri · தர்மபுரி</a>
-    </div>
-  </nav>
+    </div></nav>
+<div class="election-banner"><div class="election-banner-inner">
+  <span class="elect-badge">🗳 ELECTION 2026</span>
+  <span>தமிழ்நாடு சட்டமன்றத் தேர்தல் · April 23, 2026 · Counting: May 4</span>
+  <span class="elect-badge">234 தொகுதிகள்</span>
+</div></div>
+<div class="news-ticker"><div class="ticker-inner"><span class="ticker-label">LIVE</span><div class="ticker-scroll"><div class="ticker-track"><span class="ticker-item">ஈரோடு 8 தொகுதி — DMK, AIADMK, TVK மும்முனைப் போட்டி</span><span class="ticker-item">Salem–Chengapalli NH 544 six-lane DPR begins — Erode Bhavani flyover approved</span><span class="ticker-item">ஈரோடு மஞ்சள் சீசன் — சாதகமான விலை, ஏற்றுமதி அதிகரிப்பு</span><span class="ticker-item">Erode district: 17.4 lakh voters go to polls April 23, 2026</span><span class="ticker-item">ஈரோடு 8 தொகுதி — DMK, AIADMK, TVK மும்முனைப் போட்டி</span><span class="ticker-item">Salem–Chengapalli NH 544 six-lane DPR begins — Erode Bhavani flyover approved</span><span class="ticker-item">ஈரோடு மஞ்சள் சீசன் — சாதகமான விலை, ஏற்றுமதி அதிகரிப்பு</span><span class="ticker-item">Erode district: 17.4 lakh voters go to polls April 23, 2026</span></div></div></div></div>
 
-  <!-- NEWS TICKER -->
-  <div class="news-ticker">
-    <div class="ticker-inner">
-      <span class="ticker-label">LIVE</span>
-      <div class="ticker-scroll">
-        <div class="ticker-track">
-          <span class="ticker-item">Erode — இந்தியாவின் மஞ்சள் தலைநகரம்</span>
-          <span class="ticker-item">ஈரோடு மஞ்சள் ஏலம் — கிலோ ₹18,000 சாதனை விலை</span>
-          <span class="ticker-item">Erode-Salem Highway — 4-lane expansion work begins</span>
-          <span class="ticker-item">பெரியார் பிறந்த நாள் — ஈரோட்டில் பெரும் விழா</span>
-          <span class="ticker-item">Erode — இந்தியாவின் மஞ்சள் தலைநகரம்</span>
-          <span class="ticker-item">ஈரோடு மஞ்சள் ஏலம் — கிலோ ₹18,000 சாதனை விலை</span>
-          <span class="ticker-item">Erode-Salem Highway — 4-lane expansion work begins</span>
-          <span class="ticker-item">பெரியார் பிறந்த நாள் — ஈரோட்டில் பெரும் விழா</span>
-        </div>
-      </div>
+<div class="region-hero">
+  <div class="region-hero-inner">
+    <div class="region-breadcrumb"><a href="../index.html">Home</a> › Erode</div>
+    <span class="region-icon">🌿</span>
+    <h1 class="region-title">Erode</h1>
+    <div class="region-title-tamil">ஈரோடு</div>
+    <div class="region-tagline">Turmeric Capital of India · இந்தியாவின் மஞ்சள் தலைநகரம்</div>
+    <div class="region-desc-block">
+      <p class="region-desc">Home to Asia's largest turmeric market and the birthplace of social reformer Periyar E.V. Ramasamy. Erode's handloom industry, vibrant agriculture and diverse manufacturing make it one of western Tamil Nadu's most significant districts.</p>
+      <p class="region-desc-ta">ஆசியாவின் மிகப்பெரிய மஞ்சள் சந்தை மற்றும் சமூக சீர்திருத்தவாதி பெரியாரின் பிறந்த ஊர். கைத்தறி தொழில் மற்றும் விவசாயம் மாவட்டத்தை சிறப்பாக்குகிறது.</p>
     </div>
-  </div>
-
-  <!-- REGION HERO -->
-  <div class="region-hero">
-    <div class="region-hero-inner">
-      <div class="region-breadcrumb">
-        <a href="../index.html">Home</a> &rsaquo; Erode
-      </div>
-      <h1 class="region-title">🌿 Erode</h1>
-      <div class="region-title-tamil">ஈரோடு</div>
-      <p class="region-desc">Home to Asia's largest turmeric market, vibrant handloom weaving traditions, and the birthplace of social reformer Periyar E.V. Ramasamy.</p>
-      <p class="region-desc" style="font-family:'Tiro Tamil',serif;margin-top:8px">ஆசியாவின் மிகப்பெரிய மஞ்சள் சந்தை, கைத்தறி பாரம்பரியம் மற்றும் சமூக சீர்திருத்தவாதி பெரியாரின் பிறந்த ஊர்.</p>
+    <div style="display:flex;gap:28px;margin-top:18px;flex-wrap:wrap;">
+      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">8</div>Assembly Seats</div>
+      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">17,40,222</div>Registered Voters</div>
+      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">Apr 23</div>Polling Date</div>
     </div>
   </div>
+</div>
 
-  <!-- CONTENT + SIDEBAR -->
-  <div class="region-content">
-    <main>
-      <div class="section-head">
-        <h2 data-en="Latest from Erode" data-ta="ஈரோடு செய்திகள்">ஈரோடு செய்திகள்</h2>
-        <div class="section-head-line"></div>
-      </div>
-      
-        <article class="news-article">
-          <span class="article-label">Agriculture</span>
-          <h2 class="article-title">ஈரோடு மஞ்சள் ஏலம் — கிலோ ₹18,000 சாதனை விலை</h2>
-          <p class="article-body">ஈரோடு மஞ்சள் ஏல மையத்தில் இன்று கிலோ 18,000 ரூபாயை தாண்டி விலை சென்றது. தரமான மஞ்சளுக்கு இதுவரை இல்லாத அளவில் விலை கிடைத்துள்ளது. இது மாவட்ட விவசாயிகளுக்கு மிகுந்த மகிழ்ச்சியளித்துள்ளது. ஏல மையத்தின் தலைவர் கூறும்போது, இந்த ஆண்டு மஞ்சள் தரம் சிறப்பாக இருப்பதால் வாங்குவோர் அதிக விலை கொடுக்கத் தயாராக இருக்கிறார்கள் என்றார்.</p>
-          <div class="article-meta">
-            <span>📅 April 10, 2026</span>
-            <span class="meta-dot">·</span>
-            <span>🏷 Agriculture</span>
-          </div>
-        </article>
-        <article class="news-article">
-          <span class="article-label">Infrastructure</span>
-          <h2 class="article-title">Erode-Salem Highway — 4-lane expansion work begins</h2>
-          <p class="article-body">The long-awaited four-lane expansion of the Erode–Salem National Highway has officially begun. The ₹1,200 crore project is expected to be completed within 18 months, cutting travel time between the two cities by half. Local traders and transport companies have welcomed the development.</p>
-          <div class="article-meta">
-            <span>📅 April 8, 2026</span>
-            <span class="meta-dot">·</span>
-            <span>🏷 Infrastructure</span>
-          </div>
-        </article>
-        <article class="news-article">
-          <span class="article-label">Culture</span>
-          <h2 class="article-title">பெரியார் பிறந்த நாள் — ஈரோட்டில் பெரும் விழா</h2>
-          <p class="article-body">சமூக சீர்திருத்தவாதி தந்தை பெரியார் அவர்களின் பிறந்தநாள் விழாவை முன்னிட்டு ஈரோட்டில் பல்வேறு நிகழ்ச்சிகள் ஏற்பாடு செய்யப்பட்டுள்ளன. பள்ளி, கல்லூரி மாணவர்கள் ஊர்வலம், கட்டுரைப் போட்டிகளில் பங்கேற்றனர்.</p>
-          <div class="article-meta">
-            <span>📅 April 7, 2026</span>
-            <span class="meta-dot">·</span>
-            <span>🏷 Culture</span>
-          </div>
-        </article>
-
-      <!-- ADD MORE NEWS BELOW THIS LINE — copy the article block above -->
-
-    </main>
-
-    <aside class="sidebar">
-      <div class="sidebar-block">
-        <div class="sidebar-title">Other Regions</div>
-        
-            <a href="coimbatore.html" class="sidebar-link">
-              <span class="sidebar-link-num">01</span>
-              <span class="sidebar-link-title">🏙️ Coimbatore · கோயம்புத்தூர்</span>
-            </a>
-            <a href="tiruppur.html" class="sidebar-link">
-              <span class="sidebar-link-num">02</span>
-              <span class="sidebar-link-title">🧵 Tiruppur · திருப்பூர்</span>
-            </a>
-            <a href="salem.html" class="sidebar-link">
-              <span class="sidebar-link-num">03</span>
-              <span class="sidebar-link-title">⚙️ Salem · சேலம்</span>
-            </a>
-            <a href="namakkal.html" class="sidebar-link">
-              <span class="sidebar-link-num">04</span>
-              <span class="sidebar-link-title">🥚 Namakkal · நாமக்கல்</span>
-            </a>
-            <a href="karur.html" class="sidebar-link">
-              <span class="sidebar-link-num">05</span>
-              <span class="sidebar-link-title">🏮 Karur · கரூர்</span>
-            </a>
-            <a href="dharmapuri.html" class="sidebar-link">
-              <span class="sidebar-link-num">06</span>
-              <span class="sidebar-link-title">🌾 Dharmapuri · தர்மபுரி</span>
-            </a>
-      </div>
-      <div class="sidebar-block" style="background:var(--red-light);border-color:var(--red)">
-        <div class="sidebar-title" style="border-bottom-color:var(--red);color:var(--red-dark)">Submit News</div>
-        <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:var(--ink-mid);line-height:1.6;margin-bottom:10px">
-          Have a story from Erode? Send it to us!<br>
-          <span style="font-family:'Tiro Tamil',serif">ஈரோடு செய்தி அனுப்ப:</span>
-        </p>
-        <a href="mailto:news@thekongutimes.com" style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:var(--red);text-decoration:none">
-          ✉️ news@thekongutimes.com
-        </a>
-      </div>
-    </aside>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo">The <span>Kongu</span> Times</div>
-          <p class="footer-desc">Trusted news from the heart of Tamil Nadu's Kongu region.</p>
-          <p class="footer-desc-tamil">கொங்கு மண்டலத்தின் நம்பகமான செய்தி ஆதாரம்.</p>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Regions</div>
-          <a href="erode.html">Erode · ஈரோடு</a>
-          <a href="coimbatore.html">Coimbatore · கோயம்புத்தூர்</a>
-          <a href="tiruppur.html">Tiruppur · திருப்பூர்</a>
-          <a href="salem.html">Salem · சேலம்</a>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">More Regions</div>
-          <a href="namakkal.html">Namakkal · நாமக்கல்</a>
-          <a href="karur.html">Karur · கரூர்</a>
-          <a href="dharmapuri.html">Dharmapuri · தர்மபுரி</a>
-      <a href="../candidates-2026.html">🗳 Candidates 2026</a>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">About</div>
-          <a href="../index.html">Home</a>
-          <a href="#">Contact</a>
-          <a href="#">Submit News</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 The Kongu Times · கொங்கு டைம்ஸ். All rights reserved.</span>
-        <span>Made with ❤️ for the Kongu people</span>
-      </div>
+<div class="region-content">
+  <main>
+    <div class="sec-head" style="margin-top:0;">
+      <h2>ஈரோடு செய்திகள்</h2>
+      <span class="sec-head-tamil">Erode News — April 13, 2026</span>
+      <div class="sec-head-line"></div>
     </div>
-  </footer>
+    <article class="news-article">
+  <span class="article-label">Election 2026</span>
+  <h2 class="article-title">ஈரோடு மாவட்டம் 8 தொகுதிகளில் மும்முனைப் போட்டி — April 23 வாக்குப்பதிவு</h2>
+  <p class="article-body">தமிழக சட்டமன்றத் தேர்தல் 2026ல் ஈரோடு மாவட்டத்தில் DMK, AIADMK மற்றும் TVK கட்சிகள் 8 தொகுதிகளிலும் தீவிரமாக பிரச்சாரம் செய்கின்றன. மாவட்டத்தில் 17.4 லட்சம் வாக்காளர்கள் April 23 அன்று வாக்களிக்க உள்ளனர். ஏப்ரல் 10, 2026 அன்று வெளியிடப்பட்ட செய்திகளின்படி ஈரோடு மாவட்டம் அரசியல் களத்தில் சூடுபிடித்துள்ளது.</p>
+  <div class="article-meta"><span>📅 April 13, 2026</span><span> · </span><span>🏷 Elections</span></div>
+</article>
+<article class="news-article">
+  <span class="article-label">Infrastructure</span>
+  <h2 class="article-title">Salem–Chengapalli highway to be 6-laned — Erode Bhavani flyover green-lit</h2>
+  <p class="article-body">The 102.5 km Chengapalli–Salem stretch of NH 544 is set to be widened from 4 to 6 lanes. Over 30,000 vehicles use this corridor daily — a bottleneck for Erode, Tiruppur and Coimbatore industries. Additionally, a flyover near Bhavani in Erode district has been approved. Both projects will significantly improve supply chain logistics for the region.</p>
+  <div class="article-meta"><span>📅 April 11, 2026</span><span> · </span><span>🏷 Roads</span></div>
+</article>
+<article class="news-article">
+  <span class="article-label">Agriculture</span>
+  <h2 class="article-title">ஈரோடு மஞ்சள் சந்தை — விவசாயிகளுக்கு சாதகமான சீசன்</h2>
+  <p class="article-body">ஆசியாவின் மிகப்பெரிய மஞ்சள் ஏல மையமான ஈரோட்டில் இந்த சீசன் விவசாயிகளுக்கு சாதகமான விலை கிடைத்துள்ளது. மருந்துத் தொழில், உணவு பதப்படுத்தும் துறை ஆகியவற்றில் மஞ்சளுக்கான தேவை அதிகரித்துள்ளதால் ஏற்றுமதியும் கணிசமாக உயர்ந்துள்ளது.</p>
+  <div class="article-meta"><span>📅 April 10, 2026</span><span> · </span><span>🏷 Agriculture</span></div>
+</article>
 
-  <script src="../js/main.js"></script>
-</body>
-</html>
+  </main>
+  <aside class="sidebar">
+    <div class="sidebar-block">
+      <div class="sidebar-title">Erode Key Facts</div>
+      <a href="#" class="sidebar-link"><span class="sidebar-num">01</span><span class="sidebar-link-title"><strong>Turmeric Market</strong><br>Asia's largest — drives Erode economy</span></a>
+<a href="#" class="sidebar-link"><span class="sidebar-num">02</span><span class="sidebar-link-title"><strong>Periyar Birthplace</strong><br>Social reform legacy since 1879</span></a>
+<a href="#" class="sidebar-link"><span class="sidebar-num">03</span><span class="sidebar-link-title"><strong>8 Assembly Seats</strong><br>Erode, Bhavanisagar, Gobichettipalayam and more</span></a>
+<a href="#" class="sidebar-link"><span class="sidebar-num">04</span><span class="sidebar-link-title"><strong>NH 544 Upgrade</strong><br>6-lane expansion connecting Kongu belt</span></a>
+
+    </div>
+    <div class="sidebar-block" style="background:var(--red-light);border-color:var(--red);">
+      <div class="sidebar-title" style="border-bottom-color:var(--red);color:var(--red-dark);">Submit News</div>
+      <p style="font-family:DM Sans,sans-serif;font-size:13px;color:var(--ink-mid);line-height:1.6;margin-bottom:8px;">Have a story from Erode? Share it with us.</p>
+      <a href="mailto:news@thekongutimes.com" style="font-family:DM Sans,sans-serif;font-size:13px;font-weight:600;color:var(--red);text-decoration:none;">✉️ news@thekongutimes.com</a>
+    </div>
+    <div class="sidebar-block">
+      <div class="sidebar-title">Other Regions</div>
+      <a href="coimbatore.html" class="sidebar-link"><span class="sidebar-num">01</span><span class="sidebar-link-title">🏙️ Coimbatore · கோயம்புத்தூர்</span></a>
+<a href="tiruppur.html" class="sidebar-link"><span class="sidebar-num">02</span><span class="sidebar-link-title">🧵 Tiruppur · திருப்பூர்</span></a>
+<a href="salem.html" class="sidebar-link"><span class="sidebar-num">03</span><span class="sidebar-link-title">⚙️ Salem · சேலம்</span></a>
+<a href="namakkal.html" class="sidebar-link"><span class="sidebar-num">04</span><span class="sidebar-link-title">🥚 Namakkal · நாமக்கல்</span></a>
+<a href="karur.html" class="sidebar-link"><span class="sidebar-num">05</span><span class="sidebar-link-title">🏮 Karur · கரூர்</span></a>
+<a href="dharmapuri.html" class="sidebar-link"><span class="sidebar-num">06</span><span class="sidebar-link-title">🌾 Dharmapuri · தர்மபுரி</span></a>
+
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer"><div class="footer-inner">
+  <div class="footer-grid">
+    <div><img class="footer-logo-img" src="../kongu-times-logo.png" alt="The Kongu Times"/>
+    <p class="footer-desc">Trusted Tamil and English news from the Kongu region — updated daily.</p>
+    <p class="footer-desc-ta">கொங்கு மண்டலத்தின் நம்பகமான செய்தி ஆதாரம் — ஏப்ரல் 13, 2026.</p></div>
+    <div class="footer-col"><div class="footer-col-title">Regions</div>
+    <a href="erode.html">Erode</a><a href="coimbatore.html">Coimbatore</a>
+    <a href="tiruppur.html">Tiruppur</a><a href="salem.html">Salem</a></div>
+    <div class="footer-col"><div class="footer-col-title">More</div>
+    <a href="namakkal.html">Namakkal</a><a href="karur.html">Karur</a>
+    <a href="dharmapuri.html">Dharmapuri</a><a href="../candidates-2026.html">🗳 Candidates 2026</a></div>
+    <div class="footer-col"><div class="footer-col-title">About</div>
+    <a href="#">About Us</a><a href="#">Submit News</a><a href="#">Contact</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Kongu Times · கொங்கு டைம்ஸ். All rights reserved.</span>
+    <span>Updated: April 13, 2026</span>
+  </div>
+</div></footer></body></html>
