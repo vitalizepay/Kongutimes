@@ -1,140 +1,164 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<meta name="description" content="Erode Tamil and English news — Daily updates from the heart of the Kongu region — textile city, turmeric hub, and fast-growing industrial center."/>
-<title>Erode · ஈரோடு | The Kongu Times — Daily News</title>
-<link rel="stylesheet" href="../css/style.css"/>
+  <meta charset="UTF-8">
+  <title>Erode News</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    /* HEADER (UNCHANGED) */
+    .header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    /* TABS (UNCHANGED) */
+    .tabs {
+      display: flex;
+      background: #34495e;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 12px;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+    }
+
+    .tab:hover {
+      background: #1abc9c;
+    }
+
+    /* NEWS SECTION (ONLY THIS UPDATES) */
+    .news-container {
+      padding: 15px;
+    }
+
+    .news-card {
+      background: white;
+      margin-bottom: 10px;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .news-card h4 {
+      margin: 0 0 5px;
+      color: #2c3e50;
+    }
+
+    .news-card p {
+      margin: 0;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-<header class="site-header">
-  <div class="header-inner">
-    <a href="../index.html" class="logo-link"><img class="logo-img" src="../kongu-times-logo.png" alt="The Kongu Times"/></a>
-    <div class="header-center">
-      <div class="header-tagline">VOICE OF THE KONGU REGION · April 13, 2026</div>
-      <div class="header-tagline-ta">கொங்கு மண்டலத்தின் குரல்</div>
-    </div>
-    <div class="lang-toggle">
-      <button class="lang-btn active" onclick="this.classList.add('active');this.nextElementSibling.classList.remove('active')">தமிழ்</button>
-      <button class="lang-btn" onclick="this.classList.add('active');this.previousElementSibling.classList.remove('active')">English</button>
-    </div>
+
+  <!-- HEADER (DO NOT CHANGE) -->
+  <div class="header">
+    Erode News Portal
   </div>
-</header>
-<nav class="region-nav"><div class="region-nav-inner">
-      <a href="../index.html">🏠 Home</a>
-      <a href="../candidates-2026.html" class="candidates-link">🗳 Candidates 2026</a>
-      <a href="../regions/erode.html" class="active">Erode · ஈரோடு</a>
-      <a href="../regions/coimbatore.html">Coimbatore · கோயம்புத்தூர்</a>
-      <a href="../regions/tiruppur.html">Tiruppur · திருப்பூர்</a>
-      <a href="../regions/salem.html">Salem · சேலம்</a>
-      <a href="../regions/namakkal.html">Namakkal · நாமக்கல்</a>
-      <a href="../regions/karur.html">Karur · கரூர்</a>
-      <a href="../regions/dharmapuri.html">Dharmapuri · தர்மபுரி</a>
-    </div></nav>
-<div class="election-banner"><div class="election-banner-inner">
-  <span class="elect-badge">🗳 ELECTION 2026</span>
-  <span>தமிழ்நாடு சட்டமன்றத் தேர்தல் · April 23, 2026 · Counting: May 4</span>
-  <span class="elect-badge">234 தொகுதிகள்</span>
-</div></div>
-<div class="news-ticker"><div class="ticker-inner"><span class="ticker-label">LIVE</span><div class="ticker-scroll"><div class="ticker-track"><span class="ticker-item">Erode (East): DMK vs AIADMK vs NTK — three-cornered contest intensifies</span><span class="ticker-item">ஈரோடு மத்திய சந்தை — தினசரி மஞ்சள் விலை 10% உயர்வு</span><span class="ticker-item">Erode–Chennai Vande Bharat Express gets additional stoppage at Salem Jn</span><span class="ticker-item">Textile park in Perundurai: ₹450cr investment approved by state cabinet</span><span class="ticker-item">Erode Corporation to launch 24/7 water supply pilot in 12 wards from May 1</span><span class="ticker-item">ஈரோடு மத்திய சந்தை — தினசரி மஞ்சள் விலை 10% உயர்வு</span><span class="ticker-item">Erode–Chennai Vande Bharat Express gets additional stoppage at Salem Jn</span><span class="ticker-item">Textile park in Perundurai: ₹450cr investment approved by state cabinet</span></div></div></div></div>
 
-<div class="region-hero">
-  <div class="region-hero-inner">
-    <div class="region-breadcrumb"><a href="../index.html">Home</a> › Erode</div>
-    <span class="region-icon">🌾</span>
-    <h1 class="region-title">Erode</h1>
-    <div class="region-title-tamil">ஈரோடு</div>
-    <div class="region-tagline">Turmeric City · Textile Hub · Kongu's Gateway</div>
-    <div class="region-desc-block">
-      <p class="region-desc">Erode – the heart of the Kongu region, famous for turmeric, handlooms, and a thriving textile economy. With 5 assembly constituencies and over 12.3 lakh voters, Erode remains a decisive battleground in 2026. Daily news, ground reports, and election pulse — updated every morning.</p>
-      <p class="region-desc-ta">மஞ்சள் நகரம், ஜவுளித் துறையின் மையம். 5 சட்டமன்ற தொகுதிகள், 12.3 லட்சத்துக்கும் மேற்பட்ட வாக்காளர்கள். தினசரி செய்திகள், தேர்தல் பகுப்பாய்வு.</p>
-    </div>
-    <div style="display:flex;gap:28px;margin-top:18px;flex-wrap:wrap;">
-      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">5</div>Assembly Seats</div>
-      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">12,34,567</div>Registered Voters</div>
-      <div style="font-family:DM Sans,sans-serif;font-size:12px;color:rgba(255,255,255,.5);"><div style="font-size:24px;font-weight:700;color:var(--gold);line-height:1">Apr 23</div>Polling Date</div>
-    </div>
+  <!-- TABS (DO NOT CHANGE) -->
+  <div class="tabs">
+    <div class="tab" onclick="loadNews()">All</div>
+    <div class="tab" onclick="loadNews()">Local</div>
+    <div class="tab" onclick="loadNews()">Market</div>
+    <div class="tab" onclick="loadNews()">Weather</div>
   </div>
-</div>
 
-<div class="region-content">
-  <main>
-    <div class="sec-head" style="margin-top:0;">
-      <h2>ஈரோடு தினசரி செய்திகள்</h2>
-      <span class="sec-head-tamil">Erode Daily News — April 13, 2026</span>
-      <div class="sec-head-line"></div>
-    </div>
-    <article class="news-article">
-  <span class="article-label">Election 2026 • Exclusive</span>
-  <h2 class="article-title">Erode East battle heats up: DMK fields youth leader, AIADMK bets on ex-mayor</h2>
-  <p class="article-body">With just 10 days to go for polling, Erode East has turned into a prestige fight. DMK has fielded 32-year-old entrepreneur K. Senthil Kumar, while AIADMK’s candidate is former corporation mayor R. Manimaran. NTK’s A. Kavya is emerging as a strong third factor, especially among first-time voters. The constituency saw a heated roadshow on Sunday with thousands of cadres from both parties. Independent analysts suggest a close margin of under 8,000 votes.</p>
-  <div class="article-meta"><span>📅 April 13, 2026</span><span> · </span><span>🏷 Elections | Daily News</span></div>
-</article>
-<article class="news-article">
-  <span class="article-label">Infrastructure • Daily Brief</span>
-  <h2 class="article-title">Perundurai textile park gets ₹450 crore push – 12,000 jobs expected</h2>
-  <p class="article-body">The state government has given final clearance to the Perundurai Integrated Textile Park, a project that will span 280 acres along the Erode–Chennai highway. With an investment of ₹450 crore from the Tamil Nadu Industrial Development Corporation and private textile groups, the park is expected to generate 12,000 direct jobs. Construction will begin in June 2026, with the first phase operational by March 2028. Local power loom weavers have welcomed the move, but demand for a dedicated skill training centre remains.</p>
-  <div class="article-meta"><span>📅 April 13, 2026</span><span> · </span><span>🏷 Economy | Jobs</span></div>
-</article>
-<article class="news-article">
-  <span class="article-label">Transport • Daily Update</span>
-  <h2 class="article-title">Erode–Chennai Vande Bharat adds Salem stoppage, reduces travel time by 20 min</h2>
-  <p class="article-body">Railway authorities have announced an additional stoppage at Salem Junction for train no. 20678 (Erode–Chennai Vande Bharat Express), effective May 1, 2026. The revised schedule will see departure from Erode at 05:50, reaching Salem at 06:45, and Chennai Central at 11:10 – cutting down overall travel time by 20 minutes. The move follows repeated demands from Kongu region passenger associations. Tickets for the new timetable go live from April 18.</p>
-  <div class="article-meta"><span>📅 April 13, 2026</span><span> · </span><span>🏷 Railways | Daily Commute</span></div>
-</article>
-<article class="news-article">
-  <span class="article-label">Trade & Markets</span>
-  <h2 class="article-title">Turmeric prices surge 10% in Erode market – Nepal demand drives rally</h2>
-  <p class="article-body">The famous Erode Turmeric Market saw a sharp price increase on Monday, with the modal price touching ₹12,500 per quintal, up 10.2% from last week. Traders attribute the spike to increased export orders from Nepal and Bangladesh ahead of festive seasons. Meanwhile, arrivals dropped by 18% due to off-season conditions. The Erode Turmeric Merchants Association has urged the state to open a dedicated fumigation centre to boost value-added exports.</p>
-  <div class="article-meta"><span>📅 April 13, 2026</span><span> · </span><span>🏷 Commodities | Turmeric</span></div>
-</article>
+  <!-- ONLY THIS SECTION CHANGES -->
+  <div id="news-container" class="news-container"></div>
 
-  </main>
-  <aside class="sidebar">
-    <div class="sidebar-block">
-      <div class="sidebar-title">Erode Daily Essentials</div>
-      <a href="#" class="sidebar-link"><span class="sidebar-num">🌶️</span><span class="sidebar-link-title"><strong>Turmeric Market Rate</strong><br>₹12,500/quintal ▲ +10%</span></a>
-<a href="#" class="sidebar-link"><span class="sidebar-num">🏭</span><span class="sidebar-link-title"><strong>Perundurai Textile Park</strong><br>₹450cr approved · 12k jobs</span></a>
-<a href="#" class="sidebar-link"><span class="sidebar-num">🚆</span><span class="sidebar-link-title"><strong>Vande Bharat Update</strong><br>Salem stoppage from May 1</span></a>
-<a href="#" class="sidebar-link"><span class="sidebar-num">🗳️</span><span class="sidebar-link-title"><strong>Erode East Turnout</strong><br>68% expected on Apr 23</span></a>
+  <script>
+    const erodeNews = [
+      {title:"Rain in Erode",summary:"Light showers reported in parts of Erode."},
+      {title:"Market Prices Rise",summary:"Turmeric prices increase in Erode market."},
+      {title:"New Road Work",summary:"Road repair work begins near Perundurai."},
+      {title:"School Event",summary:"Annual day celebrated in local school."},
+      {title:"Water Supply Issue",summary:"Temporary disruption in water supply reported."},
+      {title:"Temple Festival",summary:"Local temple festival attracts large crowd."},
+      {title:"Traffic Update",summary:"Heavy traffic near Erode bus stand."},
+      {title:"Health Camp",summary:"Free medical camp organized in Erode."},
+      {title:"Power Cut Notice",summary:"Scheduled power cut announced."},
+      {title:"Farmer Support",summary:"Government announces support for farmers."},
 
-    </div>
-    <div class="sidebar-block" style="background:var(--red-light);border-color:var(--red);">
-      <div class="sidebar-title" style="border-bottom-color:var(--red);color:var(--red-dark);">Send Erode News Tip</div>
-      <p style="font-family:DM Sans,sans-serif;font-size:13px;color:var(--ink-mid);line-height:1.6;margin-bottom:8px;">See something newsworthy in Erode? Share with our bureau directly.</p>
-      <a href="mailto:erode@thekongutimes.com" style="font-family:DM Sans,sans-serif;font-size:13px;font-weight:600;color:var(--red);text-decoration:none;">✉️ erode@thekongutimes.com</a>
-    </div>
-    <div class="sidebar-block">
-      <div class="sidebar-title">Other Kongu Regions</div>
-      <a href="coimbatore.html" class="sidebar-link"><span class="sidebar-num">01</span><span class="sidebar-link-title">🏙️ Coimbatore · கோயம்புத்தூர்</span></a>
-<a href="tiruppur.html" class="sidebar-link"><span class="sidebar-num">02</span><span class="sidebar-link-title">🧵 Tiruppur · திருப்பூர்</span></a>
-<a href="salem.html" class="sidebar-link"><span class="sidebar-num">03</span><span class="sidebar-link-title">⚙️ Salem · சேலம்</span></a>
-<a href="namakkal.html" class="sidebar-link"><span class="sidebar-num">04</span><span class="sidebar-link-title">🥚 Namakkal · நாமக்கல்</span></a>
-<a href="karur.html" class="sidebar-link"><span class="sidebar-num">05</span><span class="sidebar-link-title">🏮 Karur · கரூர்</span></a>
-<a href="dharmapuri.html" class="sidebar-link"><span class="sidebar-num">06</span><span class="sidebar-link-title">🌾 Dharmapuri · தர்மபுரி</span></a>
+      {title:"New Bus Route",summary:"New bus route introduced."},
+      {title:"Police Alert",summary:"Police increase patrolling."},
+      {title:"Library Opening",summary:"New library inaugurated."},
+      {title:"Gold Prices Drop",summary:"Gold prices fall slightly."},
+      {title:"Job Fair",summary:"Job fair this weekend."},
+      {title:"Rain Forecast",summary:"More rain expected this week."},
+      {title:"Sports Meet",summary:"District sports meet begins."},
+      {title:"Cleanup Drive",summary:"City cleanup drive started."},
+      {title:"New Shops",summary:"New shops open in city."},
+      {title:"College Seminar",summary:"Seminar held in college."},
 
-    </div>
-  </aside>
-</div>
+      {title:"Traffic Diversion",summary:"Diversions due to road work."},
+      {title:"Milk Price Hike",summary:"Milk price increased."},
+      {title:"Water Tank Repair",summary:"Repair work ongoing."},
+      {title:"Festival Security",summary:"Extra police deployed."},
+      {title:"Bus Delay",summary:"Buses delayed due to rain."},
+      {title:"Farmer Protest",summary:"Farmers protest price issues."},
+      {title:"New ATM",summary:"ATM installed in main road."},
+      {title:"Hospital Upgrade",summary:"New equipment added."},
+      {title:"Tree Plantation",summary:"Trees planted in schools."},
+      {title:"Petrol Price",summary:"Petrol price unchanged."},
 
-<footer class="site-footer"><div class="footer-inner">
-  <div class="footer-grid">
-    <div><img class="footer-logo-img" src="../kongu-times-logo.png" alt="The Kongu Times"/>
-    <p class="footer-desc">Trusted Tamil and English news from the Kongu region — updated daily with ground reports from Erode, Coimbatore, Tiruppur and beyond.</p>
-    <p class="footer-desc-ta">கொங்கு மண்டலத்தின் நம்பகமான செய்தி ஆதாரம் — ஏப்ரல் 13, 2026. ஈரோடு தினசரி செய்திகள்.</p></div>
-    <div class="footer-col"><div class="footer-col-title">Regions</div>
-    <a href="erode.html">Erode (Daily News)</a><a href="coimbatore.html">Coimbatore</a>
-    <a href="tiruppur.html">Tiruppur</a><a href="salem.html">Salem</a></div>
-    <div class="footer-col"><div class="footer-col-title">More</div>
-    <a href="namakkal.html">Namakkal</a><a href="karur.html">Karur</a>
-    <a href="dharmapuri.html">Dharmapuri</a><a href="../candidates-2026.html">🗳 Candidates 2026</a></div>
-    <div class="footer-col"><div class="footer-col-title">About</div>
-    <a href="#">About Us</a><a href="#">Submit News</a><a href="#">Contact</a></div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 The Kongu Times · கொங்கு டைம்ஸ். Erode daily news edition.</span>
-    <span>Updated: April 13, 2026 · 07:15 IST</span>
-  </div>
-</div></footer></body>
+      {title:"Metro Proposal",summary:"Metro discussed for future."},
+      {title:"New Park",summary:"Park opened for public."},
+      {title:"Bus Pass Update",summary:"Online renewal available."},
+      {title:"Heavy Rain Alert",summary:"Alert issued for rain."},
+      {title:"Railway Update",summary:"Train timings changed."},
+      {title:"Market Crowd",summary:"Heavy crowd in market."},
+      {title:"Food Safety Check",summary:"Hotels inspected."},
+      {title:"Online Services",summary:"Services now online."},
+      {title:"Street Lights",summary:"LED lights installed."},
+      {title:"Bank Holiday",summary:"Banks closed tomorrow."},
+
+      {title:"New Bridge Plan",summary:"Bridge plan approved."},
+      {title:"School Reopening",summary:"Schools reopen."},
+      {title:"Water Level Rise",summary:"Dam water level rises."},
+      {title:"Bus Stand Upgrade",summary:"Renovation starts."},
+      {title:"Taxi Strike",summary:"Drivers announce strike."},
+      {title:"Electric Bus Trial",summary:"Electric buses tested."},
+      {title:"Health Alert",summary:"Dengue awareness drive."},
+      {title:"Road Accident",summary:"Minor accident reported."},
+      {title:"New Course",summary:"College adds new course."},
+      {title:"Festival Holiday",summary:"Holiday declared."}
+    ];
+
+    function loadNews() {
+      const container = document.getElementById("news-container");
+      container.innerHTML = "";
+
+      erodeNews.forEach(news => {
+        const div = document.createElement("div");
+        div.className = "news-card";
+
+        div.innerHTML = `
+          <h4>${news.title}</h4>
+          <p>${news.summary}</p>
+        `;
+
+        container.appendChild(div);
+      });
+    }
+
+    // Load news on page load
+    window.onload = loadNews;
+  </script>
+
+</body>
 </html>
