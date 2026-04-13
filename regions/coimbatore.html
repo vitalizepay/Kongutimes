@@ -3,213 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kongu Times - Coimbatore</title>
+<title>Kongu Times</title>
 
-<style>
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-
-/* BODY */
-body {
-  background: #1a0033;
-  color: white;
-}
-
-/* TOP HEADER */
-.top-bar {
-  background: #2b004d;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-box {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(45deg, orange, pink);
-  border-radius: 8px;
-}
-
-.lang-switch button {
-  margin-left: 10px;
-  padding: 6px 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.lang-switch .active {
-  background: gold;
-}
-
-/* NAVBAR */
-.navbar {
-  background: #3d0066;
-  padding: 12px 40px;
-  display: flex;
-  gap: 25px;
-  overflow-x: auto;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.navbar a.active {
-  border-bottom: 3px solid orange;
-  padding-bottom: 5px;
-}
-
-/* ELECTION BAR */
-.election-bar {
-  background: linear-gradient(90deg, #ff4d4d, #ff944d);
-  padding: 10px 40px;
-  font-weight: bold;
-}
-
-/* LIVE BAR */
-.live-bar {
-  background: #ffcc00;
-  color: black;
-  padding: 8px 40px;
-  font-size: 14px;
-}
-
-/* HERO SECTION */
-.hero {
-  padding: 60px 40px;
-}
-
-.breadcrumb {
-  font-size: 14px;
-  color: #aaa;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-size: 64px;
-  font-weight: 700;
-}
-
-.hero h2 {
-  color: gold;
-  margin-top: 10px;
-}
-
-.tagline {
-  margin-top: 20px;
-  color: #ccc;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-.description {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-  .hero h1 {
-    font-size: 40px;
-  }
-
-  .description {
-    grid-template-columns: 1fr;
-  }
-
-  .navbar {
-    gap: 15px;
-  }
-}
-</style>
-
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- TOP HEADER -->
-<div class="top-bar">
-  <div class="logo">
-    <div class="logo-box"></div>
-    <h3>The Kongu Times</h3>
+<!-- HEADER -->
+<header class="header">
+  <div class="container flex space-between">
+    <div class="logo">Kongu Times</div>
+
+    <div class="lang-switch">
+      <button>தமிழ்</button>
+      <button class="active">English</button>
+    </div>
   </div>
+</header>
 
-  <div class="lang-switch">
-    <button class="active">தமிழ்</button>
-    <button>English</button>
+<!-- NAVIGATION -->
+<nav class="nav">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/candidates">Candidates 2026</a></li>
+      <li><a href="/coimbatore">Coimbatore</a></li>
+      <li><a href="/tiruppur">Tiruppur</a></li>
+      <li><a href="/salem">Salem</a></li>
+    </ul>
   </div>
-</div>
+</nav>
 
-<!-- NAVBAR -->
-<div class="navbar">
-  <a href="#">Home</a>
-  <a href="#" class="active">Candidates 2026</a>
-  <a href="#">Erode</a>
-  <a href="#">Coimbatore</a>
-  <a href="#">Tiruppur</a>
-  <a href="#">Salem</a>
-  <a href="#">Namakkal</a>
-</div>
-
-<!-- ELECTION BAR -->
-<div class="election-bar">
-  🗳️ Election 2026 — April 23, 2026 | Counting: May 4 | 234 Constituencies
-</div>
-
-<!-- LIVE BAR -->
-<div class="live-bar">
-  🔴 LIVE: Coimbatore South: DMK vs AIADMK vs TVK — Major 2026 battle
-</div>
-
-<!-- HERO SECTION -->
-<div class="hero">
-
-  <div class="breadcrumb">
-    Home > Coimbatore
+<!-- BREAKING / LIVE -->
+<section class="breaking">
+  <div class="container">
+    <span class="live">LIVE</span>
+    <marquee id="breaking-news">
+      Loading latest updates...
+    </marquee>
   </div>
+</section>
 
-  <h1>Coimbatore</h1>
-  <h2>கோயம்புத்தூர்</h2>
+<!-- HERO NEWS -->
+<section class="hero-news container" id="hero-news">
+  <!-- dynamically injected main headline -->
+</section>
 
-  <div class="tagline">
-    MANCHESTER OF SOUTH INDIA • தொழில்துறையின் மான்செஸ்டர்
+<!-- MAIN CONTENT -->
+<main class="container main-grid">
+
+  <!-- LEFT COLUMN (News List) -->
+  <section class="news-list" id="news-list">
+    <!-- dynamic news cards -->
+  </section>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- Trending -->
+    <div class="widget">
+      <h3>Trending</h3>
+      <ul id="trending-list"></ul>
+    </div>
+
+    <!-- Election Widget -->
+    <div class="widget election">
+      <h3>Election 2026</h3>
+      <p>Polling: Apr 23</p>
+      <p>Counting: May 4</p>
+    </div>
+
+  </aside>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Kongu Times</p>
   </div>
+</footer>
 
-  <div class="description">
-    <p>
-      Tamil Nadu's second largest city and an industrial powerhouse —
-      textiles, engineering, IT, and a growing startup ecosystem.
-      With 11 assembly constituencies and over 26 lakh voters,
-      Coimbatore plays a key role in state politics.
-    </p>
+<!-- JS FOR DYNAMIC CONTENT -->
+<script>
+/* Example dynamic data (replace with API later) */
 
-    <p>
-      தமிழ்நாட்டின் இரண்டாவது பெரிய நகரம்.
-      தொழில், பொறியியல், தகவல் தொழில்நுட்பம் ஆகிய துறைகளில் முன்னணி.
-      11 தொகுதிகள் கொண்ட முக்கிய நகரமாகும்.
-    </p>
+const newsData = [
+  {
+    title: "Coimbatore South: DMK vs AIADMK vs TVK",
+    desc: "Major 2026 political battle intensifies",
+    image: "https://via.placeholder.com/400"
+  },
+  {
+    title: "Textile sector growth in Coimbatore",
+    desc: "Exports see 12% rise this quarter",
+    image: "https://via.placeholder.com/400"
+  }
+];
+
+const trending = [
+  "Election 2026",
+  "Coimbatore News",
+  "DMK vs AIADMK",
+  "Tamil Nadu Politics"
+];
+
+/* HERO */
+document.getElementById("hero-news").innerHTML = `
+  <div class="hero-card">
+    <img src="${newsData[0].image}">
+    <h1>${newsData[0].title}</h1>
+    <p>${newsData[0].desc}</p>
   </div>
+`;
 
-</div>
+/* NEWS LIST */
+const newsList = document.getElementById("news-list");
+
+newsData.forEach(news => {
+  newsList.innerHTML += `
+    <div class="news-card">
+      <img src="${news.image}">
+      <div>
+        <h3>${news.title}</h3>
+        <p>${news.desc}</p>
+      </div>
+    </div>
+  `;
+});
+
+/* TRENDING */
+const trendingList = document.getElementById("trending-list");
+
+trending.forEach(item => {
+  trendingList.innerHTML += `<li>${item}</li>`;
+});
+
+/* BREAKING */
+document.getElementById("breaking-news").innerText =
+  "Coimbatore Election heats up • New alliances forming • Live updates coming...";
+</script>
 
 </body>
 </html>
