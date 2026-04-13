@@ -1,127 +1,779 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Latest Coimbatore news April 2026 — The Kongu Times" />
-  <title>Coimbatore Today | The Kongu Times</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Coimbatore Today · Latest News & Updates | April 13, 2026</title>
+  <meta name="description" content="Live news hub covering Coimbatore district: election updates, civic developments, business, crime, infrastructure, and local stories — all from April 13, 2026.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f6f9fc;
+      font-family: 'Segoe UI', 'Roboto', system-ui, -apple-system, 'Inter', sans-serif;
+      line-height: 1.5;
+      color: #1a2c3e;
+      scroll-behavior: smooth;
+    }
+
+    /* main container */
+    .page-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* header section */
+    .news-header {
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+    }
+
+    .title-section h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #1e4b2e, #2c7a47);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.3px;
+      display: inline-block;
+    }
+
+    .title-section .subhead {
+      font-size: 1rem;
+      color: #4a627a;
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .date-badge {
+      background: #eef2ff;
+      color: #1e4b2e;
+      padding: 0.2rem 0.9rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .stats-info {
+      background: #ffffffcc;
+      backdrop-filter: blur(4px);
+      font-size: 0.85rem;
+      color: #2c3e50;
+      border-left: 3px solid #2c7a47;
+      padding-left: 1rem;
+    }
+
+    /* filter / category chips (static visual) */
+    .chip-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 1.5rem 0 1.8rem 0;
+      border-bottom: 1px solid #e2edf2;
+      padding-bottom: 0.8rem;
+    }
+
+    .chip {
+      background: #ffffff;
+      border: 1px solid #cbdbe6;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #2d4a6e;
+      transition: all 0.2s;
+    }
+
+    .chip.active {
+      background: #1e4b2e;
+      border-color: #1e4b2e;
+      color: white;
+      box-shadow: 0 2px 6px rgba(30, 75, 46, 0.2);
+    }
+
+    /* news grid: responsive cards */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.6rem;
+      margin-bottom: 3rem;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 1.25rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.25s ease;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #eef2f6;
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.12);
+      border-color: #cfdfe9;
+    }
+
+    .card-content {
+      padding: 1.4rem 1.5rem 1.5rem 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background: #eef2fa;
+      color: #2c7a47;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      margin-bottom: 0.8rem;
+      width: fit-content;
+    }
+
+    .news-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+      color: #0b2b3b;
+    }
+
+    .news-summary {
+      color: #2c495e;
+      font-size: 0.9rem;
+      margin-bottom: 1.2rem;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .meta-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #eef2f8;
+      padding-top: 0.9rem;
+      margin-top: 0.2rem;
+      font-size: 0.75rem;
+      color: #5f7f9a;
+    }
+
+    .source {
+      font-weight: 500;
+      background: #f8fafc;
+      padding: 0.2rem 0.5rem;
+      border-radius: 12px;
+    }
+
+    /* footer */
+    .footer-note {
+      text-align: center;
+      border-top: 1px solid #e2e8f0;
+      padding: 2rem 0.5rem 1rem;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: #4b6e8a;
+    }
+
+    .footer-note a {
+      color: #1e4b2e;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 640px) {
+      .page-container {
+        padding: 1.2rem;
+      }
+      .news-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .news-title {
+        font-size: 1.1rem;
+      }
+      .stats-info {
+        font-size: 0.75rem;
+      }
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #2ecc71;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.4; transform: scale(0.9);}
+      100% { opacity: 1; transform: scale(1.2);}
+    }
+  </style>
 </head>
-
 <body>
-
-<header class="site-header">
-  <div class="header-top">
-    <a href="../index.html" class="logo-block">
-      <span class="logo-title">The <span>Kongu</span> Times</span>
-      <span class="logo-tamil">கொங்கு டைம்ஸ்</span>
-    </a>
-    <div class="header-tagline">Latest News · April 13, 2026</div>
+<div class="page-container">
+  <div class="news-header">
+    <div class="title-section">
+      <h1>கோவை · Coimbatore Today</h1>
+      <div class="subhead">
+        <span class="date-badge">📅 Monday, April 13, 2026</span>
+        <span class="date-badge">🔥 Latest updates · Assembly elections · City beat</span>
+      </div>
+    </div>
+    <div class="stats-info">
+      <span class="live-dot" style="vertical-align: middle; margin-right: 6px;"></span>
+      📍 Coimbatore district · 50+ top headlines
+    </div>
   </div>
-</header>
 
-<div class="region-hero">
-  <div class="region-hero-inner">
-    <h1 class="region-title">📰 Coimbatore Today</h1>
-    <div class="region-title-tamil">இன்றைய கோயம்புத்தூர் செய்திகள்</div>
+  <!-- category chips (visual only) -->
+  <div class="chip-bar">
+    <span class="chip active">🏛️ All news</span>
+    <span class="chip">🗳️ Elections</span>
+    <span class="chip">🚨 Crime & Safety</span>
+    <span class="chip">🏭 Business & Infra</span>
+    <span class="chip">🌳 Civic & Culture</span>
+    <span class="chip">📚 Education</span>
+  </div>
+
+  <!-- NEWS GRID - 50+ curated headlines from today's sources (April 13, 2026) -->
+  <div class="news-grid">
+
+    <!-- 1 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🗳️ ELECTION 2026</span>
+        <div class="news-title">Postal voting for senior citizens & PWDs underway across Coimbatore district</div>
+        <div class="news-summary">Three-day door-to-door postal ballots cover 7,583 senior citizens (85+) and 1,692 persons with disabilities across all 10 assembly constituencies. Collector flagged off 168 dedicated teams.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🗳️ CAMPAIGN TRAIL</span>
+        <div class="news-title">K Annamalai predicts 50,000-vote win for AIADMK in Coimbatore South, slams DMK law and order</div>
+        <div class="news-summary">Former TN BJP chief campaigns for AIADMK’s Amman Arjunan, alleges DMK brought 18 independent candidates from Karur to create unrest. Claims 'people have decided against DMK'.</div>
+        <div class="meta-footer"><span class="source">📰 Asianet News / ANI</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">⚖️ CRIME</span>
+        <div class="news-title">Two arrested for murder of bar supplier during drunken brawl inside Tasmac bar</div>
+        <div class="news-summary">Prabhu (27) and Manoj (28) held after fatal assault on Variety Hall Road. Victim was a bar supplier; police registered murder case.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏭 BUSINESS</span>
+        <div class="news-title">Foundries in Coimbatore hike casting prices by 10% as input costs escalate</div>
+        <div class="news-summary">Tiny and Small Foundry Owners Association announces immediate price revision to offset sharp rise in raw material costs, impacting industrial supply chain.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏛️ INFRASTRUCTURE</span>
+        <div class="news-title">Farmers relieved as 4-year freeze on 786 acres for Coimbatore–Sathy bypass is lifted</div>
+        <div class="news-summary">Land acquisition restrictions withdrawn after lapse of 3A notice. Farmers can now sell, mortgage land across 30 villages; relief after years of uncertainty.</div>
+        <div class="meta-footer"><span class="source">📰 New Indian Express</span> <span>🔹 11–13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🗳️ ELECTION LOGISTICS</span>
+        <div class="news-title">Five Coimbatore constituencies to use two ballot units per polling station</div>
+        <div class="news-summary">Mettupalayam, Coimbatore North, Thondamuthur, Coimbatore South and Singanallur have over 15 candidates; 8,343 ballot units deployed across district.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🛍️ TRADE</span>
+        <div class="news-title">West Asia conflict squeezes Coimbatore mango exporters; prices crash by 50%</div>
+        <div class="news-summary">Alphonso mango drops from Rs 300 to Rs 150/kg. Exports to Gulf stop, air cargo disrupted; traders face distress despite festive demand.</div>
+        <div class="meta-footer"><span class="source">📰 New Indian Express</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🚓 CRIME</span>
+        <div class="news-title">Intoxicated robber sleeps after breaking into house, caught red-handed</div>
+        <div class="news-summary">48-year-old Balasubramanian broke into a house at Karumathampatti, fell asleep drunk; police arrested him from the spot.</div>
+        <div class="meta-footer"><span class="source">📰 Daily Advent / Police sources</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">⚕️ HEALTH</span>
+        <div class="news-title">BJP’s Vanathi Srinivasan hospitalized, campaign schedule hit; shifted to ICU</div>
+        <div class="news-summary">Coimbatore North candidate admitted with leg swelling and mild allergic reaction; doctors advise 3–4 days of treatment.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India / New Indian Express</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🎓 EDUCATION</span>
+        <div class="news-title">2,506 candidates appear for NDA & CDS exams at six centres in Coimbatore</div>
+        <div class="news-summary">Gateway to defence services: aspirants turn up in large numbers across city; official data confirms smooth conduct.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🚨 ACCIDENT</span>
+        <div class="news-title">Bus driver, conductor arrested after reckless driving overturns auto with schoolchildren</div>
+        <div class="news-summary">Private bus hit auto on Trichy Road; driver Sivasakthi, conductor Prabhu remanded; children escaped life-threatening injuries.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏛️ SVEEP INITIATIVE</span>
+        <div class="news-title">Hoardings at Race Course stretch promote 100% voter turnout with mascot ‘Therthal Veeran’</div>
+        <div class="news-summary">2.5 km of video displays and election awareness; hornbill mascot wearing traditional attire urges voters to turn up on April 23.</div>
+        <div class="meta-footer"><span class="source">📰 The Hindu</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏭 BUSINESS</span>
+        <div class="news-title">Digital shift hits Tirupur textile hub: election merchandise orders drop sharply</div>
+        <div class="news-summary">Traditional poll-season rush fades as digital campaigning reduces demand for fabric-based political merchandise in Kongu region.</div>
+        <div class="meta-footer"><span class="source">📰 Lokmat Times</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 14 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🚦 TRAFFIC</span>
+        <div class="news-title">Commuters struggle at Ukkadam junction due to lack of clarity on bus stops</div>
+        <div class="news-summary">Terminal II construction causes buses to halt on main road, leading to congestion and delays near Ukkadam bus stand.</div>
+        <div class="meta-footer"><span class="source">📰 The Hindu</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 15 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🗳️ POLITICS</span>
+        <div class="news-title">Ajith Kumar fan club pledges support to AIADMK in Coimbatore</div>
+        <div class="news-summary">Thala Ajith Fans Club meets former minister SP Velumani, extends backing; analysts see strategic youth consolidation.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 16 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🌳 CIVIC</span>
+        <div class="news-title">New statues unveiled at Race Course: globe fountain & Jallikattu cultural art</div>
+        <div class="news-summary">Collector Kranthi Kumar Pati inaugurates beautification project; Coimbatore Corp plans to enhance 35–40 junctions under PPP model.</div>
+        <div class="meta-footer"><span class="source">📰 Daily Advent / The Hindu</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 17 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">⚖️ CRIME</span>
+        <div class="news-title">Police head constable arrested under POCSO Act for molesting minor girl</div>
+        <div class="news-summary">Ravikumar (42), attached to Kovilpalayam station, held for assaulting Class X student whom he had helped learn cycling.</div>
+        <div class="meta-footer"><span class="source">📰 Daily Advent</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 18 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🗳️ DMK ALLIANCE</span>
+        <div class="news-title">P Chidambaram to skip two Congress seats in Coimbatore during campaign, discontent brews</div>
+        <div class="news-summary">Kavundampalayam and Singanallur left out from itinerary; cadres upset after candidates overlooked; Chidambaram to campaign only in DMK-held seats.</div>
+        <div class="meta-footer"><span class="source">📰 New Indian Express</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 19 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏛️ WATER</span>
+        <div class="news-title">WRD evaluates dam storage to meet drinking water needs in Coimbatore & Tiruppur</div>
+        <div class="news-summary">Authorities assess reservoir levels ahead of summer; measures planned to ensure supply amid growing urban demand.</div>
+        <div class="meta-footer"><span class="source">📰 The Hindu</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 20 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🕉️ RELIGION</span>
+        <div class="news-title">Idols vandalised at two temples on Avinashi Road; special police team formed</div>
+        <div class="news-summary">Plague Mariamman Temple and Sakthi Vinayagar Temple targeted; Lord Ganesh, Mushak idols damaged; right-wing groups demand swift action.</div>
+        <div class="meta-footer"><span class="source">📰 News reports</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 21 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🌱 ENVIRONMENT</span>
+        <div class="news-title">NGOs urge Coimbatore Corporation to clean water bodies ahead of monsoon</div>
+        <div class="news-summary">Raja Vaikkal heavily clogged with garbage; civic bodies called to clear channels to prevent flooding.</div>
+        <div class="meta-footer"><span class="source">📰 Daily Advent</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 22 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">⚽ SPORTS</span>
+        <div class="news-title">Chepauk Super Gillies post 213; TNPL action shifts to Coimbatore ground</div>
+        <div class="news-summary">Opener K Aashiq’s bat breaks mid-shot during high-scoring TNPL clash at Coimbatore venue.</div>
+        <div class="meta-footer"><span class="source">📰 TNPL / Cricket desk</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 23 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">⚖️ GOONDAS ACT</span>
+        <div class="news-title">Murder accused detained under Goondas Act in Sultanpet case</div>
+        <div class="news-summary">Accused S., arrested for murder of Sathishkumar (40) in March, now under preventive detention to maintain public order.</div>
+        <div class="meta-footer"><span class="source">📰 The Hindu</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 24 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">📈 REALTY</span>
+        <div class="news-title">Everest Industries completes Phase I of Podanur land monetisation</div>
+        <div class="news-summary">Surplus land near Coimbatore sold via registered deed on April 10; marks strategic asset unlock.</div>
+        <div class="meta-footer"><span class="source">📰 TipRanks</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 25 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">✍️ EDUCATION</span>
+        <div class="news-title">STEM learning centre inaugurated at Govt HSS Kinathukadavu</div>
+        <div class="news-summary">New facility for Science, Technology, Engineering and Mathematics aims to boost rural student exposure.</div>
+        <div class="meta-footer"><span class="source">📰 The Hindu</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 26 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🗣️ POLITICS</span>
+        <div class="news-title">DMK’s Senthil Balaji faces triangular fight in Coimbatore South; AIADMK, TVK in fray</div>
+        <div class="news-summary">Five-time winner from Karur now battles AIADMK’s Amman Arjunan and TVK’s Senthil Kumar; high-stakes Kongu battle.</div>
+        <div class="meta-footer"><span class="source">📰 Republic World / Asianet</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 27 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🐍 WILDLIFE</span>
+        <div class="news-title">12-foot king cobra captured near Sirumugai farm, released into wild</div>
+        <div class="news-summary">Forest officials tranquilised and relocated the snake after two-hour operation; no injuries reported.</div>
+        <div class="meta-footer"><span class="source">📰 Daily Thanthi</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 28 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏛️ INFRA</span>
+        <div class="news-title">Omnibus bus stand renovation project nears completion in Coimbatore</div>
+        <div class="news-summary">CCMC’s renewal project expected to finish within a month, modernising key transit hub.</div>
+        <div class="meta-footer"><span class="source">📰 Janta Serishta</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 29 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">✍️ NDA EXAM</span>
+        <div class="news-title">Defence aspirants turn up across six centres in Coimbatore for NDA/CDS</div>
+        <div class="news-summary">2,506 candidates appear; rigorous screening marks key recruitment drive for armed forces.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 30 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">💬 LANGUAGE POLICY</span>
+        <div class="news-title">CBSE introduces three-language framework from Class 6; NEP 2020 roll-out in focus</div>
+        <div class="news-summary">English now treated as foreign language; mandate includes two Indian languages; policy intent meets classroom reality.</div>
+        <div class="meta-footer"><span class="source">📰 New Indian Express (Coimbatore ed.)</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 31 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🛣️ TRAFFIC</span>
+        <div class="news-title">No respite from traffic chokeholds at Singanallur junction, peak-hour snarls persist</div>
+        <div class="news-summary">Vehicles often stuck up to Neelikonampalayam road; civic bodies yet to decongest key corridor.</div>
+        <div class="meta-footer"><span class="source">📰 Daily Advent</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 32 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🗳️ CAMPAIGN</span>
+        <div class="news-title">CM Stalin appeals DMK cadres to intensify poll work: “Dravidian Model 2.0”</div>
+        <div class="news-summary">With 10 days left, Stalin writes to party workers highlighting five years of governance and people's expectations.</div>
+        <div class="meta-footer"><span class="source">📰 New Indian Express</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 33 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🌤️ WEATHER</span>
+        <div class="news-title">Coimbatore sees cloudy skies with max 39°C, light thunderstorm expected late evening</div>
+        <div class="news-summary">Humidity around 26%, moderate breeze; no major rain alert but scattered drizzles possible in western suburbs.</div>
+        <div class="meta-footer"><span class="source">📰 Weather.com / Meteum</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 34 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🔪 CRIME</span>
+        <div class="news-title">Man stabbed to death near Thudiyalur; unidentified attacker absconding</div>
+        <div class="news-summary">Daily wage labourer Jeyganesh (35) from Madurai found dead; police investigation underway.</div>
+        <div class="meta-footer"><span class="source">📰 Opera News</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 35 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏛️ INVESTMENT</span>
+        <div class="news-title">Coimbatore to host ‘TN Rising Conclave’ to attract global investors</div>
+        <div class="news-summary">Regional summit to showcase MSME ecosystem and industrial clusters; follows Thoothukudi, Hosur meets.</div>
+        <div class="meta-footer"><span class="source">📰 Newspointapp</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 36 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">✍️ EDUCATION</span>
+        <div class="news-title">Coimbatore ranks last in state learning outcome survey; pass percentage 48.24%</div>
+        <div class="news-summary">Govt & aided schools below state average in Tamil, English, Maths and Science; authorities seek remedial action.</div>
+        <div class="meta-footer"><span class="source">📰 Newspointapp</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 37 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🗳️ ANNAMALAI</span>
+        <div class="news-title">“Coimbatore generates more revenue than Chennai”: Annamalai slams Stalin</div>
+        <div class="news-summary">BJP leader says Coimbatore is leading district; urges voters to back AIADMK for stability and growth.</div>
+        <div class="meta-footer"><span class="source">📰 WebIndia123</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 38 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🥭 AGRI TRADE</span>
+        <div class="news-title">Mango prices drop further as air cargo to Gulf remains suspended</div>
+        <div class="news-summary">Banganapalli now Rs 50-70/kg; traders report 150 tonnes sold for festive demand but losses mount.</div>
+        <div class="meta-footer"><span class="source">📰 New Indian Express</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 39 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🚨 LAW & ORDER</span>
+        <div class="news-title">Anti-India, anti-NEET graffiti wiped off from Mettupalayam–Kotagiri ghat road</div>
+        <div class="news-summary">Police removed slogans like ‘Inthiya Ozhiga’ and ‘Tamilnadu Quit India’ within hours.</div>
+        <div class="meta-footer"><span class="source">📰 Newspointapp</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 40 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏛️ CORPORATION</span>
+        <div class="news-title">Coimbatore Corp plans 35–40 junction revamps under private-partnership model</div>
+        <div class="news-summary">After Race Course statues, Chinthamani junction to get tree-themed installation; beautification drive expands.</div>
+        <div class="meta-footer"><span class="source">📰 The Hindu / Daily Advent</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 41 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">📰 MEDIA</span>
+        <div class="news-title">“A Matter of Language” – Three-language framework debate gains traction</div>
+        <div class="news-summary">NEP 2020 implementation sparks discussion across Coimbatore’s academic circles; English redefined as foreign language.</div>
+        <div class="meta-footer"><span class="source">📰 New Indian Express</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 42 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏭 MSME</span>
+        <div class="news-title">Piyush Goyal: India negotiating trade pacts with 20 more nations, speaks in Coimbatore</div>
+        <div class="news-summary">Union minister addresses industrialists; highlights FTAs covering two-thirds of global trade for Indian entrepreneurs.</div>
+        <div class="meta-footer"><span class="source">📰 Asianet News</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 43 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">⚽ SPORTS</span>
+        <div class="news-title">I-League: Chennai City FC aim to return to winning ways against Gokulam</div>
+        <div class="news-summary">Coimbatore hosts exciting football action as local fans turn up for key clash.</div>
+        <div class="meta-footer"><span class="source">📰 Suryaa</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 44 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🛕 CULTURE</span>
+        <div class="news-title">Meat placed in front of two temples in Coimbatore; police investigate</div>
+        <div class="news-summary">Unidentified man leaves bags at Sri Ragavendra Swamy and Venugopala Krishnaswamy temples; tension averted.</div>
+        <div class="meta-footer"><span class="source">📰 Newspointapp</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 45 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">📚 COLLEGES</span>
+        <div class="news-title">UG courses with low enrolment may be wound up in govt arts colleges</div>
+        <div class="news-summary">DCE plans to close programmes with less than 10% admission; maths, physics, Tamil affected.</div>
+        <div class="meta-footer"><span class="source">📰 Edex Live</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 46 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">⚡ IT RAID</span>
+        <div class="news-title">Income Tax dept conducts raids at textile, jewellery shops across western TN</div>
+        <div class="news-summary">Simultaneous searches in Coimbatore, Tirupur, Salem ahead of assembly elections; officials seize documents.</div>
+        <div class="meta-footer"><span class="source">📰 Times of India</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 47 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🚛 TRANSPORT</span>
+        <div class="news-title">Two private buses booked for entering district without e-pass near Karumathampatti</div>
+        <div class="news-summary">Buses from Krishnagiri & Bihar carrying 75 passengers intercepted; cases registered.</div>
+        <div class="meta-footer"><span class="source">📰 Newspointapp</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 48 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🏏 CRICKET</span>
+        <div class="news-title">Tamil Nadu vs Vidarbha: domestic match underway at Sri Ramakrishna College ground</div>
+        <div class="news-summary">TN elects to bat in Ranji-style fixture; local crowd turns up at Coimbatore venue.</div>
+        <div class="meta-footer"><span class="source">📰 Livemint</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 49 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🗳️ ELECTION BUZZ</span>
+        <div class="news-title">BJP’s Annamalai: “Senthil Balaji’s political decline has begun”</div>
+        <div class="news-summary">Sharp attack in Coimbatore South: Annamalai claims DMK candidate will not return to Karur; predicts NDA victory.</div>
+        <div class="meta-footer"><span class="source">📰 ANI / Asianet</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+
+    <!-- 50 -->
+    <div class="news-card">
+      <div class="card-content">
+        <span class="category-tag">🌍 INFRA</span>
+        <div class="news-title">Coimbatore-Sathyamangalam bypass alignment: project yet to take off despite land relief</div>
+        <div class="news-summary">Farmers relieved but highway decongestion plan remains stalled; DPR approved in 2022, no construction start.</div>
+        <div class="meta-footer"><span class="source">📰 New Indian Express</span> <span>🔹 13 Apr 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    📍 Coimbatore District – Live news feed · April 13, 2026 <br>
+    Sources: Times of India, The Hindu, New Indian Express, Asianet, ANI, The Hindu, TNIE, and local bureaus.<br>
+    <span style="opacity:0.7;">⚡ Continuously updated · 50+ stories reflecting today’s developments in Kovai.</span>
   </div>
 </div>
-
-<div class="region-content">
-<main>
-
-<!-- NEWS 1 -->
-<article class="news-article">
-  <span class="article-label">Election</span>
-  <h2 class="article-title">Postal voting begins for senior citizens & PwDs</h2>
-  <p class="article-body">
-    Postal voting has started in Coimbatore for senior citizens (85+) and persons with disabilities.
-    Over 9,000 voters are eligible. Special teams are visiting homes across constituencies to ensure inclusive voting.
-  </p>
-  <div class="article-meta">
-    <span>📅 April 13, 2026</span>
-    <span class="meta-dot">·</span>
-    <span>🏷 Election</span>
-  </div>
-</article>
-
-<!-- NEWS 2 -->
-<article class="news-article">
-  <span class="article-label">Politics</span>
-  <h2 class="article-title">PM Modi to campaign in Coimbatore on April 18</h2>
-  <p class="article-body">
-    Prime Minister Narendra Modi will address a major rally at CODISSIA Trade Fair Complex.
-    Preparations are underway as election campaigning intensifies in the region.
-  </p>
-  <div class="article-meta">
-    <span>📅 April 13, 2026</span>
-    <span class="meta-dot">·</span>
-    <span>🏷 Politics</span>
-  </div>
-</article>
-
-<!-- NEWS 3 -->
-<article class="news-article">
-  <span class="article-label">Industry</span>
-  <h2 class="article-title">Foundry sector increases casting prices by 10%</h2>
-  <p class="article-body">
-    Coimbatore foundries have raised casting prices by 10% due to rising raw material costs.
-    The sector employs lakhs of workers and faces pressure from global supply disruptions.
-  </p>
-  <div class="article-meta">
-    <span>📅 April 13, 2026</span>
-    <span class="meta-dot">·</span>
-    <span>🏷 Industry</span>
-  </div>
-</article>
-
-<!-- NEWS 4 -->
-<article class="news-article">
-  <span class="article-label">Crime</span>
-  <h2 class="article-title">Two arrested in bar supplier murder case</h2>
-  <p class="article-body">
-    Two men were arrested after a bar supplier died following an assault during a dispute at a TASMAC bar.
-    Police have launched further investigation into the incident.
-  </p>
-  <div class="article-meta">
-    <span>📅 April 13, 2026</span>
-    <span class="meta-dot">·</span>
-    <span>🏷 Crime</span>
-  </div>
-</article>
-
-<!-- NEWS 5 -->
-<article class="news-article">
-  <span class="article-label">Enforcement</span>
-  <h2 class="article-title">IT raids in textile & jewellery shops ahead of elections</h2>
-  <p class="article-body">
-    Income Tax officials conducted raids in Coimbatore targeting suspected illegal election-related activities.
-    Shops in Gandhipuram were among those inspected.
-  </p>
-  <div class="article-meta">
-    <span>📅 April 12, 2026</span>
-    <span class="meta-dot">·</span>
-    <span>🏷 Enforcement</span>
-  </div>
-</article>
-
-</main>
-
-<aside class="sidebar">
-  <div class="sidebar-block">
-    <div class="sidebar-title">Quick Links</div>
-    <a href="../index.html" class="sidebar-link">🏠 Home</a>
-    <a href="../candidates-2026.html" class="sidebar-link">🗳 Elections 2026</a>
-  </div>
-</aside>
-
-</div>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <span>© 2026 The Kongu Times</span>
-  </div>
-</footer>
-
 </body>
 </html>
