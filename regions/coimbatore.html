@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Erode News</title>
+  <title>Coimbatore News</title>
 
   <style>
     body {
@@ -11,7 +11,6 @@
       background: #f5f5f5;
     }
 
-    /* HEADER (UNCHANGED) */
     .header {
       background: #2c3e50;
       color: white;
@@ -20,7 +19,6 @@
       font-size: 22px;
     }
 
-    /* TABS (UNCHANGED) */
     .tabs {
       display: flex;
       background: #34495e;
@@ -38,7 +36,6 @@
       background: #1abc9c;
     }
 
-    /* NEWS SECTION (ONLY THIS UPDATES) */
     .news-container {
       padding: 15px;
     }
@@ -65,12 +62,12 @@
 </head>
 <body>
 
-  <!-- HEADER (DO NOT CHANGE) -->
+  <!-- HEADER (UNCHANGED) -->
   <div class="header">
-    Erode News Portal
+    Coimbatore News Portal
   </div>
 
-  <!-- TABS (DO NOT CHANGE) -->
+  <!-- TABS (UNCHANGED) -->
   <div class="tabs">
     <div class="tab" onclick="loadNews()">All</div>
     <div class="tab" onclick="loadNews()">Local</div>
@@ -78,72 +75,72 @@
     <div class="tab" onclick="loadNews()">Weather</div>
   </div>
 
-  <!-- ONLY THIS SECTION CHANGES -->
+  <!-- ONLY NEWS CHANGES -->
   <div id="news-container" class="news-container"></div>
 
   <script>
-    const erodeNews = [
-      {title:"Rain in Erode",summary:"Light showers reported in parts of Erode."},
-      {title:"Market Prices Rise",summary:"Turmeric prices increase in Erode market."},
-      {title:"New Road Work",summary:"Road repair work begins near Perundurai."},
-      {title:"School Event",summary:"Annual day celebrated in local school."},
-      {title:"Water Supply Issue",summary:"Temporary disruption in water supply reported."},
-      {title:"Temple Festival",summary:"Local temple festival attracts large crowd."},
-      {title:"Traffic Update",summary:"Heavy traffic near Erode bus stand."},
-      {title:"Health Camp",summary:"Free medical camp organized in Erode."},
-      {title:"Power Cut Notice",summary:"Scheduled power cut announced."},
-      {title:"Farmer Support",summary:"Government announces support for farmers."},
+    const coimbatoreNews = [
+      {title:"Rain in Coimbatore",summary:"Light rain reported across city areas."},
+      {title:"Traffic Congestion",summary:"Heavy traffic near Gandhipuram."},
+      {title:"Metro Plan Update",summary:"Metro rail project discussion continues."},
+      {title:"IT Park Expansion",summary:"New IT companies entering Coimbatore."},
+      {title:"Water Supply Issue",summary:"Water disruption in some areas."},
+      {title:"Temple Festival",summary:"Marudamalai temple sees large crowd."},
+      {title:"Bus Delay",summary:"City buses delayed due to rain."},
+      {title:"Health Camp",summary:"Free medical camp organized."},
+      {title:"Power Cut",summary:"Scheduled maintenance announced."},
+      {title:"Farmers Market",summary:"Uzhavar Sandhai sees heavy sales."},
 
-      {title:"New Bus Route",summary:"New bus route introduced."},
-      {title:"Police Alert",summary:"Police increase patrolling."},
-      {title:"Library Opening",summary:"New library inaugurated."},
-      {title:"Gold Prices Drop",summary:"Gold prices fall slightly."},
-      {title:"Job Fair",summary:"Job fair this weekend."},
-      {title:"Rain Forecast",summary:"More rain expected this week."},
-      {title:"Sports Meet",summary:"District sports meet begins."},
-      {title:"Cleanup Drive",summary:"City cleanup drive started."},
-      {title:"New Shops",summary:"New shops open in city."},
-      {title:"College Seminar",summary:"Seminar held in college."},
+      {title:"New Flyover Plan",summary:"Proposal for new flyover approved."},
+      {title:"Police Patrol",summary:"Increased security in city zones."},
+      {title:"Library Opening",summary:"New public library opened."},
+      {title:"Gold Price Drop",summary:"Gold prices slightly reduced."},
+      {title:"Job Fair",summary:"Mega job fair this weekend."},
+      {title:"Weather Alert",summary:"Rain forecast for next 3 days."},
+      {title:"Sports Event",summary:"District sports meet begins."},
+      {title:"Clean City Drive",summary:"Corporation starts cleaning drive."},
+      {title:"Mall Opening",summary:"New shopping mall inaugurated."},
+      {title:"College Event",summary:"Tech fest conducted in college."},
 
-      {title:"Traffic Diversion",summary:"Diversions due to road work."},
-      {title:"Milk Price Hike",summary:"Milk price increased."},
-      {title:"Water Tank Repair",summary:"Repair work ongoing."},
+      {title:"Traffic Diversion",summary:"Road work causes diversions."},
+      {title:"Milk Price Rise",summary:"Price increased by ₹2."},
+      {title:"Water Tank Repair",summary:"Repair work in progress."},
       {title:"Festival Security",summary:"Extra police deployed."},
-      {title:"Bus Delay",summary:"Buses delayed due to rain."},
-      {title:"Farmer Protest",summary:"Farmers protest price issues."},
-      {title:"New ATM",summary:"ATM installed in main road."},
-      {title:"Hospital Upgrade",summary:"New equipment added."},
-      {title:"Tree Plantation",summary:"Trees planted in schools."},
-      {title:"Petrol Price",summary:"Petrol price unchanged."},
+      {title:"Train Delay",summary:"Trains delayed due to rain."},
+      {title:"Farmer Protest",summary:"Farmers demand better prices."},
+      {title:"ATM Installed",summary:"New ATM near RS Puram."},
+      {title:"Hospital Upgrade",summary:"GH gets new equipment."},
+      {title:"Tree Plantation",summary:"Drive held in schools."},
+      {title:"Petrol Price",summary:"Prices remain steady."},
 
-      {title:"Metro Proposal",summary:"Metro discussed for future."},
-      {title:"New Park",summary:"Park opened for public."},
-      {title:"Bus Pass Update",summary:"Online renewal available."},
-      {title:"Heavy Rain Alert",summary:"Alert issued for rain."},
-      {title:"Railway Update",summary:"Train timings changed."},
-      {title:"Market Crowd",summary:"Heavy crowd in market."},
-      {title:"Food Safety Check",summary:"Hotels inspected."},
-      {title:"Online Services",summary:"Services now online."},
-      {title:"Street Lights",summary:"LED lights installed."},
+      {title:"Airport Expansion",summary:"Expansion work underway."},
+      {title:"New Park Opened",summary:"Park opened in Saibaba Colony."},
+      {title:"Bus Pass Online",summary:"Students can renew passes."},
+      {title:"Heavy Rain Alert",summary:"IMD issues warning."},
+      {title:"Railway Update",summary:"New train timings announced."},
+      {title:"Market Rush",summary:"Crowd increases in markets."},
+      {title:"Food Safety Check",summary:"Hotel inspections conducted."},
+      {title:"Online Services",summary:"Civic services go digital."},
+      {title:"LED Lights",summary:"New street lights installed."},
       {title:"Bank Holiday",summary:"Banks closed tomorrow."},
 
-      {title:"New Bridge Plan",summary:"Bridge plan approved."},
-      {title:"School Reopening",summary:"Schools reopen."},
-      {title:"Water Level Rise",summary:"Dam water level rises."},
-      {title:"Bus Stand Upgrade",summary:"Renovation starts."},
-      {title:"Taxi Strike",summary:"Drivers announce strike."},
-      {title:"Electric Bus Trial",summary:"Electric buses tested."},
-      {title:"Health Alert",summary:"Dengue awareness drive."},
-      {title:"Road Accident",summary:"Minor accident reported."},
-      {title:"New Course",summary:"College adds new course."},
-      {title:"Festival Holiday",summary:"Holiday declared."}
+      {title:"Bridge Construction",summary:"New bridge work approved."},
+      {title:"School Reopen",summary:"Schools reopen after break."},
+      {title:"Dam Water Rise",summary:"Siruvani water level increases."},
+      {title:"Bus Stand Upgrade",summary:"Renovation begins."},
+      {title:"Taxi Strike",summary:"Drivers plan strike."},
+      {title:"Electric Bus Trial",summary:"Trial runs successful."},
+      {title:"Health Awareness",summary:"Dengue awareness drive."},
+      {title:"Accident Report",summary:"Minor accident on Avinashi road."},
+      {title:"New Course",summary:"College launches new program."},
+      {title:"Festival Holiday",summary:"Holiday announced in district."}
     ];
 
     function loadNews() {
       const container = document.getElementById("news-container");
       container.innerHTML = "";
 
-      erodeNews.forEach(news => {
+      coimbatoreNews.forEach(news => {
         const div = document.createElement("div");
         div.className = "news-card";
 
@@ -156,7 +153,6 @@
       });
     }
 
-    // Load news on page load
     window.onload = loadNews;
   </script>
 
